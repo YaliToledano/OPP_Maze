@@ -12,7 +12,6 @@ import gui.Graph_GUI;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class Graph_AlgoTest {
