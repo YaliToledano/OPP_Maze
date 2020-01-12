@@ -1,5 +1,10 @@
 package dataStructure;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import utils.Point3D;
+
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
@@ -16,6 +21,31 @@ public class DGraph implements graph, Serializable {
 		numberOfEdges = 0;
     }
 
+	/**
+	 * gets a json representing a graph and initializes a new DGraph from it
+	 * @param json - json string to init from
+	 */
+	public void init(String json){
+		try {
+			JSONObject js = new JSONObject(json);
+			JSONArray Edges = js.getJSONArray("Edges");
+			JSONArray Nodes = js.getJSONArray("Nodes");
+			for (int i = 0; i <Nodes.length() ; i++) {
+				JSONObject n = Nodes.getJSONObject(i);
+				String[] pos = n.getString("pos").split(",");
+				int id = n.getInt("id");
+				hashMap.put(id,new Node(id,new Point3D(Double.parseDouble(pos[0]),Double.parseDouble(pos[1])),0));
+			}
+			for (int i = 0; i <Edges.length() ; i++) {
+				JSONObject e = Edges.getJSONObject(i);
+				int src=e.getInt("src"),dest=e.getInt("dest");
+				double w = e.getDouble("w");
+				connect(src,dest,w);
+			}
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+	}
 	public DGraph(DGraph dg)
 	{
 		HashMap<Integer, node_data> original = dg.hashMap;
