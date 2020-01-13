@@ -27,6 +27,7 @@ public class DGraph implements graph, Serializable {
 	 */
 	public void init(String json){
 		try {
+
 			JSONObject js = new JSONObject(json);
 			JSONArray Edges = js.getJSONArray("Edges");
 			JSONArray Nodes = js.getJSONArray("Nodes");

@@ -18,6 +18,9 @@ import java.util.Iterator;
 import java.util.Random;
 
 public class Graph_GUI implements Runnable {
+    public Graph_GUI() {
+        StdDraw.setCanvasSize(600, 600);
+    }
     private static graph lastGraph;
     private static int mc = -1;
     /**
@@ -92,10 +95,9 @@ public class Graph_GUI implements Runnable {
                 max_y = p.y();
             }
         }
-        Range rx = new Range(min_x-20,max_x+20);
-        Range ry = new Range(min_y-20,max_y+20);
-        StdDraw.setXscale(rx.get_min(), rx.get_max());
-        StdDraw.setYscale(ry.get_min(), ry.get_max());
+        double prec = 0.00001;
+        StdDraw.setXscale(min_x - min_x * prec, max_x + max_x * prec);
+        StdDraw.setYscale(min_y - min_y * prec, max_y + max_y * prec);
     }
     /**
      * draws given graph in GUI
@@ -103,9 +105,7 @@ public class Graph_GUI implements Runnable {
      */
     public static void draw(graph graph)
     {
-        //DGraph graph = (DGraph)graph1;
         Graph_GUI.mc = graph.getMC();
-        StdDraw.setCanvasSize(600, 600);
         setScale(graph);
         Collection<node_data> c = graph.getV();
         Iterator<node_data> iterator = c.iterator();
@@ -134,8 +134,16 @@ public class Graph_GUI implements Runnable {
                 StdDraw.setPenColor(Color.yellow);
                 StdDraw.line(src.x(), src.y(),dest.x(),dest.y());
                 StdDraw.setPenColor(Color.black);
-                StdDraw.square(src.x()+(dest.x()-src.x())*0.95,src.y()+(dest.y()-src.y())*0.95,0.5);
-                StdDraw.text((dest.x()+src.x())/2,(dest.y()+src.y())/2,String.format("%.2f", w));
+                double pointx = src.x() + (dest.x() - src.x()) * 0.95, pointy = src.y() + (dest.y() - src.y()) * 0.95;
+                double point2x = src.x() + (dest.x() - src.x()) * 0.91, point2y = src.y() + (dest.y() - src.y()) * 0.91;
+                double m = Math.tan(0.26) * (point2y - pointy) / (point2x - pointx);
+                double m2 = Math.tan(Math.PI - 0.26) * (point2y - pointy) / (point2x - pointx);
+                double newl = m * (point2x - pointx) + pointy;
+                double newr = m2 * (point2x - pointx) + pointy;
+                StdDraw.line(pointx, pointy, point2x, newl);
+                StdDraw.line(pointx, pointy, point2x, newr);
+                //StdDraw.filledSquare(src.x()+(dest.x()-src.x())*0.95,src.y()+(dest.y()-src.y())*0.95,0.00008);
+                StdDraw.text(src.x() + (dest.x() - src.x()) * 0.8, src.y() + (dest.y() - src.y()) * 0.8, String.format("%.2f", w));
             }
         }
         lastGraph = graph;
