@@ -78,7 +78,7 @@ public class SimpleGameClient {
 				try {
 					JSONObject line = new JSONObject(robot_json);
 					JSONObject ttt = line.getJSONObject("Robot");
-					int rid = ttt.getInt("id");
+					int rid = ttt.getInt("id");//robot id
 					int src = ttt.getInt("src");
 					int dest = ttt.getInt("dest");
 				
