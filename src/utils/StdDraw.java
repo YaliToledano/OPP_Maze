@@ -626,14 +626,14 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 
 	// set of key codes currently pressed down
 	private static TreeSet<Integer> keysDown = new TreeSet<Integer>();
-	private double clickedX, clickedY;
-	private String alg = "";
-	private Point3D psrc = null;
-	private Point3D pdest = null;
+
+
 	// singleton pattern: client can't instantiate
 	private StdDraw() { }
 
-
+	private static String Mode = "";
+	private static Point3D lastLoc = null;
+	private static String map = "";
 	// static initializer
 	static {
 		init();
@@ -705,7 +705,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		frame.setResizable(false);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);            // closes all windows
 		// frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);      // closes only current window
-		frame.setTitle("Graph paths");
+		frame.setTitle("Maze of Waze");
 		frame.setJMenuBar(createMenuBar());
 		frame.pack();
 		frame.requestFocusInWindow();
@@ -728,30 +728,28 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		JMenuItem clear = new JMenuItem("Clear ");
 		clear.addActionListener(std);
 		menu.add(clear);
-		menu = new JMenu("Graph");
-		menuBar.add(menu);
-		JMenuItem addv = new JMenuItem("add vertex ");
-		addv.addActionListener(std);
-		menu.add(addv);
-		JMenuItem adde = new JMenuItem("add edge ");
-		adde.addActionListener(std);
-		menu.add(adde);
-		JMenuItem removev = new JMenuItem("remove vertex ");
-		removev.addActionListener(std);
-		menu.add(removev);
-		JMenuItem removee = new JMenuItem("remove edge ");
-		removee.addActionListener(std);
-		menu.add(removee);
+
+		//add stages selection
+		JMenu stages = new JMenu("stages");
+		JMenuItem s;
+		for (int i = 0; i < 24; i++) {
+			s = new JMenuItem("A" + (i + 1));
+			s.addActionListener(std);
+			stages.add(s);
+		}
+		menuBar.add(stages);
+
+		//add mode selection
+		JMenu Mode = new JMenu("Mode");
+		JMenuItem M = new JMenuItem("Manual");
+		JMenuItem A = new JMenuItem("Automatic");
+		M.addActionListener(std);
+		A.addActionListener(std);
+		Mode.add(M);
+		Mode.add(A);
+		menuBar.add(Mode);
 
 
-		JMenu Algo = new JMenu("Algo");
-		menuBar.add(Algo);
-		JMenuItem menuItem3 = new JMenuItem("TSP");
-		menuItem3.addActionListener(std);
-		Algo.add(menuItem3);
-		JMenuItem menuItem4 = new JMenuItem("shortest path");
-		menuItem4.addActionListener(std);
-        Algo.add(menuItem4);
 		return menuBar;
 	}
 
@@ -1685,71 +1683,43 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		System.out.println(e.getActionCommand());
-		if (e.getActionCommand().contains("Save")) {
+		String event = e.getActionCommand();
+		if (event.contains("Save")) {
 			FileDialog chooser = new FileDialog(StdDraw.frame, "Use a .png or .jpg extension", FileDialog.SAVE);
 			chooser.setVisible(true);
 			String filename = chooser.getFile();
 			try {
 				Graph_GUI.save(filename);
 			}catch (Exception ex){ex.printStackTrace();}
-		} else if (e.getActionCommand().contains("Load")) {
-			FileDialog chooser = new FileDialog(StdDraw.frame, "Use a .png or .jpg extension", FileDialog.LOAD);
-			chooser.setVisible(true);
-			String filename = chooser.getFile();
-			try {
-				Graph_GUI.load(filename);
-			}catch (Exception ex){ex.printStackTrace();}
-		} else if (e.getActionCommand().contains("TSP")) {
-			Graph_Algo ga = new Graph_Algo(Graph_GUI.getLastGraph());
-			String text = JOptionPane.showInputDialog("enter targets separate by comma");
-			String[] strings = text.split(",");
-			ArrayList<Integer> targets = new ArrayList<>();
-			for (String s : strings) {
-				targets.add(Integer.parseInt(s));
-			}
-			List<node_data> ls = ga.TSP(targets);
-			StdDraw.setPenColor(Color.green);
-			for (int i = 0; i < ls.size() - 1; i++) {
-				node_data n1 = ls.get(i);
-				node_data n2 = ls.get(i + 1);
-				StdDraw.line(n1.getLocation().x(), n1.getLocation().y(), n2.getLocation().x(), n2.getLocation().y());
-			}
-		} else if (e.getActionCommand().contains("shortest path")) {//double click on desired  nodes
-			alg = "shortest path";
-		} else if (e.getActionCommand().contains("Clear")) {
-			StdDraw.clear();
-			Graph_GUI.draw(Graph_GUI.getLastGraph());
-		} else if (e.getActionCommand().contains("add vertex")) {
-			alg = "add v";
-		} else if (e.getActionCommand().contains("add edge")) {
-			String text = JOptionPane.showInputDialog("enter source dest and weight");
-			String[] s = text.split("\\,");
-			if (s.length == 0 || s.length > 3) {
-				alg = "";
-				return;
-			}
-			int src = Integer.parseInt(s[0]);
-			int dest = Integer.parseInt(s[1]);
-			double w = Double.parseDouble(s[2]);
-			graph gr = Graph_GUI.getLastGraph();
-			node_data n1 = gr.getNode(src);
-			node_data n2 = gr.getNode(dest);
-			if (n1 == null || n2 == null) {
-				alg = "";
-				return;
-			}
-			gr.connect(src, dest, w);
-			Graph_GUI.draw(Graph_GUI.getLastGraph());
-		} else if (e.getActionCommand().contains("remove vertex")) {
-			String text = JOptionPane.showInputDialog("vertex to remove");
-			Graph_GUI.getLastGraph().removeNode(Integer.parseInt(text));
-		} else if (e.getActionCommand().contains("remove edge")) {
-			String text = JOptionPane.showInputDialog("edge to remove separate by comma");
-			String[] strings = text.split(",");
-			Graph_GUI.getLastGraph().removeEdge(Integer.parseInt(strings[0]), Integer.parseInt(strings[1]));
+		} else if (event.contains("A")) {
+			Mode = "";
+			map = event;
+		} else if (event.contains("Manual")) {
+			Mode = "Manual";
+		} else if (event.contains("Automatic")) {
+			Mode = "Automatic";
 		}
+
 	}
 
+	/**
+	 * @return last selected graph
+	 */
+	public static String getMap() {
+		return map;
+	}
+
+	/**
+	 * @return Last selected location
+	 */
+	public static Point3D getLastLoc() {
+		if (lastLoc == null) return null;
+		return new Point3D(lastLoc);
+	}
+
+	public static String getMode() {
+		return Mode;
+	}
 	/***************************************************************************
 	 *  Mouse interactions.
 	 ***************************************************************************/
@@ -1806,79 +1776,12 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	 */
 	@Override
 	public void mouseClicked(MouseEvent e) {
-
 		if (e.getClickCount() == 2) {
-			if (alg.contains("shortest path")) {
-
-				if (psrc == null) {
-					psrc = new Point3D(userX(e.getX()), userY(e.getY()));
-					return;
-				}
-				if (pdest == null) {
-					pdest = new Point3D(userX(e.getX()), userY(e.getY()));
-					shortPath();
-					pdest = null;
-					psrc = null;
-					alg = "";
-					return;
-				}
-			} else if (alg.contains("add v")) {
-				Point3D p = new Point3D(userX(e.getX()), userY(e.getY()));
-				graph gr = Graph_GUI.getLastGraph();
-				gr.addNode((node_data) new Node(gr.nodeSize() + (int) Math.random() * (gr.nodeSize() + 100), p, 0));
-				Graph_GUI.draw(Graph_GUI.getLastGraph());
-				alg = "";
+			if (Mode.contains("Manual")) {
+				lastLoc = new Point3D(userX(e.getX()), userY(e.getY()));
+				//System.out.println(lastLoc.toString());
 			}
 		}
-	}
-
-	private void shortPath() {
-		Graph_Algo ga = new Graph_Algo(Graph_GUI.getLastGraph());
-		node_data nd;
-		int src = 0, dest = 0;
-		Point3D sp = psrc;
-		node_data snode = null, dnode = null;
-		ArrayList<node_data> l = (ArrayList<node_data>) Graph_GUI.getLastGraph().getV();
-		for (node_data n : l) {
-			if (close(n.getLocation(), sp)) {
-				snode = n;
-			}
-		}
-		sp = pdest;
-		for (node_data n : l) {
-			if (close(n.getLocation(), sp)) {
-				dnode = n;
-			}
-		}
-		if (snode == null || dnode == null) return;
-		src = snode.getKey();
-		dest = dnode.getKey();
-		List<node_data> ls = ga.shortestPath(src, dest);
-		if (ls == null) {
-			StdDraw.text(xmax - 80, ymax - 10, "doesn't exist");
-			return;
-		}
-		double ww = ga.shortestPathDist(src, dest);
-		String w = "shortest distance is " + ww;
-		if (ww == Double.MAX_VALUE) w = " path doesn't exist";
-		StdDraw.setPenColor(Color.green);
-		for (int i = 0; i < ls.size() - 1; i++) {
-			node_data n1 = ls.get(i);
-			node_data n2 = ls.get(i + 1);
-			StdDraw.line(n1.getLocation().x(), n1.getLocation().y(), n2.getLocation().x(), n2.getLocation().y());
-		}
-		StdDraw.text(xmax - 80, ymax - 10, w);
-	}
-
-	private boolean close(Point3D p1, Point3D p2) {
-		double EPSILONX = 10;
-		double EPSILONY = 10;
-		///System.out.println(EPSILONX + " " + EPSILONY);
-		//System.out.println("x: " + Math.abs(scaleX(p1.x()) - scaleX(p2.x())));
-		//System.out.println("y: "+Math.abs(scaleY(p1.y()) - scaleY(p2.y())));
-		if (Math.abs(p1.x() - p2.x()) > EPSILONX) return false;
-		if (Math.abs(p1.y() - p2.y()) > EPSILONY) return false;
-		return true;
 	}
 	/**
 	 * This method cannot be called directly.

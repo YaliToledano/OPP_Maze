@@ -31,10 +31,11 @@ public class DGraph implements graph, Serializable {
 			JSONObject js = new JSONObject(json);
 			JSONArray Edges = js.getJSONArray("Edges");
 			JSONArray Nodes = js.getJSONArray("Nodes");
+			int id = -1;
 			for (int i = 0; i <Nodes.length() ; i++) {
 				JSONObject n = Nodes.getJSONObject(i);
 				String[] pos = n.getString("pos").split(",");
-				int id = n.getInt("id");
+				id = n.getInt("id");
 				hashMap.put(id,new Node(id,new Point3D(Double.parseDouble(pos[0]),Double.parseDouble(pos[1])),0));
 			}
 			for (int i = 0; i <Edges.length() ; i++) {

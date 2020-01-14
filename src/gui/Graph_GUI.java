@@ -18,9 +18,9 @@ import java.util.Iterator;
 import java.util.Random;
 
 public class Graph_GUI implements Runnable {
-    public Graph_GUI() {
-        StdDraw.setCanvasSize(600, 600);
-    }
+    //public Graph_GUI() {
+    // StdDraw.setCanvasSize(600, 600);
+    // }
     private static graph lastGraph;
     private static int mc = -1;
     /**
@@ -117,7 +117,7 @@ public class Graph_GUI implements Runnable {
             Point3D p = n.getLocation();
             StdDraw.point(p.x(),p.y());
             String s = n.getKey() +"";
-            StdDraw.text(p.x()+3,p.y()+3,s);
+            StdDraw.text(p.x() + 0.0002, p.y() + 0.0002, s);
         }
         StdDraw.setPenRadius(0.005);
         iterator = c.iterator();
@@ -185,6 +185,7 @@ public class Graph_GUI implements Runnable {
     @Override
     public void run() {
         draw(lastGraph);
+        /*
         while (true) {
             synchronized (lastGraph) {
                 if (mc < lastGraph.getMC()) {
@@ -199,5 +200,7 @@ public class Graph_GUI implements Runnable {
                 }
             }
         }
+
+         */
     }
 }
