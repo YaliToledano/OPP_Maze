@@ -11,10 +11,14 @@ public class Arena implements _arena {
     private graph graph;
     private List<Fruit> fruits;
     private List<Robot> robots;
-    private int fruitsCount = 0;
-    private int robotsCount = 0;
+    private int fruitsCount;
+    private int robotsCount;
 
     Arena() {
+        fruits = new ArrayList<Fruit>();
+        robots = new ArrayList<Robot>();
+        fruitsCount = 0;
+        robotsCount = 0;
     }
 
     public dataStructure.graph getGraph() {
@@ -110,11 +114,22 @@ public class Arena implements _arena {
         }
     }
 
-    public void addRobot(String json) {
+    public void addRobot(Robot robot) {
         try {
-            Robot f = new Robot(json);
-            robots.add(f);
+            robots.add(robot);
             robotsCount++;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public void addRobots(List<String> json) {
+        try {
+            robots = new ArrayList<Robot>();
+            for (String j:json) {
+            Robot r = new Robot(j);
+            robots.add(r);
+            robotsCount++;
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }

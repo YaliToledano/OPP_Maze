@@ -16,6 +16,10 @@ public class Robot implements _robot {
 
     public Robot(){}
 
+    public Robot(int src){
+        this.src = src;
+    }
+
     public Robot(String json) {
         try {
             this.id = id;
