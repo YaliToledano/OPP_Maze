@@ -41,4 +41,24 @@ public class Game_Algo {
         }
         return robotorder;
     }
+
+    public List<Robot> closestRobotsToNode(int t) {
+        List<Robot> robotorder = new ArrayList<Robot>();
+        List<Robot> robots = arena.getRobots(); //original robots list
+        //creating distance list
+        List<Double> dist = new ArrayList<Double>();
+        for (Robot r : robots) {
+            dist.add(ga.shortestPathDist(r.getSrc(), t));
+        }
+        List<Double> distorder = new ArrayList<Double>(); //crating empty distance list that will be parallel to the new robots list
+        for (int i = 0; i < robots.size(); i++) {  //sorting the new robots list with the distance list (insertion sort)
+            int j = 0;
+            while (j < robotorder.size() && distorder.get(j) < dist.get(i)) {
+                j++;
+            }
+            robotorder.add(j, robots.get(i));
+            distorder.add(j, dist.get(i));
+        }
+        return robotorder;
+    }
 }

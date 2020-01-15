@@ -5,6 +5,7 @@ import org.json.JSONObject;
 import utils.Point3D;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Arena implements _arena {
@@ -14,7 +15,7 @@ public class Arena implements _arena {
     private int fruitsCount;
     private int robotsCount;
 
-    Arena() {
+    public Arena() {
         fruits = new ArrayList<Fruit>();
         robots = new ArrayList<Robot>();
         fruitsCount = 0;
@@ -99,12 +100,18 @@ public class Arena implements _arena {
     }
 
 
-    public void addFruit(String json) {
+    public void addFruits(List<String> json) {
         try {
-            Fruit f = new Fruit(fruitsCount, json);
-            setFruitEdge(f);
-            fruits.add(f);
-            fruitsCount++;
+            fruits = new ArrayList<Fruit>();
+            fruitsCount = 0;
+            Iterator<String> it = json.iterator();
+            while (it.hasNext()) {
+                Fruit f = new Fruit(fruitsCount, it.next());
+                setFruitEdge(f);
+                fruits.add(f);
+                fruitsCount++;
+            }
+
         } catch (Exception e) {
             e.printStackTrace();
         }

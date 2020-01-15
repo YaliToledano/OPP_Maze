@@ -37,13 +37,7 @@ import gui.Graph_GUI;
 
 import java.awt.*;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
+import java.awt.event.*;
 
 import java.awt.geom.Arc2D;
 import java.awt.geom.Ellipse2D;
@@ -702,7 +696,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 
 		frame.setContentPane(draw);
 		frame.addKeyListener(std);    // JLabel cannot get keyboard focus
-		frame.setResizable(false);
+		frame.setResizable(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);            // closes all windows
 		// frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);      // closes only current window
 		frame.setTitle("Maze of Waze");
@@ -733,7 +727,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		JMenu stages = new JMenu("stages");
 		JMenuItem s;
 		for (int i = 0; i < 24; i++) {
-			s = new JMenuItem("A" + (i + 1));
+			s = new JMenuItem("A" + (i));
 			s.addActionListener(std);
 			stages.add(s);
 		}
@@ -796,7 +790,6 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 			xmax = max + BORDER * size;
 		}
 	}
-
 	/**
 	 * Sets the <em>y</em>-scale to the specified range.
 	 *
