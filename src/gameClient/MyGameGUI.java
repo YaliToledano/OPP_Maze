@@ -51,7 +51,7 @@ public class MyGameGUI implements Runnable {
         Iterator<String> fruits = game.getFruits().iterator();
         ArrayList<Fruit> fruits1 = new ArrayList<>();
         while (fruits.hasNext()) {
-            fruits1.add(new Fruit(fruits.next()));
+          //  fruits1.add(new Fruit(fruits.next()));
         }
         for (int i = 0; i < fruits1.size(); i++) {
             StdDraw.picture(fruits1.get(i).getLocation().x(), fruits1.get(i).getLocation().y(), "banana.jpg", 0.0005, 0.0005);

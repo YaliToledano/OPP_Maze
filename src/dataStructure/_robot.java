@@ -7,8 +7,6 @@ public interface _robot {
 
     public double currentScore();
 
-    public int targetNode();
-
     public int getID();
 
     public double getSpeed();

@@ -107,6 +107,15 @@ public class DGraph implements graph, Serializable {
 		return list;
 	}
 
+	public Collection<edge_data> getAllE() {
+		ArrayList<node_data> nodes = new ArrayList<node_data>(hashMap.values());
+		ArrayList<edge_data> edges = new ArrayList<edge_data>();
+		for (node_data n:nodes) {
+			edges.addAll(getE(n.getKey()));
+		}
+		return edges;
+	}
+
 	@Override
 	public node_data removeNode(int key) {
 		MC++;

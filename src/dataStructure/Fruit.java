@@ -12,11 +12,13 @@ public class Fruit implements _fruit {
     private double value;
     private int type;
     private Point3D pos;
-    private static int count = 0;
+    private Edge edge;
 
-    public Fruit(String json) {
+    public Fruit() {}
+
+    public Fruit(int id ,String json) {
         try {
-            id = count++;
+            this.id = id;
             JSONObject jj = new JSONObject(json);
             JSONObject j = jj.getJSONObject("Fruit");
             value = j.getDouble("value");
@@ -34,12 +36,12 @@ public class Fruit implements _fruit {
     }
 
     public edge_data getEdge() {
-        return null;
+        return this.edge;
     }
 
     @Override
     public int getType() {
-        return 0;
+        return type;
     }
 
     public double getValue() {
@@ -49,5 +51,9 @@ public class Fruit implements _fruit {
     //setters
     public void setPos(Point3D pos) {
         this.pos = new Point3D(pos);
+    }
+
+    public void setEdge(Edge edge) {
+        this.edge = edge;
     }
 }
