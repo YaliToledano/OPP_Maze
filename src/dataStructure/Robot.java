@@ -22,7 +22,6 @@ public class Robot implements _robot {
 
     public Robot(String json) {
         try {
-            this.id = id;
             JSONObject jj = new JSONObject(json);
             JSONObject j = jj.getJSONObject("Robot");
             this.id = j.getInt("id");
@@ -38,6 +37,21 @@ public class Robot implements _robot {
         }
     }
 
+    public void update(String json) {
+        try {
+            JSONObject jj = new JSONObject(json);
+            JSONObject j = jj.getJSONObject("Robot");
+            this.src = j.getInt("src");
+            this.dest=-1;
+            this.targetNode=-1;
+            this.value = j.getDouble("value");
+            this.speed = j.getDouble("speed");
+            String[] pos1 = j.getString("pos").split(",");
+            pos = new Point3D(Double.parseDouble(pos1[0]), Double.parseDouble(pos1[1]));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
 
 
     @Override

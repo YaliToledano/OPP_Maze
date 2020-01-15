@@ -61,51 +61,47 @@ public class Arena implements _arena {
         this.robotsCount = robotsCount;
     }
 
-    public void setFruitEdge(Fruit f)
-    {
-        Point3D pos =  f.getLocation();
-        ArrayList<edge_data> edges = (ArrayList<edge_data>)((DGraph)graph).getAllE();
-        ArrayList<edge_data> match =  new ArrayList<edge_data>();
-        for (edge_data e:edges) {
-            if(isOnEdge((Edge)e,pos))
+    public void setFruitEdge(Fruit f) {
+        Point3D pos = f.getLocation();
+        ArrayList<edge_data> edges = (ArrayList<edge_data>) ((DGraph) graph).getAllE();
+        ArrayList<edge_data> match = new ArrayList<edge_data>();
+        for (edge_data e : edges) {
+            if (isOnEdge((Edge) e, pos))
                 match.add(e);
         }
 
         edge_data selected_edge = null;
 
-        if(f.getType()==1) {
+        if (f.getType() == 1) {
             double max = Double.NEGATIVE_INFINITY;
             for (edge_data e : match) {
-                if(max<e.getWeight()){
+                if (max < e.getWeight()) {
                     max = e.getWeight();
                     selected_edge = e;
                 }
             }
-        }
-        else
-        {
+        } else {
             double min = Double.POSITIVE_INFINITY;
             for (edge_data e : match) {
-                if(min>e.getWeight()){
+                if (min > e.getWeight()) {
                     min = e.getWeight();
                     selected_edge = e;
                 }
             }
         }
-        f.setEdge((Edge)selected_edge);
+        f.setEdge((Edge) selected_edge);
     }
 
-    private boolean isOnEdge(Edge e ,Point3D pos)
-    {
+    private boolean isOnEdge(Edge e, Point3D pos) {
         Point3D p1 = this.graph.getNode(e.getSrc()).getLocation();
         Point3D p2 = this.graph.getNode(e.getDest()).getLocation();
-        return (((p1.y()-pos.y())/(p1.x()-pos.x()))==((pos.y()-p2.y())/(pos.x()-p2.x())));
+        return (((p1.y() - pos.y()) / (p1.x() - pos.x())) == ((pos.y() - p2.y()) / (pos.x() - p2.x())));
     }
 
 
     public void addFruit(String json) {
         try {
-            Fruit f = new Fruit(fruitsCount,json);
+            Fruit f = new Fruit(fruitsCount, json);
             setFruitEdge(f);
             fruits.add(f);
             fruitsCount++;
@@ -122,18 +118,41 @@ public class Arena implements _arena {
             e.printStackTrace();
         }
     }
+
     public void addRobots(List<String> json) {
         try {
             robots = new ArrayList<Robot>();
-            for (String j:json) {
-            Robot r = new Robot(j);
-            robots.add(r);
-            robotsCount++;
+            for (String j : json) {
+                Robot r = new Robot(j);
+                robots.add(r);
+                robotsCount++;
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
+    public void updateRobots(List<String> json) {
+        try {
+            for (String s : json) {
+                JSONObject jj = new JSONObject(s);
+                JSONObject j = jj.getJSONObject("Robot");
+                Robot r = searchRobot(j.getInt("id"));
+                r.update(s);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public Robot searchRobot(int id) { //search robot in the list by id
+        for (Robot r : robots) {
+            if (r.getID() == id)
+                return r;
+        }
+        return null;
+    }
+
 
     @Override
     public edge_data getEdge() {
@@ -142,5 +161,7 @@ public class Arena implements _arena {
 
     @Override
     public int move(Robot r, Node n) {
+
+        return 1;
     }
 }
