@@ -76,6 +76,7 @@ public class Arena implements _arena {
         ArrayList<edge_data> edges = (ArrayList<edge_data>) ((DGraph) graph).getAllE();
         ArrayList<edge_data> match = new ArrayList<edge_data>();
         for (edge_data e : edges) {
+            //System.out.println(e.getSrc() + " " + e.getDest());
             if (isOnEdge((Edge) e, pos))
                 match.add(e);
         }
@@ -91,6 +92,7 @@ public class Arena implements _arena {
                 }
             }
         } else {
+            //System.out.println("banana");
             double min = Double.POSITIVE_INFINITY;
             for (edge_data e : match) {
                 if (min > e.getWeight()) {
@@ -99,13 +101,16 @@ public class Arena implements _arena {
                 }
             }
         }
+
+        //    System.out.println("Edge is "+selected_edge.getSrc() +" "+selected_edge.getDest());
         f.setEdge((Edge) selected_edge);
     }
 
     private boolean isOnEdge(Edge e, Point3D pos) {
         Point3D p1 = this.graph.getNode(e.getSrc()).getLocation();
         Point3D p2 = this.graph.getNode(e.getDest()).getLocation();
-        return (((p1.y() - pos.y()) / (p1.x() - pos.x())) == ((pos.y() - p2.y()) / (pos.x() - p2.x())));
+        if (Math.abs((pos.distance2D(p1) + pos.distance2D(p2)) - p1.distance2D(p2)) <= 0.001) return true;
+        return false;
     }
 
 
@@ -133,6 +138,7 @@ public class Arena implements _arena {
     public void addRobot(Robot robot) {
         try {
             robots.add(robot);
+            robot.setDest(-1);
             robotsCount++;
         } catch (Exception e) {
             e.printStackTrace();

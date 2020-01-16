@@ -73,13 +73,14 @@ public class MyGameGUI implements Runnable {
                     }
                 }
                 p = StdDraw.getLastLoc();
-                System.out.println("robot in " + p.toString());
+                //System.out.println("robot in " + p.toString());
                 StdDraw.setPenRadius(0.05);
                 StdDraw.setPenColor(Color.red);
                 StdDraw.point(p.x(), p.y());
                 int src = nodeFromLoc(p, arena.getGraph());
                 game.addRobot(src);
             } else {
+                //System.out.println(numRobots);
                 List<Integer> ls = game_algo.placeRobots(numRobots);
                 for (int j = 0; j < ls.size(); j++) {
                     game.addRobot(ls.get(i));
@@ -98,27 +99,19 @@ public class MyGameGUI implements Runnable {
         game.startGame();
         System.out.println("game started" + game.timeToEnd());
         arena.addRobots(game.getRobots());
-        System.out.println(p.toString());
+        //System.out.println(p.toString());
         //Game_Algo game_algo = new Game_Algo(arena);
         while (game.isRunning()) {
             System.out.println(game.timeToEnd());
-            if (StdDraw.getLastLoc() != null || !close(p, StdDraw.getLastLoc()) || nodeFromLoc(StdDraw.getLastLoc(), arena.getGraph()) != -1) {
-                p = StdDraw.getLastLoc();
-                move(game, arena, nodeFromLoc(p, arena.getGraph()), game_algo);
+            if (Mode.equals("Manual")) {
+                if (StdDraw.getLastLoc() != null || !close(p, StdDraw.getLastLoc()) || nodeFromLoc(StdDraw.getLastLoc(), arena.getGraph()) != -1) {
+                    p = StdDraw.getLastLoc();
+                    move(game, arena, nodeFromLoc(p, arena.getGraph()), game_algo);
+                }
+            } else {
+                game_algo.greedyMove(game);
             }
-            StdDraw.clear();
-            Graph_GUI.setLastGraph(arena.getGraph());
-            gui = new Thread(new Graph_GUI());
-            gui.start();
-            try {
-                gui.join();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            arena.addFruits(game.getFruits());
-            drawFruits(arena);
-            drawRobots(arena);
-            StdDraw.show();
+            reDraw(game, arena, gui);
             try {
                 Thread.sleep(100);
             } catch (Exception e) {
@@ -128,6 +121,22 @@ public class MyGameGUI implements Runnable {
         System.out.println(game.toString());
     }
 
+    //draws all required components
+    private static void reDraw(game_service game, Arena arena, Thread gui) {
+        StdDraw.clear();
+        Graph_GUI.setLastGraph(arena.getGraph());
+        gui = new Thread(new Graph_GUI());
+        gui.start();
+        try {
+            gui.join();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        arena.addFruits(game.getFruits());
+        drawFruits(arena);
+        drawRobots(arena);
+        StdDraw.show();
+    }
     //finds a node in the graph that matches given location
     private static int nodeFromLoc(Point3D p, graph g) {
         ArrayList<node_data> l = (ArrayList<node_data>) g.getV();
@@ -142,7 +151,14 @@ public class MyGameGUI implements Runnable {
     private static void drawFruits(Arena a) {
         List<Fruit> fruits = a.getFruits();
         for (int i = 0; i < fruits.size(); i++) {
-            StdDraw.picture(fruits.get(i).getLocation().x(), fruits.get(i).getLocation().y(), "banana.jpg", 0.0005, 0.0005);
+            if (fruits.get(i).getType() == -1) {
+                StdDraw.picture(fruits.get(i).getLocation().x(), fruits.get(i).getLocation().y(), "banana.jpg", 0.0005, 0.0005);
+            } else {
+                StdDraw.setPenColor(StdDraw.GREEN);
+                StdDraw.setPenRadius(0.05);
+                StdDraw.point(fruits.get(i).getLocation().x(), fruits.get(i).getLocation().y());
+                //StdDraw.picture(fruits.get(i).getLocation().x(), fruits.get(i).getLocation().y(), "apple.png", 0.7, 0.7);
+            }
         }
     }
 
@@ -179,14 +195,18 @@ public class MyGameGUI implements Runnable {
 
     @Override
     public void run() {
-        while (StdDraw.getMode().equals("") || StdDraw.getMap().equals("")) {
-            try {
-                Thread.sleep(500);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+        while (true) {
+            while (StdDraw.getMode().equals("") || StdDraw.getMap().equals("")) {
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
+            //System.out.println(Integer.parseInt(StdDraw.getMap().substring(1)) + StdDraw.getMode());
+            play(Integer.parseInt(StdDraw.getMap().substring(1)), StdDraw.getMode());
+            StdDraw.setMap("");
+            StdDraw.setMode("");
         }
-        //System.out.println(Integer.parseInt(StdDraw.getMap().substring(1)));
-        play(Integer.parseInt(StdDraw.getMap().substring(1)), StdDraw.getMode());
     }
 }

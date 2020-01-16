@@ -736,13 +736,12 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		//add mode selection
 		JMenu Mode = new JMenu("Mode");
 		JMenuItem M = new JMenuItem("Manual");
+        M.addActionListener(std);
+        Mode.add(M);
 		JMenuItem A = new JMenuItem("Automatic");
-		M.addActionListener(std);
 		A.addActionListener(std);
-		Mode.add(M);
 		Mode.add(A);
 		menuBar.add(Mode);
-
 
 		return menuBar;
 	}
@@ -1675,17 +1674,17 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		System.out.println(e.getActionCommand());
+        System.out.println("event click is " + e.getActionCommand());
 		String event = e.getActionCommand();
-		if (event.contains("Save")) {
+        if (event.equals("Save")) {
 			FileDialog chooser = new FileDialog(StdDraw.frame, "Use a .png or .jpg extension", FileDialog.SAVE);
 			chooser.setVisible(true);
 			String filename = chooser.getFile();
 			try {
 				Graph_GUI.save(filename);
 			}catch (Exception ex){ex.printStackTrace();}
-		} else if (event.contains("A")) {
-			Mode = "";
+        } else if (event.contains("A") && event.matches(".*\\d.*")) {
+            //Mode = "";
 			map = event;
 		} else if (event.contains("Manual")) {
 			Mode = "Manual";
@@ -1713,6 +1712,14 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	public static String getMode() {
 		return Mode;
 	}
+
+    public static void setMode(String s) {
+        Mode = s;
+    }
+
+    public static void setMap(String s) {
+        map = s;
+    }
 	/***************************************************************************
 	 *  Mouse interactions.
 	 ***************************************************************************/

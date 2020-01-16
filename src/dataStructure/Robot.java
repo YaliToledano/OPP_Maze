@@ -4,8 +4,13 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import utils.Point3D;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingDeque;
 
 public class Robot implements _robot {
 
@@ -13,9 +18,10 @@ public class Robot implements _robot {
     private Point3D pos;
     private int src;
     private int dest;
-    private List<Integer> targetNodes;
+    private BlockingQueue<Integer> targetNodes;
     private double speed;
     private double value;
+    private Fruit fruit;
 
     public Robot() {
     }
@@ -35,7 +41,7 @@ public class Robot implements _robot {
             this.speed = j.getDouble("speed");
             String[] pos1 = j.getString("pos").split(",");
             pos = new Point3D(Double.parseDouble(pos1[0]), Double.parseDouble(pos1[1]));
-            targetNodes = new ArrayList<>();
+            targetNodes = new LinkedBlockingDeque<>();
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -122,7 +128,7 @@ public class Robot implements _robot {
     }
 
 
-    public void setTargetNodes(List<Integer> targetNodes) {
+    public void setTargetNodes(BlockingQueue<Integer> targetNodes) {
         this.targetNodes = targetNodes;
     }
 
@@ -131,7 +137,7 @@ public class Robot implements _robot {
     }
 
 
-    public List<Integer> getTargetNodes() {
+    public BlockingQueue<Integer> getTargetNodes() {
         return targetNodes;
     }
 
@@ -145,4 +151,11 @@ public class Robot implements _robot {
         this.dest = target;
     }
 
+    public void setFruit(Fruit f) {
+        this.fruit = f;
+    }
+
+    public Fruit getFruit() {
+        return fruit;
+    }
 }
