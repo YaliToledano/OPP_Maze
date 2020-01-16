@@ -13,6 +13,7 @@ public class Fruit implements _fruit {
     private int type;
     private Point3D pos;
     private Edge edge;
+    boolean assigned;
 
     public Fruit() {}
 
@@ -25,12 +26,19 @@ public class Fruit implements _fruit {
             type = j.getInt("type");
             String[] pos1 = j.getString("pos").split(",");
             pos = new Point3D(Double.parseDouble(pos1[0]), Double.parseDouble(pos1[1]));
+            assigned = false;
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
 
     //getters
+
+
+    public int getId() {
+        return id;
+    }
+
     public Point3D getLocation() {
         return pos;
     }
@@ -48,6 +56,10 @@ public class Fruit implements _fruit {
         return value;
     }
 
+    public Point3D getPos() {
+        return pos;
+    }
+
     //setters
     public void setPos(Point3D pos) {
         this.pos = new Point3D(pos);
@@ -56,4 +68,14 @@ public class Fruit implements _fruit {
     public void setEdge(Edge edge) {
         this.edge = edge;
     }
+
+    public void setAssigned(boolean assigned) {
+        this.assigned = assigned;
+    }
+
+    public boolean isAssigned() {
+        return assigned;
+    }
+
+
 }

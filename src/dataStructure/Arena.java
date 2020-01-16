@@ -4,9 +4,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import utils.Point3D;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import javax.management.Query;
+import java.util.*;
 
 public class Arena implements _arena {
     private graph graph;
@@ -14,10 +13,12 @@ public class Arena implements _arena {
     private List<Robot> robots;
     private int fruitsCount;
     private int robotsCount;
+    private Queue<Fruit> unassigned;
 
     public Arena() {
         fruits = new ArrayList<Fruit>();
         robots = new ArrayList<Robot>();
+        unassigned = new LinkedList<>();
         fruitsCount = 0;
         robotsCount = 0;
     }
@@ -42,6 +43,10 @@ public class Arena implements _arena {
         return robotsCount;
     }
 
+    public Queue<Fruit> getUnassigned() {
+        return unassigned;
+    }
+
     public void setFruits(List<Fruit> fruits) {
         this.fruits = fruits;
     }
@@ -60,6 +65,10 @@ public class Arena implements _arena {
 
     public void setRobotsCount(int robotsCount) {
         this.robotsCount = robotsCount;
+    }
+
+    public void setUnassigned(Queue<Fruit> unassigned) {
+        this.unassigned = unassigned;
     }
 
     public void setFruitEdge(Fruit f) {
@@ -110,6 +119,10 @@ public class Arena implements _arena {
                 setFruitEdge(f);
                 fruits.add(f);
                 fruitsCount++;
+            }
+            for (Fruit fr:fruits) {
+                if(!fr.isAssigned())
+                    unassigned.add(fr);
             }
 
         } catch (Exception e) {

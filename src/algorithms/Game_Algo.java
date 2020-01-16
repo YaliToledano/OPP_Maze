@@ -3,10 +3,7 @@ package algorithms;
 import dataStructure.Arena;
 import dataStructure.Fruit;
 import dataStructure.Robot;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class Game_Algo {
     private Arena arena;
@@ -61,4 +58,26 @@ public class Game_Algo {
         }
         return robotorder;
     }
+
+    public void placeRobots() //place robots at the beginning
+    {
+        Iterator<Robot> r = arena.getRobots().iterator();
+        for (Fruit f:arena.getFruits()) {
+            if(r.hasNext())
+                r.next().setSrc(f.getEdge().getSrc()); //place near to a fruit
+        }
+        while(r.hasNext()) {
+            r.next().setSrc((int)(Math.round(Math.random()*arena.getGraph().nodeSize()))); //the rest placed randomly
+        }
+    }
+
+    public void AutomaticMode()
+    {
+
+    }
+
+
+
+
+
 }

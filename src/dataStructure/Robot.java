@@ -4,19 +4,23 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import utils.Point3D;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Robot implements _robot {
 
     private int id;
     private Point3D pos;
     private int src;
     private int dest;
-    private int targetNode;
+    private List<Integer> targetNodes;
     private double speed;
     private double value;
 
-    public Robot(){}
+    public Robot() {
+    }
 
-    public Robot(int src){
+    public Robot(int src) {
         this.src = src;
     }
 
@@ -26,12 +30,12 @@ public class Robot implements _robot {
             JSONObject j = jj.getJSONObject("Robot");
             this.id = j.getInt("id");
             this.src = j.getInt("src");
-            this.dest=-1;
-            this.targetNode=-1;
+            this.dest = -1;
             this.value = j.getDouble("value");
             this.speed = j.getDouble("speed");
             String[] pos1 = j.getString("pos").split(",");
             pos = new Point3D(Double.parseDouble(pos1[0]), Double.parseDouble(pos1[1]));
+            targetNodes = new ArrayList<>();
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -42,12 +46,12 @@ public class Robot implements _robot {
             JSONObject jj = new JSONObject(json);
             JSONObject j = jj.getJSONObject("Robot");
             this.src = j.getInt("src");
-            this.dest=-1;
-            this.targetNode=-1;
+            this.dest = -1;
             this.value = j.getDouble("value");
             this.speed = j.getDouble("speed");
             String[] pos1 = j.getString("pos").split(",");
             pos = new Point3D(Double.parseDouble(pos1[0]), Double.parseDouble(pos1[1]));
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -105,8 +109,6 @@ public class Robot implements _robot {
     }
 
 
-
-
     public void setId(int id) {
         this.id = id;
     }
@@ -120,9 +122,8 @@ public class Robot implements _robot {
     }
 
 
-
-    public void setTargetNode(int targetNode) {
-        this.targetNode = targetNode;
+    public void setTargetNodes(List<Integer> targetNodes) {
+        this.targetNodes = targetNodes;
     }
 
     public void setValue(double value) {
@@ -130,8 +131,8 @@ public class Robot implements _robot {
     }
 
 
-    public int getTargetNode() {
-        return targetNode;
+    public List<Integer> getTargetNodes() {
+        return targetNodes;
     }
 
     public int getDesttNode() {
