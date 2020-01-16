@@ -59,16 +59,22 @@ public class Game_Algo {
         return robotorder;
     }
 
-    public void placeRobots() //place robots at the beginning
+    /**
+     * @param numOfRobots
+     * @return list of vertexes to place robots on
+     */
+    public List<Integer> placeRobots(int numOfRobots) //place robots at the beginning
     {
-        Iterator<Robot> r = arena.getRobots().iterator();
+        List<Integer> ls = new ArrayList<>();
+        int count = 0;
         for (Fruit f:arena.getFruits()) {
-            if(r.hasNext())
-                r.next().setSrc(f.getEdge().getSrc()); //place near to a fruit
+            ls.add(f.getEdge().getSrc());
+            count++;
         }
-        while(r.hasNext()) {
-            r.next().setSrc((int)(Math.round(Math.random()*arena.getGraph().nodeSize()))); //the rest placed randomly
+        for (int i = count; i < numOfRobots; i++) {
+            ls.add(1 + (int) Math.random() * arena.getGraph().getV().size());
         }
+        return ls;
     }
 
     public void AutomaticMode()

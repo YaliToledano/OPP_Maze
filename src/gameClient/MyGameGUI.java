@@ -18,19 +18,14 @@ import utils.Point3D;
 import utils.StdDraw;
 
 public class MyGameGUI implements Runnable {
-    private static int nextNode;//will be changed by GUI input
-
-    public static void setNextNode(int node) {
-        nextNode = node;
-    }
 
     public static void main(String[] args) {
         Thread t = new Thread(new MyGameGUI());
         t.start();
     }
 
-    //all process pf manual handling of robots in the scenario
-    private static void ManualMode(int scenario_num) {
+
+    private static void play(int scenario_num, String Mode) {
         //init game service and graph
         Arena arena = new Arena();
         game_service game = Game_Server.getServer(scenario_num);
@@ -64,25 +59,36 @@ public class MyGameGUI implements Runnable {
             e.printStackTrace();
         }
 
-
+        Game_Algo game_algo = new Game_Algo(arena);
         //robots init and placement
         Point3D p = StdDraw.getLastLoc();
         for (int i = 0; i < numRobots; i++) {
-            while (StdDraw.getLastLoc() == null || close(p, StdDraw.getLastLoc())) {
+            if (Mode.equals("Manual")) {
+                while (StdDraw.getLastLoc() == null || close(p, StdDraw.getLastLoc())) {
 
-                try {
-                    Thread.sleep(500);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    try {
+                        Thread.sleep(500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                p = StdDraw.getLastLoc();
+                System.out.println("robot in " + p.toString());
+                StdDraw.setPenRadius(0.05);
+                StdDraw.setPenColor(Color.red);
+                StdDraw.point(p.x(), p.y());
+                int src = nodeFromLoc(p, arena.getGraph());
+                game.addRobot(src);
+            } else {
+                List<Integer> ls = game_algo.placeRobots(numRobots);
+                for (int j = 0; j < ls.size(); j++) {
+                    game.addRobot(ls.get(i));
+                    StdDraw.setPenRadius(0.05);
+                    StdDraw.setPenColor(Color.red);
+                    p = arena.getGraph().getNode(ls.get(i)).getLocation();
+                    StdDraw.point(p.x(), p.y());
                 }
             }
-            p = StdDraw.getLastLoc();
-            System.out.println("robot in " + p.toString());
-            StdDraw.setPenRadius(0.05);
-            StdDraw.setPenColor(Color.red);
-            StdDraw.point(p.x(), p.y());
-            int src = nodeFromLoc(p, arena.getGraph());
-            game.addRobot(src);
         }
         System.out.println("init robot");
 
@@ -93,7 +99,7 @@ public class MyGameGUI implements Runnable {
         System.out.println("game started" + game.timeToEnd());
         arena.addRobots(game.getRobots());
         System.out.println(p.toString());
-        Game_Algo game_algo = new Game_Algo(arena);
+        //Game_Algo game_algo = new Game_Algo(arena);
         while (game.isRunning()) {
             System.out.println(game.timeToEnd());
             if (StdDraw.getLastLoc() != null || !close(p, StdDraw.getLastLoc()) || nodeFromLoc(StdDraw.getLastLoc(), arena.getGraph()) != -1) {
@@ -181,6 +187,6 @@ public class MyGameGUI implements Runnable {
             }
         }
         //System.out.println(Integer.parseInt(StdDraw.getMap().substring(1)));
-        ManualMode(Integer.parseInt(StdDraw.getMap().substring(1)));
+        play(Integer.parseInt(StdDraw.getMap().substring(1)), StdDraw.getMode());
     }
 }
