@@ -67,6 +67,10 @@ public class Game_Algo {
         return robotorder;
     }
 
+    /**
+     * @param t - target node
+     * @return list of robots in descending order of distance from t(on the graph not actual distance)
+     */
     public List<Robot> closestRobotsToNode(int t) {
         List<Robot> robotorder = new ArrayList<Robot>();
         List<Robot> robots = arena.getRobots(); //original robots list
@@ -121,26 +125,16 @@ public class Game_Algo {
                 }
                 //System.out.println(i + " " + d + " " + s);
                 r.setDest(itr.next().getDest());
-                game.chooseNextEdge(r.getID(), r.getDest());
+                game.chooseNextEdge(r.getId(), r.getDest());
                 arena.updateRobots(game.move());
-                System.out.println("moved robot " + r.getID() + " to node " + r.getDest());
+                System.out.println("moved robot " + r.getId() + " to node " + r.getDest());
 
             }
 
         }
-        /*
-        int rToMove = closestRobotsToNode(t).get(0).getID();
-        arena.updateRobots(game.move());
-        if (arena.getRobots().get(rToMove).getDest() == -1) {
-            arena.updateRobots(game.move());
-            game.chooseNextEdge(rToMove, t);
-            Robot r = arena.getRobots().get(rToMove);
-            r.setDest(t);
-        }
-         */
     }
 
-    //greedy algorithm
+    //greedy algorithm - fruit first approach
     public void greedyMove(game_service game) {
         for (Fruit f : arena.getFruits()) {
             //if (f.isAssigned()==true) continue;
@@ -164,9 +158,9 @@ public class Game_Algo {
             if (r.getDest() == -1 && r.getTargetNodes().size() > 0) {
                 r.setDest(r.getTargetNodes().remove());
                 System.out.println(r.getTargetNodes().toString());
-                game.chooseNextEdge(r.getID(), r.getDest());
+                game.chooseNextEdge(r.getId(), r.getDest());
 
-                System.out.println("moved robot " + r.getID() + " to node " + r.getDest());
+                System.out.println("moved robot " + r.getId() + " to node " + r.getDest());
             }
             if (r.getDest() == -1 && r.getTargetNodes().size() == 0) {
                 if (r.getFruit() != null)
@@ -177,15 +171,16 @@ public class Game_Algo {
         }
         arena.updateRobots(game.move());
     }
-
+    //better greedy algorithm - if robots are close together
     public void basicG(game_service game) {
         for (Robot r : arena.getRobots()) {
             if (r.getTargetNodes().size() == 0) {
                 if (r.getFruit() != null)
                     r.getFruit().setAssigned(false);
                 Fruit f = closetFruitToRobot(r);
-                if (f.isAssigned()) {
+                if (f.isAssigned()) {//if other robot already goes to that fruit chooses another random fruit
                     int x = (int) Math.random() * arena.getFruitsCount();
+                    while (f.getId() != x) x = (int) Math.random() * arena.getFruitsCount();
                     f = arena.getFruits().get(x);
                 }
                 f.setAssigned(true);
@@ -202,8 +197,8 @@ public class Game_Algo {
             } else {
                 if (r.getDest() == -1) {
                     r.setDest(r.getTargetNodes().remove());
-                    System.out.println("moved robot " + r.getID() + " to node " + r.getDest());
-                    game.chooseNextEdge(r.getID(), r.getDest());
+                    System.out.println("moved robot " + r.getId() + " to node " + r.getDest());
+                    game.chooseNextEdge(r.getId(), r.getDest());
                 }
             }
             arena.updateRobots(game.move());

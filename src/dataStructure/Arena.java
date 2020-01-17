@@ -7,6 +7,9 @@ import utils.Point3D;
 import javax.management.Query;
 import java.util.*;
 
+/**
+ * this class contains and keeps track of every data structure for the game
+ */
 public class Arena implements _arena {
     private graph graph;
     private List<Fruit> fruits;
@@ -105,13 +108,19 @@ public class Arena implements _arena {
         f.setEdge((Edge) selected_edge);
     }
 
+    /**
+     * \
+     *
+     * @param e   edge to check
+     * @param pos of point
+     * @return if the ethe given pos is on the edge
+     */
     private boolean isOnEdge(Edge e, Point3D pos) {
         Point3D p1 = this.graph.getNode(e.getSrc()).getLocation();
         Point3D p2 = this.graph.getNode(e.getDest()).getLocation();
         if (Math.abs((p1.distance2D(pos) + p2.distance2D(pos)) - p1.distance2D(p2)) <= 0.0001) return true;
         return false;
     }
-
 
     public void addFruits(List<String> json) {
         try {
@@ -173,7 +182,7 @@ public class Arena implements _arena {
 
     public Robot searchRobot(int id) { //search robot in the list by id
         for (Robot r : robots) {
-            if (r.getID() == id)
+            if (r.getId() == id)
                 return r;
         }
         return null;
