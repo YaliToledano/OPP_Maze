@@ -85,31 +85,30 @@ public class Arena implements _arena {
 
         if (f.getType() == 1) {
             double max = Double.NEGATIVE_INFINITY;
-            for (edge_data e : match) {
-                if (max < e.getWeight()) {
-                    max = e.getWeight();
-                    selected_edge = e;
+            for (int e = 0; e < 1; e++) {
+                if (max < match.get(e).getWeight()) {
+                    max = match.get(e).getWeight();
+                    selected_edge = match.get(e);
                 }
             }
         } else {
             //System.out.println("banana");
             double min = Double.POSITIVE_INFINITY;
-            for (edge_data e : match) {
-                if (min > e.getWeight()) {
-                    min = e.getWeight();
-                    selected_edge = e;
+            for (int e = 0; e < 1; e++) {
+                if (min > match.get(e).getWeight()) {
+                    min = match.get(e).getWeight();
+                    selected_edge = match.get(e);
                 }
             }
         }
-
-        //    System.out.println("Edge is "+selected_edge.getSrc() +" "+selected_edge.getDest());
+        // System.out.println("Edge is "+selected_edge.getSrc() +" "+selected_edge.getDest());
         f.setEdge((Edge) selected_edge);
     }
 
     private boolean isOnEdge(Edge e, Point3D pos) {
         Point3D p1 = this.graph.getNode(e.getSrc()).getLocation();
         Point3D p2 = this.graph.getNode(e.getDest()).getLocation();
-        if (Math.abs((pos.distance2D(p1) + pos.distance2D(p2)) - p1.distance2D(p2)) <= 0.001) return true;
+        if (Math.abs((p1.distance2D(pos) + p2.distance2D(pos)) - p1.distance2D(p2)) <= 0.0001) return true;
         return false;
     }
 
@@ -125,11 +124,12 @@ public class Arena implements _arena {
                 fruits.add(f);
                 fruitsCount++;
             }
+            /*
             for (Fruit fr:fruits) {
                 if(!fr.isAssigned())
                     unassigned.add(fr);
             }
-
+             */
         } catch (Exception e) {
             e.printStackTrace();
         }

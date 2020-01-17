@@ -63,7 +63,7 @@ public class Fruit implements _fruit {
     //setters
     public void setPos(Point3D pos) {
         this.pos = new Point3D(pos);
-        setAssigned(false);
+        //setAssigned(false);
     }
 
     public void setEdge(Edge edge) {

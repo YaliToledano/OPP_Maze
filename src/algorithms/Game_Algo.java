@@ -26,6 +26,27 @@ public class Game_Algo {
         this.arena = arena;
     }
 
+    //finds fruit with shortest dist to  given robot
+    private Fruit closetFruitToRobot(Robot r) {
+        //List<Fruit> fruitsorder = new ArrayList<Fruit>();
+        List<Fruit> fruits = arena.getFruits(); //original fruits list
+        //creating distance list
+        //PriorityQueue<Fruit> dist = new PriorityQueue<>();
+        Double close = Double.POSITIVE_INFINITY;
+        Fruit closeFruit = null;
+        double x = 0;
+        for (Fruit f : fruits) {
+            System.out.println("fruit in " + f.getEdge().getSrc() + " -> " + f.getEdge().getDest());
+            x = ga.shortestPathDist(r.getSrc(), f.getEdge().getSrc()) + f.getEdge().getWeight();
+            if (x < close) {
+                close = x;
+                closeFruit = f;
+            }
+        }
+
+        return closeFruit;
+    }
+
     public List<Robot> closestRobotsToFruit(Fruit fruit) {
         List<Robot> robotorder = new ArrayList<Robot>();
         List<Robot> robots = arena.getRobots(); //original robots list
@@ -122,37 +143,71 @@ public class Game_Algo {
     //greedy algorithm
     public void greedyMove(game_service game) {
         for (Fruit f : arena.getFruits()) {
-            if (f.isAssigned()) continue;
+            //if (f.isAssigned()==true) continue;
             Robot r = closestRobotsToFruit(f).get(0);
             //System.out.println("fruit edge"+f.getEdge().getSrc() + " " + f.getEdge().getDest());
-            List<node_data> ls = ga.shortestPath(r.getSrc(), f.getEdge().getSrc());
-
-            BlockingQueue<Integer> dest = new LinkedBlockingQueue<>();
-            for (node_data n : ls) {
-                dest.add(n.getKey());
+            if (r.getTargetNodes().size() == 0) {
+                List<node_data> ls = ga.shortestPath(r.getSrc(), f.getEdge().getSrc());
+                BlockingQueue<Integer> dest = r.getTargetNodes();
+                for (node_data n : ls) {
+                    dest.add(n.getKey());
+                }
+                dest.add(f.getEdge().getDest());
+                if (dest.peek() == r.getSrc())
+                    dest.remove();
+                //r.setTargetNodes(dest);
+                r.setFruit(f);
+                f.setAssigned(true);
             }
-            dest.add(f.getEdge().getDest());
-            if (dest.peek() == r.getSrc())
-                dest.remove();
-            r.setTargetNodes(dest);
-            r.setFruit(f);
-            f.setAssigned(true);
         }
         for (Robot r : arena.getRobots()) {
-            if (r.getDest() == -1 && r.getTargetNodes() != null && r.getTargetNodes().size() > 0) {
+            if (r.getDest() == -1 && r.getTargetNodes().size() > 0) {
                 r.setDest(r.getTargetNodes().remove());
                 System.out.println(r.getTargetNodes().toString());
                 game.chooseNextEdge(r.getID(), r.getDest());
 
                 System.out.println("moved robot " + r.getID() + " to node " + r.getDest());
-            } else if (r.getTargetNodes() != null && r.getTargetNodes().size() == 0) {
+            }
+            if (r.getDest() == -1 && r.getTargetNodes().size() == 0) {
                 if (r.getFruit() != null)
                     r.getFruit().setAssigned(false);
                 r.setFruit(null);
-                r.setTargetNodes(null);
+                //r.setTargetNodes(null);
             }
         }
         arena.updateRobots(game.move());
+    }
+
+    public void basicG(game_service game) {
+        for (Robot r : arena.getRobots()) {
+            if (r.getTargetNodes().size() == 0) {
+                if (r.getFruit() != null)
+                    r.getFruit().setAssigned(false);
+                Fruit f = closetFruitToRobot(r);
+                if (f.isAssigned()) {
+                    int x = (int) Math.random() * arena.getFruitsCount();
+                    f = arena.getFruits().get(x);
+                }
+                f.setAssigned(true);
+                r.setFruit(f);
+                List<node_data> nodesPath = ga.shortestPath(r.getSrc(), f.getEdge().getSrc());
+                System.out.println("closest fruit is in" + f.getEdge().getSrc() + " " + f.getEdge().getDest());
+                for (node_data n : nodesPath) {
+                    r.getTargetNodes().add(n.getKey());
+                }
+                r.getTargetNodes().add(f.getEdge().getDest());
+                if (r.getTargetNodes().peek() == r.getSrc())
+                    r.getTargetNodes().remove();
+                //System.out.println("course is " + r.getTargetNodes().toString());
+            } else {
+                if (r.getDest() == -1) {
+                    r.setDest(r.getTargetNodes().remove());
+                    System.out.println("moved robot " + r.getID() + " to node " + r.getDest());
+                    game.chooseNextEdge(r.getID(), r.getDest());
+                }
+            }
+            arena.updateRobots(game.move());
+        }
     }
 }
 

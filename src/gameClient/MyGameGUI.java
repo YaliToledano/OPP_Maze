@@ -99,8 +99,6 @@ public class MyGameGUI implements Runnable {
         game.startGame();
         System.out.println("game started" + game.timeToEnd());
         arena.addRobots(game.getRobots());
-        //System.out.println(p.toString());
-        //Game_Algo game_algo = new Game_Algo(arena);
         while (game.isRunning()) {
             System.out.println(game.timeToEnd());
             if (Mode.equals("Manual")) {
@@ -109,7 +107,7 @@ public class MyGameGUI implements Runnable {
                     move(game, arena, nodeFromLoc(p, arena.getGraph()), game_algo);
                 }
             } else {
-                game_algo.greedyMove(game);
+                game_algo.basicG(game);
             }
             reDraw(game, arena, gui);
             try {
