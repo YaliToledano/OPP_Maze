@@ -18,11 +18,20 @@ import java.util.Iterator;
 import java.util.Random;
 
 public class Graph_GUI implements Runnable {
+    private static double max_x, min_x, min_y, max_y;//parameters to hold max/min coordinates
     //public Graph_GUI() {
     // StdDraw.setCanvasSize(600, 600);
     // }
     private static graph lastGraph;
     private static int mc = -1;
+
+    public static Range getX() {
+        return new Range(min_x, max_x);
+    }
+
+    public static Range getY() {
+        return new Range(min_y, max_y);
+    }
     /**
      * saves last graph to a given file
      * @param filename
@@ -96,6 +105,10 @@ public class Graph_GUI implements Runnable {
             }
         }
         double prec = 0.00001;
+        max_x = max_x + max_x * prec;
+        min_x = min_x - min_x * prec;
+        max_y = max_y + max_y * prec;
+        min_y = min_y - min_y * prec;
         StdDraw.setXscale(min_x - min_x * prec, max_x + max_x * prec);
         StdDraw.setYscale(min_y - min_y * prec, max_y + max_y * prec);
     }
@@ -109,16 +122,6 @@ public class Graph_GUI implements Runnable {
         setScale(graph);
         Collection<node_data> c = graph.getV();
         Iterator<node_data> iterator = c.iterator();
-        StdDraw.setPenColor(Color.blue);
-        StdDraw.setPenRadius(0.02);
-        while (iterator.hasNext())
-        {
-            node_data n = iterator.next();
-            Point3D p = n.getLocation();
-            StdDraw.point(p.x(),p.y());
-            String s = n.getKey() +"";
-            StdDraw.text(p.x() + 0.0002, p.y() + 0.0002, s);
-        }
         StdDraw.setPenRadius(0.005);
         iterator = c.iterator();
         while (iterator.hasNext())
@@ -145,6 +148,17 @@ public class Graph_GUI implements Runnable {
                 //StdDraw.filledSquare(src.x()+(dest.x()-src.x())*0.95,src.y()+(dest.y()-src.y())*0.95,0.00008);
                 StdDraw.text(src.x() + (dest.x() - src.x()) * 0.8, src.y() + (dest.y() - src.y()) * 0.8, String.format("%.2f", w));
             }
+        }
+        iterator = c.iterator();
+        StdDraw.setPenRadius(0.03);
+        while (iterator.hasNext()) {
+            StdDraw.setPenColor(Color.blue);
+            node_data n = iterator.next();
+            Point3D p = n.getLocation();
+            StdDraw.point(p.x(), p.y());
+            StdDraw.setPenColor(Color.BLACK);
+            String s = n.getKey() + "";
+            StdDraw.text(p.x(), p.y(), s);
         }
         lastGraph = graph;
     }

@@ -63,7 +63,6 @@ public class Robot implements _robot {
         }
     }
 
-
     @Override
     public Point3D getCurrentLocation() {
         return pos;
@@ -74,6 +73,7 @@ public class Robot implements _robot {
         return 0;
     }
 
+    @Override
     public int getId() {
         return id;
     }
@@ -100,15 +100,6 @@ public class Robot implements _robot {
         this.dest = dest;
     }
 
-    public Point3D getPos() {
-        return pos;
-    }
-
-    @Override
-    public int getID() {
-        return id;
-    }
-
     @Override
     public double getSpeed() {
         return speed;
@@ -127,7 +118,6 @@ public class Robot implements _robot {
         this.speed = speed;
     }
 
-
     public void setTargetNodes(BlockingQueue<Integer> targetNodes) {
         this.targetNodes = targetNodes;
     }
@@ -143,12 +133,6 @@ public class Robot implements _robot {
 
     public int getDesttNode() {
         return dest;
-    }
-
-
-    @Override
-    public void move(int target) {
-        this.dest = target;
     }
 
     public void setFruit(Fruit f) {

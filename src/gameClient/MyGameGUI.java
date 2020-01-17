@@ -6,6 +6,7 @@ import java.util.*;
 import java.util.List;
 
 import algorithms.Game_Algo;
+import algorithms.Graph_Algo;
 import dataStructure.*;
 import dataStructure.Robot;
 import gui.Graph_GUI;
@@ -15,6 +16,7 @@ import org.json.JSONObject;
 import Server.Game_Server;
 import Server.game_service;
 import utils.Point3D;
+import utils.Range;
 import utils.StdDraw;
 
 public class MyGameGUI implements Runnable {
@@ -100,7 +102,10 @@ public class MyGameGUI implements Runnable {
         System.out.println("game started" + game.timeToEnd());
         arena.addRobots(game.getRobots());
         while (game.isRunning()) {
+            //StdDraw.text(,0,"time: " + game.timeToEnd());
             System.out.println(game.timeToEnd());
+            //Range rx = Graph_GUI.getX(),ry=Graph_GUI.getY();
+            //StdDraw.text(rx.get_max()-0.5,ry.get_max()-0.5,game.timeToEnd()+"");
             if (Mode.equals("Manual")) {
                 if (StdDraw.getLastLoc() != null || !close(p, StdDraw.getLastLoc()) || nodeFromLoc(StdDraw.getLastLoc(), arena.getGraph()) != -1) {
                     p = StdDraw.getLastLoc();
@@ -110,6 +115,7 @@ public class MyGameGUI implements Runnable {
                 game_algo.basicG(game);
             }
             reDraw(game, arena, gui);
+
             try {
                 Thread.sleep(100);
             } catch (Exception e) {
@@ -150,12 +156,12 @@ public class MyGameGUI implements Runnable {
         List<Fruit> fruits = a.getFruits();
         for (int i = 0; i < fruits.size(); i++) {
             if (fruits.get(i).getType() == -1) {
-                StdDraw.picture(fruits.get(i).getLocation().x(), fruits.get(i).getLocation().y(), "banana.jpg", 0.0005, 0.0005);
+                StdDraw.picture(fruits.get(i).getLocation().x(), fruits.get(i).getLocation().y(), "banana.jpg", 0.0008, 0.0008);
             } else {
                 StdDraw.setPenColor(StdDraw.GREEN);
                 StdDraw.setPenRadius(0.05);
-                StdDraw.point(fruits.get(i).getLocation().x(), fruits.get(i).getLocation().y());
-                //StdDraw.picture(fruits.get(i).getLocation().x(), fruits.get(i).getLocation().y(), "apple.png", 0.7, 0.7);
+                //StdDraw.point(fruits.get(i).getLocation().x(), fruits.get(i).getLocation().y());
+                StdDraw.picture(fruits.get(i).getLocation().x(), fruits.get(i).getLocation().y(), "apple.png", 0.0008, 0.0008);
             }
         }
     }
