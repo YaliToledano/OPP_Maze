@@ -78,5 +78,11 @@ public class Fruit implements _fruit {
         return assigned;
     }
 
+    public void setType(int t) {
+        this.type = t;
+    }
 
+    public void setValue(double val) {
+        this.value = val;
+    }
 }

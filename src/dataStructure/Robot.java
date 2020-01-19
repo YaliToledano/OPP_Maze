@@ -126,6 +126,10 @@ public class Robot implements _robot {
         this.value = value;
     }
 
+    public void setFruit(Fruit f) {
+        this.fruit = f;
+    }
+
 
     public BlockingQueue<Integer> getTargetNodes() {
         return targetNodes;
@@ -133,10 +137,6 @@ public class Robot implements _robot {
 
     public int getDesttNode() {
         return dest;
-    }
-
-    public void setFruit(Fruit f) {
-        this.fruit = f;
     }
 
     public Fruit getFruit() {
