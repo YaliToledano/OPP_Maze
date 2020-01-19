@@ -2951,7 +2951,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20142496295004,32.10758702792413,0 </coordinates>
+        <coordinates>35.201432967673895,32.107589406375304,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -2965,7 +2965,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.201697123561026,32.107667895263894,0 </coordinates>
+        <coordinates>35.20176116135185,32.10768692287325,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -2979,7 +2979,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20196661593072,32.107747969786594,0 </coordinates>
+        <coordinates>35.20231348729766,32.107851036003936,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -2993,7 +2993,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20223610830042,32.1078280443093,0 </coordinates>
+        <coordinates>35.2026256715279,32.10794379559954,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3007,7 +3007,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20250293242883,32.107907326014946,0 </coordinates>
+        <coordinates>35.2029111733453,32.10802862702458,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3021,35 +3021,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.202772424798525,32.107987400537645,0 </coordinates>
-      </Point>
-    </Placemark><Placemark>
-      <TimeSpan>
-     <begin>0</begin>
-        <end>1</end> </TimeSpan>
-<Style id="lodging">
-      <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
-</href>
-        </Icon>
-      </IconStyle>
-    </Style>      <Point>
-        <coordinates>35.203039248926935,32.10806668224329,0 </coordinates>
-      </Point>
-    </Placemark><Placemark>
-      <TimeSpan>
-     <begin>0</begin>
-        <end>1</end> </TimeSpan>
-<Style id="lodging">
-      <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
-</href>
-        </Icon>
-      </IconStyle>
-    </Style>      <Point>
-        <coordinates>35.20330874129663,32.108146756766,0 </coordinates>
+        <coordinates>35.20318333395628,32.10810949436434,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3063,7 +3035,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20357556542505,32.10822603847164,0 </coordinates>
+        <coordinates>35.20359424311403,32.10823158819104,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3077,7 +3049,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20384505779474,32.10830611299435,0 </coordinates>
+        <coordinates>35.203869071966295,32.108313248347855,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3091,7 +3063,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.204122554888286,32.10838856596822,0 </coordinates>
+        <coordinates>35.20414123257728,32.10839411568761,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3105,7 +3077,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20439204725798,32.10846864049092,0 </coordinates>
+        <coordinates>35.20442673439468,32.10847894711265,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3119,7 +3091,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.2046588713864,32.108547922196564,0 </coordinates>
+        <coordinates>35.204696226764376,32.10855902163536,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3175,21 +3147,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20454358401827,32.10851366675183,0 </coordinates>
-      </Point>
-    </Placemark><Placemark>
-      <TimeSpan>
-     <begin>1</begin>
-        <end>2</end> </TimeSpan>
-<Style id="lodging">
-      <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
-</href>
-        </Icon>
-      </IconStyle>
-    </Style>      <Point>
-        <coordinates>35.20432268293918,32.10844803020527,0 </coordinates>
+        <coordinates>35.204539165996685,32.1085123540209,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3203,7 +3161,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.2040995728493,32.108381737293236,0 </coordinates>
+        <coordinates>35.20431605590681,32.10844606110887,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3217,7 +3175,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20387646275942,32.108315444381205,0 </coordinates>
+        <coordinates>35.204092945816924,32.10837976819684,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3231,7 +3189,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.203653352669534,32.108249151469174,0 </coordinates>
+        <coordinates>35.20385879067309,32.10831019345748,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3245,7 +3203,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.203432451590444,32.10818351492261,0 </coordinates>
+        <coordinates>35.203637889594,32.10824455691091,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3259,7 +3217,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.203211550511355,32.10811787837604,0 </coordinates>
+        <coordinates>35.20341698851491,32.108178920364345,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3273,7 +3231,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20298844042147,32.10805158546401,0 </coordinates>
+        <coordinates>35.203193878425026,32.108112627452314,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3287,7 +3245,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.202765330331594,32.10798529255198,0 </coordinates>
+        <coordinates>35.20297076833515,32.10804633454028,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3301,7 +3259,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.2025444292525,32.107919656005414,0 </coordinates>
+        <coordinates>35.202747658245265,32.10798004162825,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3315,7 +3273,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20232131916262,32.10785336309338,0 </coordinates>
+        <coordinates>35.202526757166176,32.10791440508169,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3329,7 +3287,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20210041808353,32.10778772654682,0 </coordinates>
+        <coordinates>35.20230585608708,32.10784876853512,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3343,7 +3301,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20187730799365,32.10772143363478,0 </coordinates>
+        <coordinates>35.2020827459972,32.10778247562309,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3357,7 +3315,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20165640691456,32.10765579708821,0 </coordinates>
+        <coordinates>35.20185963590732,32.10771618271106,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3371,7 +3329,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.201433296824675,32.10758950417618,0 </coordinates>
+        <coordinates>35.20163652581744,32.10764988979903,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3385,7 +3343,21 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.201212395745586,32.10752386762962,0 </coordinates>
+        <coordinates>35.201415624738345,32.10758425325246,0 </coordinates>
+      </Point>
+    </Placemark><Placemark>
+      <TimeSpan>
+     <begin>3</begin>
+        <end>4</end> </TimeSpan>
+<Style id="lodging">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
+</href>
+        </Icon>
+      </IconStyle>
+    </Style>      <Point>
+        <coordinates>35.20119251464847,32.10751796034043,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3427,7 +3399,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20120606696104,32.107364950689735,0 </coordinates>
+        <coordinates>35.20120654624243,32.10736352273445,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3441,7 +3413,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20125399510045,32.10722215516099,0 </coordinates>
+        <coordinates>35.20125495366324,32.10721929925042,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3455,21 +3427,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20130240252125,32.107077931676955,0 </coordinates>
-      </Point>
-    </Placemark><Placemark>
-      <TimeSpan>
-     <begin>3</begin>
-        <end>4</end> </TimeSpan>
-<Style id="lodging">
-      <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
-</href>
-        </Icon>
-      </IconStyle>
-    </Style>      <Point>
-        <coordinates>35.20135033066066,32.1069351361482,0 </coordinates>
+        <coordinates>35.20130336108404,32.107075075766375,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3483,7 +3441,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20139825880007,32.10679234061945,0 </coordinates>
+        <coordinates>35.201351289223446,32.10693228023763,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3497,7 +3455,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20144666622087,32.106648117135414,0 </coordinates>
+        <coordinates>35.201399217362855,32.10678948470888,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3511,7 +3469,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.201495073641674,32.10650389365138,0 </coordinates>
+        <coordinates>35.20144762478366,32.10664526122484,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3525,7 +3483,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20154300178108,32.106361098122626,0 </coordinates>
+        <coordinates>35.20149603220446,32.106501037740806,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3539,7 +3497,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20159140920188,32.10621687463859,0 </coordinates>
+        <coordinates>35.20154396034387,32.10635824221205,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3553,7 +3511,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20163981662269,32.106072651154555,0 </coordinates>
+        <coordinates>35.20159188848328,32.10621544668331,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3567,7 +3525,21 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20168774476209,32.1059298556258,0 </coordinates>
+        <coordinates>35.20164029590408,32.106071223199265,0 </coordinates>
+      </Point>
+    </Placemark><Placemark>
+      <TimeSpan>
+     <begin>4</begin>
+        <end>5</end> </TimeSpan>
+<Style id="lodging">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
+</href>
+        </Icon>
+      </IconStyle>
+    </Style>      <Point>
+        <coordinates>35.20168822404349,32.10592842767052,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3599,8 +3571,8 @@
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
-     <begin>4</begin>
-        <end>5</end> </TimeSpan>
+     <begin>5</begin>
+        <end>6</end> </TimeSpan>
 <Style id="lodging">
       <IconStyle>
         <Icon>
@@ -3609,7 +3581,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.201773333560546,32.105788534157945,0 </coordinates>
+        <coordinates>35.20177417880898,32.105787152642385,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3637,7 +3609,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.2019440737451,32.10550946801414,0 </coordinates>
+        <coordinates>35.20194322849667,32.1055108495297,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3651,7 +3623,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20202944383738,32.10536993494223,0 </coordinates>
+        <coordinates>35.202028598588946,32.1053713164578,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3665,7 +3637,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20211481392966,32.10523040187033,0 </coordinates>
+        <coordinates>35.20211312343279,32.105233164901456,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3679,7 +3651,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.202199338773504,32.10509225031399,0 </coordinates>
+        <coordinates>35.20219849352507,32.105093631829554,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3693,7 +3665,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20228470886578,32.104952717242085,0 </coordinates>
+        <coordinates>35.20228301836891,32.10495548027321,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3707,7 +3679,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.202369233709625,32.10481456568574,0 </coordinates>
+        <coordinates>35.20236754321275,32.10481732871687,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3721,7 +3693,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.202454603801904,32.10467503261384,0 </coordinates>
+        <coordinates>35.20245206805659,32.10467917716053,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3735,21 +3707,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.202539128645746,32.1045368810575,0 </coordinates>
-      </Point>
-    </Placemark><Placemark>
-      <TimeSpan>
-     <begin>5</begin>
-        <end>6</end> </TimeSpan>
-<Style id="lodging">
-      <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
-</href>
-        </Icon>
-      </IconStyle>
-    </Style>      <Point>
-        <coordinates>35.20262534398646,32.10439596647003,0 </coordinates>
+        <coordinates>35.20253743814887,32.104539644088625,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3763,7 +3721,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.202709868830304,32.10425781491369,0 </coordinates>
+        <coordinates>35.20262196299271,32.10440149253228,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3777,7 +3735,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20279439367415,32.104119663357345,0 </coordinates>
+        <coordinates>35.20270648783655,32.10426334097594,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3791,7 +3749,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20287891851799,32.103981511801,0 </coordinates>
+        <coordinates>35.20279185792883,32.10412380790404,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3805,7 +3763,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20296428861027,32.1038419787291,0 </coordinates>
+        <coordinates>35.20287722802111,32.10398427483213,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3819,7 +3777,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20304881345411,32.10370382717276,0 </coordinates>
+        <coordinates>35.202962598113395,32.10384474176023,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3833,7 +3791,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20313418354639,32.103564294100856,0 </coordinates>
+        <coordinates>35.20304712295723,32.103706590203885,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3847,7 +3805,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20321870839023,32.103426142544514,0 </coordinates>
+        <coordinates>35.20313249304951,32.10356705713198,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3861,7 +3819,21 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20330407848251,32.10328660947261,0 </coordinates>
+        <coordinates>35.20321701789335,32.10342890557564,0 </coordinates>
+      </Point>
+    </Placemark><Placemark>
+      <TimeSpan>
+     <begin>6</begin>
+        <end>7</end> </TimeSpan>
+<Style id="lodging">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
+</href>
+        </Icon>
+      </IconStyle>
+    </Style>      <Point>
+        <coordinates>35.20330238798563,32.10328937250374,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3903,7 +3875,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20345427470858,32.103239216274574,0 </coordinates>
+        <coordinates>35.20345558473573,32.10323905605077,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -3917,7 +3889,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20358658745076,32.103223033669885,0 </coordinates>
+        <coordinates>35.20358789747791,32.10322287344607,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4001,7 +3973,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.204376533822426,32.10312641871313,0 </coordinates>
+        <coordinates>35.204375223795275,32.10312657893694,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4015,7 +3987,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.204508846564615,32.103110236108435,0 </coordinates>
+        <coordinates>35.20450753653746,32.10311039633224,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4029,7 +4001,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.204639849279644,32.10309421372755,0 </coordinates>
+        <coordinates>35.2046385392525,32.10309437395136,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4043,7 +4015,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20477216202183,32.103078031122855,0 </coordinates>
+        <coordinates>35.20477085199468,32.10307819134666,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4099,7 +4071,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.204785965001356,32.10290678742298,0 </coordinates>
+        <coordinates>35.20478584908786,32.10290595382228,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4141,7 +4113,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20475095912677,32.10265504001152,0 </coordinates>
+        <coordinates>35.20475084321328,32.10265420641082,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4155,7 +4127,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20473936777757,32.1025716799415,0 </coordinates>
+        <coordinates>35.20473913595059,32.102570012740095,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4169,7 +4141,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.204727660514884,32.102487486270775,0 </coordinates>
+        <coordinates>35.204727428687896,32.10248581906937,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4183,7 +4155,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.204716069165684,32.10240412620075,0 </coordinates>
+        <coordinates>35.204715837338696,32.10240245899935,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4197,7 +4169,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20470436190299,32.10231993253003,0 </coordinates>
+        <coordinates>35.204704130076,32.102318265328634,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4211,7 +4183,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.2046926546403,32.102235738859314,0 </coordinates>
+        <coordinates>35.2046925387268,32.10223490525861,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4225,7 +4197,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.2046810632911,32.10215237878929,0 </coordinates>
+        <coordinates>35.204680947377604,32.10215154518859,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4253,7 +4225,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.204657764679204,32.10198482504855,0 </coordinates>
+        <coordinates>35.20465764876571,32.101983991447845,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4267,7 +4239,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20464605741651,32.10190063137782,0 </coordinates>
+        <coordinates>35.204645941503024,32.10189979777712,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4281,7 +4253,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.204634350153825,32.10181643770711,0 </coordinates>
+        <coordinates>35.20463423424033,32.101815604106406,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4295,7 +4267,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20462264289113,32.101732244036384,0 </coordinates>
+        <coordinates>35.20462252697764,32.10173141043568,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4309,7 +4281,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20461105154193,32.10164888396636,0 </coordinates>
+        <coordinates>35.20461093562844,32.10164805036566,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4323,7 +4295,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20459946019273,32.10156552389634,0 </coordinates>
+        <coordinates>35.204599228365744,32.10156385669494,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4393,7 +4365,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20463577958933,32.10182671760136,0 </coordinates>
+        <coordinates>35.20463597408857,32.10182811635743,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4477,7 +4449,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.204753257129084,32.10267156627007,0 </coordinates>
+        <coordinates>35.20475306262985,32.10267016751399,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4505,7 +4477,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20479235147592,32.10295271624094,0 </coordinates>
+        <coordinates>35.20479215697669,32.102951317484866,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4603,7 +4575,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20544318231834,32.102935776504566,0 </coordinates>
+        <coordinates>35.20544528874564,32.1029353189263,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4617,7 +4589,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20565382504877,32.10289001867784,0 </coordinates>
+        <coordinates>35.20565593147607,32.102889561099566,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4631,7 +4603,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20586446777919,32.10284426085111,0 </coordinates>
+        <coordinates>35.205868680633806,32.10284334569457,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4645,7 +4617,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.206077216936926,32.10279804544611,0 </coordinates>
+        <coordinates>35.20607932336423,32.10279758786784,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4659,7 +4631,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20628996609466,32.102751830041115,0 </coordinates>
+        <coordinates>35.20629207252196,32.10275137246285,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4673,7 +4645,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20650271525239,32.102705614636115,0 </coordinates>
+        <coordinates>35.206504821679694,32.10270515705785,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4687,7 +4659,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.206713357982814,32.10265985680938,0 </coordinates>
+        <coordinates>35.20671546441012,32.102659399231115,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4701,7 +4673,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.206926107140546,32.10261364140439,0 </coordinates>
+        <coordinates>35.20692821356785,32.10261318382612,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4715,7 +4687,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20713674987097,32.102567883577656,0 </coordinates>
+        <coordinates>35.20713885629828,32.10256742599939,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4743,7 +4715,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20756014175913,32.10247591034593,0 </coordinates>
+        <coordinates>35.207562248186434,32.10247545276766,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4827,7 +4799,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.207809374824706,32.10237832420412,0 </coordinates>
+        <coordinates>35.207807831889184,32.10237908952733,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4841,7 +4813,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20796366837652,32.10230179188272,0 </coordinates>
+        <coordinates>35.207962125441,32.10230255720593,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4855,7 +4827,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20811950486385,32.102224494238094,0 </coordinates>
+        <coordinates>35.20811796192834,32.10222525956131,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4869,7 +4841,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.208273798415675,32.102147961916685,0 </coordinates>
+        <coordinates>35.20827225548015,32.1021487272399,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4883,7 +4855,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.208429634903005,32.10207066427207,0 </coordinates>
+        <coordinates>35.20842809196749,32.102071429595284,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4897,7 +4869,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20858392845482,32.10199413195066,0 </coordinates>
+        <coordinates>35.20858238551931,32.101994897273876,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4911,7 +4883,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20874130787767,32.10191606898283,0 </coordinates>
+        <coordinates>35.20873822200664,32.10191759962925,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4925,7 +4897,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.2088956014295,32.10183953666142,0 </coordinates>
+        <coordinates>35.20889251555846,32.10184106730785,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4939,7 +4911,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20904989498131,32.101763004340015,0 </coordinates>
+        <coordinates>35.20904835204579,32.10176376966323,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4953,7 +4925,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20920573146864,32.1016857066954,0 </coordinates>
+        <coordinates>35.20920418853313,32.10168647201861,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4967,7 +4939,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20936002502046,32.10160917437399,0 </coordinates>
+        <coordinates>35.20936156795598,32.101608409050776,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4981,7 +4953,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.209515861507796,32.10153187672937,0 </coordinates>
+        <coordinates>35.20951740444332,32.10153111140615,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -4995,7 +4967,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20967015505961,32.10145534440797,0 </coordinates>
+        <coordinates>35.209671697995134,32.10145457908475,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5023,7 +4995,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.209980285098766,32.101301514441936,0 </coordinates>
+        <coordinates>35.20998182803428,32.10130074911872,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5037,7 +5009,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.2101361215861,32.10122421679732,0 </coordinates>
+        <coordinates>35.21013766452162,32.101223451474105,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5051,21 +5023,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21029041513792,32.10114768447591,0 </coordinates>
-      </Point>
-    </Placemark><Placemark>
-      <TimeSpan>
-     <begin>15</begin>
-        <end>16</end> </TimeSpan>
-<Style id="lodging">
-      <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
-</href>
-        </Icon>
-      </IconStyle>
-    </Style>      <Point>
-        <coordinates>35.21032811460856,32.10112898487395,0 </coordinates>
+        <coordinates>35.210291958073434,32.1011469191527,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5107,7 +5065,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21055952297918,32.10138668719002,0 </coordinates>
+        <coordinates>35.21032811460856,32.10112898487395,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5121,7 +5079,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21079324543352,32.10164696652925,0 </coordinates>
+        <coordinates>35.21056183706289,32.10138926421318,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5135,7 +5093,21 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.211024653804145,32.10190466884533,0 </coordinates>
+        <coordinates>35.21079555951722,32.10164954355241,0 </coordinates>
+      </Point>
+    </Placemark><Placemark>
+      <TimeSpan>
+     <begin>15</begin>
+        <end>16</end> </TimeSpan>
+<Style id="lodging">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
+</href>
+        </Icon>
+      </IconStyle>
+    </Style>      <Point>
+        <coordinates>35.211026967887854,32.10190724586849,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5149,7 +5121,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21125837625848,32.10216494818456,0 </coordinates>
+        <coordinates>35.211260690342186,32.10216752520772,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5177,7 +5149,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21172350708344,32.10268292983986,0 </coordinates>
+        <coordinates>35.21172582116714,32.10268550686302,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5205,7 +5177,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.2121886379084,32.103200911495165,0 </coordinates>
+        <coordinates>35.212190951992106,32.103203488518325,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5247,7 +5219,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21288749118769,32.103979172489694,0 </coordinates>
+        <coordinates>35.2128898052714,32.103981749512855,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5261,7 +5233,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.213118899558324,32.104236874805764,0 </coordinates>
+        <coordinates>35.213121213642026,32.104239451828924,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5331,7 +5303,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.213063499685475,32.10431540937608,0 </coordinates>
+        <coordinates>35.213062621897826,32.104315834142106,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5387,7 +5359,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21270975126298,32.104486590086054,0 </coordinates>
+        <coordinates>35.212710629050626,32.10448616532002,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5415,7 +5387,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.2125341937332,32.104571543291996,0 </coordinates>
+        <coordinates>35.2125324381579,32.10457239282405,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5429,7 +5401,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21244553718066,32.104614444660996,0 </coordinates>
+        <coordinates>35.212443781605366,32.10461529419305,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5443,7 +5415,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21235688062813,32.104657346029995,0 </coordinates>
+        <coordinates>35.21235512505283,32.10465819556205,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5457,7 +5429,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.212269101863235,32.104699822632966,0 </coordinates>
+        <coordinates>35.21226734628794,32.10470067216502,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5471,7 +5443,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21218132309835,32.10474229923594,0 </coordinates>
+        <coordinates>35.21217956752305,32.104743148767994,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5485,7 +5457,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21209354433346,32.10478477583891,0 </coordinates>
+        <coordinates>35.212091788758165,32.104785625370965,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5499,7 +5471,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21200488778093,32.10482767720791,0 </coordinates>
+        <coordinates>35.21200313220563,32.10482852673997,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5513,7 +5485,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.211916231228386,32.10487057857691,0 </coordinates>
+        <coordinates>35.21191447565309,32.10487142810897,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5527,7 +5499,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.2118284524635,32.104913055179885,0 </coordinates>
+        <coordinates>35.2118266968882,32.10491390471194,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5541,7 +5513,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.211740673698614,32.104955531782856,0 </coordinates>
+        <coordinates>35.21173804033567,32.10495680608094,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5611,7 +5583,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21174087038235,32.105107452954876,0 </coordinates>
+        <coordinates>35.21174114023729,32.1051080786709,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5625,7 +5597,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21176785587609,32.105170024557495,0 </coordinates>
+        <coordinates>35.21176812573103,32.10517065027352,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5639,7 +5611,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21179511122476,32.10523322187614,0 </coordinates>
+        <coordinates>35.211795381079696,32.10523384759217,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5653,7 +5625,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21182236657343,32.105296419194794,0 </coordinates>
+        <coordinates>35.211822636428366,32.10529704491081,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5667,7 +5639,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.2118496219221,32.10535961651344,0 </coordinates>
+        <coordinates>35.211849891777035,32.105360242229466,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5685,8 +5657,8 @@
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
-     <begin>19</begin>
-        <end>20</end> </TimeSpan>
+     <begin>20</begin>
+        <end>21</end> </TimeSpan>
 <Style id="lodging">
       <IconStyle>
         <Icon>
@@ -5695,7 +5667,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.211904132619445,32.10548601115073,0 </coordinates>
+        <coordinates>35.21190386276451,32.105485385434704,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5765,7 +5737,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21203932994305,32.105799494879854,0 </coordinates>
+        <coordinates>35.21203959979799,32.10580012059588,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5779,7 +5751,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21206658529172,32.1058626921985,0 </coordinates>
+        <coordinates>35.21206685514666,32.105863317914526,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5793,7 +5765,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21209384064039,32.10592588951715,0 </coordinates>
+        <coordinates>35.212094380350266,32.1059271409492,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5807,7 +5779,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21212109598906,32.1059890868358,0 </coordinates>
+        <coordinates>35.212121365844,32.105989712551825,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5821,12 +5793,12 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.212148081482795,32.10605165843842,0 </coordinates>
+        <coordinates>35.21214889104761,32.1060535355865,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
-     <begin>20</begin>
-        <end>21</end> </TimeSpan>
+     <begin>21</begin>
+        <end>22</end> </TimeSpan>
 <Style id="lodging">
       <IconStyle>
         <Icon>
@@ -5835,7 +5807,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.212175066976535,32.10611423004104,0 </coordinates>
+        <coordinates>35.21217614639628,32.10611673290514,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5919,7 +5891,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21242194132938,32.106714055521216,0 </coordinates>
+        <coordinates>35.2124226917237,32.10671588648263,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5933,7 +5905,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21249773115565,32.106898982624415,0 </coordinates>
+        <coordinates>35.21249848154997,32.10690081358583,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -5965,20 +5937,6 @@
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
-     <begin>21</begin>
-        <end>22</end> </TimeSpan>
-<Style id="lodging">
-      <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
-</href>
-        </Icon>
-      </IconStyle>
-    </Style>      <Point>
-        <coordinates>35.212620608555284,32.10719880336134,0 </coordinates>
-      </Point>
-    </Placemark><Placemark>
-      <TimeSpan>
      <begin>22</begin>
         <end>23</end> </TimeSpan>
 <Style id="lodging">
@@ -6031,7 +5989,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21256283162678,32.107057827711344,0 </coordinates>
+        <coordinates>35.212620608555284,32.10719880336134,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6045,7 +6003,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21250505469826,32.10691685206135,0 </coordinates>
+        <coordinates>35.212563403675574,32.107059223509864,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6059,7 +6017,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21244784981855,32.10677727220987,0 </coordinates>
+        <coordinates>35.21250562674706,32.106918247859866,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6073,7 +6031,21 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.212390072890045,32.10663629655987,0 </coordinates>
+        <coordinates>35.21244842186735,32.10677866800838,0 </coordinates>
+      </Point>
+    </Placemark><Placemark>
+      <TimeSpan>
+     <begin>22</begin>
+        <end>23</end> </TimeSpan>
+<Style id="lodging">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
+</href>
+        </Icon>
+      </IconStyle>
+    </Style>      <Point>
+        <coordinates>35.21239064493884,32.10663769235839,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6105,8 +6077,8 @@
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
-     <begin>22</begin>
-        <end>23</end> </TimeSpan>
+     <begin>23</begin>
+        <end>24</end> </TimeSpan>
 <Style id="lodging">
       <IconStyle>
         <Icon>
@@ -6185,7 +6157,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21174143457885,32.10601819591436,0 </coordinates>
+        <coordinates>35.21173917269795,32.106017475813765,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6213,7 +6185,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21128679651847,32.10587345569427,0 </coordinates>
+        <coordinates>35.21128453463758,32.10587273559367,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6241,21 +6213,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.210832158458096,32.10572871547418,0 </coordinates>
-      </Point>
-    </Placemark><Placemark>
-      <TimeSpan>
-     <begin>23</begin>
-        <end>24</end> </TimeSpan>
-<Style id="lodging">
-      <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
-</href>
-        </Icon>
-      </IconStyle>
-    </Style>      <Point>
-        <coordinates>35.21060370848746,32.10565598531383,0 </coordinates>
+        <coordinates>35.2108298965772,32.10572799537358,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6269,7 +6227,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21037752039772,32.105583975254085,0 </coordinates>
+        <coordinates>35.21060144660656,32.10565526521324,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6283,7 +6241,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21015133230798,32.10551196519434,0 </coordinates>
+        <coordinates>35.21037525851683,32.10558325515349,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6297,7 +6255,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.209922882337345,32.10543923503399,0 </coordinates>
+        <coordinates>35.210149070427086,32.105511245093744,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6311,7 +6269,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20969443236671,32.10536650487365,0 </coordinates>
+        <coordinates>35.20992062045645,32.1054385149334,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6325,7 +6283,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20946824427697,32.105294494813904,0 </coordinates>
+        <coordinates>35.20969217048581,32.10536578477305,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6339,7 +6297,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20924205618723,32.10522248475416,0 </coordinates>
+        <coordinates>35.20946598239607,32.1052937747133,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6353,7 +6311,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.209013606216594,32.10514975459381,0 </coordinates>
+        <coordinates>35.20923753242543,32.10522104455296,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6367,7 +6325,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20878741812685,32.105077744534064,0 </coordinates>
+        <coordinates>35.20901134433569,32.105149034493216,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6381,7 +6339,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20856123003711,32.10500573447432,0 </coordinates>
+        <coordinates>35.20878289436506,32.10507630433287,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6395,7 +6353,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20833504194738,32.10493372441457,0 </coordinates>
+        <coordinates>35.20855670627532,32.10500429427312,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6409,7 +6367,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20810659197674,32.104860994254224,0 </coordinates>
+        <coordinates>35.20832825630468,32.104931564112775,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6423,7 +6381,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20797194027441,32.10481812605042,0 </coordinates>
+        <coordinates>35.20810206821494,32.10485955405303,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6507,7 +6465,21 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20779133076386,32.1049344644816,0 </coordinates>
+        <coordinates>35.20797194027441,32.10481812605042,0 </coordinates>
+      </Point>
+    </Placemark><Placemark>
+      <TimeSpan>
+     <begin>25</begin>
+        <end>26</end> </TimeSpan>
+<Style id="lodging">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
+</href>
+        </Icon>
+      </IconStyle>
+    </Style>      <Point>
+        <coordinates>35.20778952466876,32.10493562786591,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6525,8 +6497,8 @@
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
-     <begin>25</begin>
-        <end>26</end> </TimeSpan>
+     <begin>26</begin>
+        <end>27</end> </TimeSpan>
 <Style id="lodging">
       <IconStyle>
         <Icon>
@@ -6549,7 +6521,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20724589004201,32.10528580654376,0 </coordinates>
+        <coordinates>35.207244083946904,32.10528696992807,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6563,7 +6535,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20706528053146,32.105402144974946,0 </coordinates>
+        <coordinates>35.20706347443635,32.10540330835926,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6577,7 +6549,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.206884671020916,32.10551848340613,0 </coordinates>
+        <coordinates>35.2068810588307,32.10552081017475,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6591,7 +6563,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.206704061510365,32.105634821837306,0 </coordinates>
+        <coordinates>35.20670044932015,32.10563714860593,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6605,7 +6577,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20652164590471,32.1057523236528,0 </coordinates>
+        <coordinates>35.2065180337145,32.105754650421424,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6619,7 +6591,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.206341036394164,32.10586866208398,0 </coordinates>
+        <coordinates>35.20633742420395,32.10587098885261,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6633,7 +6605,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20616042688361,32.10598500051516,0 </coordinates>
+        <coordinates>35.2061550085983,32.105988490668096,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6647,7 +6619,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20597801127796,32.10610250233066,0 </coordinates>
+        <coordinates>35.205972592992644,32.10610599248359,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6661,7 +6633,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20579740176741,32.106218840761834,0 </coordinates>
+        <coordinates>35.2057919834821,32.10622233091477,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6731,7 +6703,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20507639551475,32.10620000757251,0 </coordinates>
+        <coordinates>35.205079696164255,32.10620027387998,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6745,7 +6717,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.204746330564085,32.1061733768259,0 </coordinates>
+        <coordinates>35.204749631213595,32.10617364313337,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6759,7 +6731,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.204412964963915,32.10614647977182,0 </coordinates>
+        <coordinates>35.20440966431441,32.106146213464356,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6773,7 +6745,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.204079599363745,32.10611958271774,0 </coordinates>
+        <coordinates>35.20407629871424,32.10611931641027,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6787,7 +6759,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.203746233763574,32.10609268566366,0 </coordinates>
+        <coordinates>35.20374293311407,32.106092419356195,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6801,7 +6773,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.203416168812915,32.106066054917044,0 </coordinates>
+        <coordinates>35.2034095675139,32.10606552230212,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6815,7 +6787,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.203082803212745,32.106039157862966,0 </coordinates>
+        <coordinates>35.203079502563234,32.1060388915555,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6843,7 +6815,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20241937266191,32.10598563006227,0 </coordinates>
+        <coordinates>35.2024160720124,32.105985363754804,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6857,7 +6829,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20208930771124,32.10595899931566,0 </coordinates>
+        <coordinates>35.20208270641223,32.10595846670073,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6871,21 +6843,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20175594211107,32.105932102261576,0 </coordinates>
-      </Point>
-    </Placemark><Placemark>
-      <TimeSpan>
-     <begin>28</begin>
-        <end>29</end> </TimeSpan>
-<Style id="lodging">
-      <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
-</href>
-        </Icon>
-      </IconStyle>
-    </Style>      <Point>
-        <coordinates>35.2016888087167,32.10592668571429,0 </coordinates>
+        <coordinates>35.20175264146157,32.10593183595412,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6945,6 +6903,20 @@
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
+     <begin>28</begin>
+        <end>29</end> </TimeSpan>
+<Style id="lodging">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/cabs.png
+</href>
+        </Icon>
+      </IconStyle>
+    </Style>      <Point>
+        <coordinates>35.2016888087167,32.10592668571429,0 </coordinates>
+      </Point>
+    </Placemark><Placemark>
+      <TimeSpan>
      <begin>29</begin>
         <end>30</end> </TimeSpan>
 <Style id="lodging">
@@ -6969,7 +6941,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20177417880898,32.105787152642385,0 </coordinates>
+        <coordinates>35.201773333560546,32.105788534157945,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6983,7 +6955,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20185954890126,32.105647619570476,0 </coordinates>
+        <coordinates>35.20185785840439,32.1056503826016,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -6997,7 +6969,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.2019440737451,32.10550946801414,0 </coordinates>
+        <coordinates>35.20194238324823,32.10551223104527,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -7011,7 +6983,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.202028598588946,32.1053713164578,0 </coordinates>
+        <coordinates>35.20202775334051,32.10537269797336,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -7025,7 +6997,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20211312343279,32.105233164901456,0 </coordinates>
+        <coordinates>35.202112278184345,32.105234546417016,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -7039,7 +7011,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20219849352507,32.105093631829554,0 </coordinates>
+        <coordinates>35.20219764827663,32.105095013345114,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -7053,7 +7025,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.202283863617346,32.104954098757645,0 </coordinates>
+        <coordinates>35.20228301836891,32.10495548027321,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -7067,7 +7039,7 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20236838846119,32.1048159472013,0 </coordinates>
+        <coordinates>35.20236754321275,32.10481732871687,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
@@ -7081,31 +7053,16 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.20245375855347,32.1046764141294,0 </coordinates>
+        <coordinates>35.20245291330503,32.10467779564497,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
      <begin>0</begin>
         <end>1</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
-
-</href>
-        </Icon>
-      </IconStyle>
-    </Style>      <Point>
-        <coordinates>35.20392770907119,32.10833067124629,0 </coordinates>
-      </Point>
-    </Placemark><Placemark>
-      <TimeSpan>
-     <begin>0</begin>
-        <end>1</end> </TimeSpan>
-<Style id="movies">
-      <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7117,10 +7074,10 @@
       <TimeSpan>
      <begin>0</begin>
         <end>1</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7132,10 +7089,10 @@
       <TimeSpan>
      <begin>0</begin>
         <end>1</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7147,10 +7104,10 @@
       <TimeSpan>
      <begin>0</begin>
         <end>1</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7162,10 +7119,10 @@
       <TimeSpan>
      <begin>0</begin>
         <end>1</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7177,10 +7134,10 @@
       <TimeSpan>
      <begin>0</begin>
         <end>1</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7192,10 +7149,10 @@
       <TimeSpan>
      <begin>0</begin>
         <end>1</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7207,25 +7164,10 @@
       <TimeSpan>
      <begin>0</begin>
         <end>1</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
-
-</href>
-        </Icon>
-      </IconStyle>
-    </Style>      <Point>
-        <coordinates>35.20392770907119,32.10833067124629,0 </coordinates>
-      </Point>
-    </Placemark><Placemark>
-      <TimeSpan>
-     <begin>0</begin>
-        <end>1</end> </TimeSpan>
-<Style id="movies">
-      <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7237,10 +7179,10 @@
       <TimeSpan>
      <begin>1</begin>
         <end>2</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7252,10 +7194,10 @@
       <TimeSpan>
      <begin>1</begin>
         <end>2</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7267,10 +7209,10 @@
       <TimeSpan>
      <begin>1</begin>
         <end>2</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7282,10 +7224,10 @@
       <TimeSpan>
      <begin>1</begin>
         <end>2</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7297,10 +7239,10 @@
       <TimeSpan>
      <begin>1</begin>
         <end>2</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7312,10 +7254,10 @@
       <TimeSpan>
      <begin>1</begin>
         <end>2</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7327,10 +7269,10 @@
       <TimeSpan>
      <begin>1</begin>
         <end>2</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7342,10 +7284,10 @@
       <TimeSpan>
      <begin>1</begin>
         <end>2</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7357,25 +7299,10 @@
       <TimeSpan>
      <begin>1</begin>
         <end>2</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
-
-</href>
-        </Icon>
-      </IconStyle>
-    </Style>      <Point>
-        <coordinates>35.20622459040522,32.101281022067994,0 </coordinates>
-      </Point>
-    </Placemark><Placemark>
-      <TimeSpan>
-     <begin>1</begin>
-        <end>2</end> </TimeSpan>
-<Style id="movies">
-      <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7387,10 +7314,10 @@
       <TimeSpan>
      <begin>2</begin>
         <end>3</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7402,10 +7329,10 @@
       <TimeSpan>
      <begin>2</begin>
         <end>3</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7417,10 +7344,10 @@
       <TimeSpan>
      <begin>2</begin>
         <end>3</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7432,10 +7359,10 @@
       <TimeSpan>
      <begin>2</begin>
         <end>3</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7447,10 +7374,10 @@
       <TimeSpan>
      <begin>2</begin>
         <end>3</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7462,10 +7389,10 @@
       <TimeSpan>
      <begin>2</begin>
         <end>3</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7477,10 +7404,10 @@
       <TimeSpan>
      <begin>2</begin>
         <end>3</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7492,10 +7419,10 @@
       <TimeSpan>
      <begin>2</begin>
         <end>3</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7507,10 +7434,10 @@
       <TimeSpan>
      <begin>2</begin>
         <end>3</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7522,10 +7449,10 @@
       <TimeSpan>
      <begin>2</begin>
         <end>3</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7537,10 +7464,10 @@
       <TimeSpan>
      <begin>3</begin>
         <end>4</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7552,10 +7479,10 @@
       <TimeSpan>
      <begin>3</begin>
         <end>4</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7567,10 +7494,10 @@
       <TimeSpan>
      <begin>3</begin>
         <end>4</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7582,10 +7509,10 @@
       <TimeSpan>
      <begin>3</begin>
         <end>4</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7597,10 +7524,10 @@
       <TimeSpan>
      <begin>3</begin>
         <end>4</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7612,10 +7539,10 @@
       <TimeSpan>
      <begin>3</begin>
         <end>4</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7627,10 +7554,10 @@
       <TimeSpan>
      <begin>3</begin>
         <end>4</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7642,10 +7569,10 @@
       <TimeSpan>
      <begin>3</begin>
         <end>4</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7657,10 +7584,10 @@
       <TimeSpan>
      <begin>3</begin>
         <end>4</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7672,10 +7599,10 @@
       <TimeSpan>
      <begin>3</begin>
         <end>4</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7687,10 +7614,10 @@
       <TimeSpan>
      <begin>4</begin>
         <end>5</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7702,10 +7629,10 @@
       <TimeSpan>
      <begin>4</begin>
         <end>5</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7717,10 +7644,10 @@
       <TimeSpan>
      <begin>4</begin>
         <end>5</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7732,10 +7659,10 @@
       <TimeSpan>
      <begin>4</begin>
         <end>5</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7747,10 +7674,10 @@
       <TimeSpan>
      <begin>4</begin>
         <end>5</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7762,10 +7689,10 @@
       <TimeSpan>
      <begin>4</begin>
         <end>5</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7777,10 +7704,10 @@
       <TimeSpan>
      <begin>4</begin>
         <end>5</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7792,10 +7719,10 @@
       <TimeSpan>
      <begin>4</begin>
         <end>5</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7807,10 +7734,10 @@
       <TimeSpan>
      <begin>4</begin>
         <end>5</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7822,10 +7749,10 @@
       <TimeSpan>
      <begin>4</begin>
         <end>5</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7837,10 +7764,10 @@
       <TimeSpan>
      <begin>5</begin>
         <end>6</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7852,10 +7779,10 @@
       <TimeSpan>
      <begin>5</begin>
         <end>6</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7867,10 +7794,10 @@
       <TimeSpan>
      <begin>5</begin>
         <end>6</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7882,10 +7809,10 @@
       <TimeSpan>
      <begin>5</begin>
         <end>6</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7897,10 +7824,10 @@
       <TimeSpan>
      <begin>5</begin>
         <end>6</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7912,10 +7839,10 @@
       <TimeSpan>
      <begin>5</begin>
         <end>6</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7927,10 +7854,10 @@
       <TimeSpan>
      <begin>5</begin>
         <end>6</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7942,10 +7869,10 @@
       <TimeSpan>
      <begin>5</begin>
         <end>6</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7957,10 +7884,10 @@
       <TimeSpan>
      <begin>5</begin>
         <end>6</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7972,10 +7899,10 @@
       <TimeSpan>
      <begin>5</begin>
         <end>6</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -7987,10 +7914,10 @@
       <TimeSpan>
      <begin>6</begin>
         <end>7</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8002,10 +7929,10 @@
       <TimeSpan>
      <begin>6</begin>
         <end>7</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8017,10 +7944,10 @@
       <TimeSpan>
      <begin>6</begin>
         <end>7</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8032,10 +7959,10 @@
       <TimeSpan>
      <begin>6</begin>
         <end>7</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8047,10 +7974,10 @@
       <TimeSpan>
      <begin>6</begin>
         <end>7</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8062,10 +7989,10 @@
       <TimeSpan>
      <begin>6</begin>
         <end>7</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8077,10 +8004,10 @@
       <TimeSpan>
      <begin>6</begin>
         <end>7</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8092,10 +8019,10 @@
       <TimeSpan>
      <begin>6</begin>
         <end>7</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8107,10 +8034,25 @@
       <TimeSpan>
      <begin>6</begin>
         <end>7</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+
+</href>
+        </Icon>
+      </IconStyle>
+    </Style>      <Point>
+        <coordinates>35.20622459040522,32.101281022067994,0 </coordinates>
+      </Point>
+    </Placemark><Placemark>
+      <TimeSpan>
+     <begin>6</begin>
+        <end>7</end> </TimeSpan>
+<Style id="electronics">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8122,10 +8064,10 @@
       <TimeSpan>
      <begin>7</begin>
         <end>8</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8137,10 +8079,10 @@
       <TimeSpan>
      <begin>7</begin>
         <end>8</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8152,10 +8094,10 @@
       <TimeSpan>
      <begin>7</begin>
         <end>8</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8167,10 +8109,10 @@
       <TimeSpan>
      <begin>7</begin>
         <end>8</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8182,10 +8124,10 @@
       <TimeSpan>
      <begin>7</begin>
         <end>8</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8197,10 +8139,10 @@
       <TimeSpan>
      <begin>7</begin>
         <end>8</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8212,10 +8154,10 @@
       <TimeSpan>
      <begin>7</begin>
         <end>8</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8227,10 +8169,10 @@
       <TimeSpan>
      <begin>7</begin>
         <end>8</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8242,10 +8184,10 @@
       <TimeSpan>
      <begin>7</begin>
         <end>8</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8257,10 +8199,10 @@
       <TimeSpan>
      <begin>7</begin>
         <end>8</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8272,10 +8214,10 @@
       <TimeSpan>
      <begin>8</begin>
         <end>9</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8287,10 +8229,10 @@
       <TimeSpan>
      <begin>8</begin>
         <end>9</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8302,10 +8244,10 @@
       <TimeSpan>
      <begin>8</begin>
         <end>9</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8317,10 +8259,10 @@
       <TimeSpan>
      <begin>8</begin>
         <end>9</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8332,10 +8274,10 @@
       <TimeSpan>
      <begin>8</begin>
         <end>9</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8347,10 +8289,10 @@
       <TimeSpan>
      <begin>8</begin>
         <end>9</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8362,10 +8304,10 @@
       <TimeSpan>
      <begin>8</begin>
         <end>9</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8377,10 +8319,10 @@
       <TimeSpan>
      <begin>8</begin>
         <end>9</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8392,10 +8334,10 @@
       <TimeSpan>
      <begin>8</begin>
         <end>9</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8407,10 +8349,10 @@
       <TimeSpan>
      <begin>8</begin>
         <end>9</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8422,10 +8364,10 @@
       <TimeSpan>
      <begin>9</begin>
         <end>10</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8437,10 +8379,10 @@
       <TimeSpan>
      <begin>9</begin>
         <end>10</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8452,10 +8394,10 @@
       <TimeSpan>
      <begin>9</begin>
         <end>10</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8467,10 +8409,10 @@
       <TimeSpan>
      <begin>9</begin>
         <end>10</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8482,10 +8424,10 @@
       <TimeSpan>
      <begin>9</begin>
         <end>10</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8497,10 +8439,10 @@
       <TimeSpan>
      <begin>9</begin>
         <end>10</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8512,10 +8454,10 @@
       <TimeSpan>
      <begin>9</begin>
         <end>10</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8527,10 +8469,10 @@
       <TimeSpan>
      <begin>9</begin>
         <end>10</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8542,10 +8484,10 @@
       <TimeSpan>
      <begin>9</begin>
         <end>10</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8557,10 +8499,10 @@
       <TimeSpan>
      <begin>9</begin>
         <end>10</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8572,10 +8514,10 @@
       <TimeSpan>
      <begin>10</begin>
         <end>11</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8587,10 +8529,10 @@
       <TimeSpan>
      <begin>10</begin>
         <end>11</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8602,10 +8544,10 @@
       <TimeSpan>
      <begin>10</begin>
         <end>11</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8617,10 +8559,10 @@
       <TimeSpan>
      <begin>10</begin>
         <end>11</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8632,10 +8574,10 @@
       <TimeSpan>
      <begin>10</begin>
         <end>11</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8647,10 +8589,10 @@
       <TimeSpan>
      <begin>10</begin>
         <end>11</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8662,10 +8604,10 @@
       <TimeSpan>
      <begin>10</begin>
         <end>11</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8677,10 +8619,10 @@
       <TimeSpan>
      <begin>10</begin>
         <end>11</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8692,10 +8634,10 @@
       <TimeSpan>
      <begin>10</begin>
         <end>11</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8707,10 +8649,10 @@
       <TimeSpan>
      <begin>10</begin>
         <end>11</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8722,10 +8664,10 @@
       <TimeSpan>
      <begin>11</begin>
         <end>12</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8737,10 +8679,10 @@
       <TimeSpan>
      <begin>11</begin>
         <end>12</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8752,10 +8694,10 @@
       <TimeSpan>
      <begin>11</begin>
         <end>12</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8767,10 +8709,10 @@
       <TimeSpan>
      <begin>11</begin>
         <end>12</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8782,10 +8724,10 @@
       <TimeSpan>
      <begin>11</begin>
         <end>12</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8797,10 +8739,10 @@
       <TimeSpan>
      <begin>11</begin>
         <end>12</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8812,10 +8754,10 @@
       <TimeSpan>
      <begin>11</begin>
         <end>12</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8827,10 +8769,10 @@
       <TimeSpan>
      <begin>11</begin>
         <end>12</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8842,10 +8784,10 @@
       <TimeSpan>
      <begin>11</begin>
         <end>12</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8857,10 +8799,10 @@
       <TimeSpan>
      <begin>11</begin>
         <end>12</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8872,10 +8814,10 @@
       <TimeSpan>
      <begin>12</begin>
         <end>13</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8887,10 +8829,10 @@
       <TimeSpan>
      <begin>12</begin>
         <end>13</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8902,10 +8844,10 @@
       <TimeSpan>
      <begin>12</begin>
         <end>13</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8917,10 +8859,10 @@
       <TimeSpan>
      <begin>12</begin>
         <end>13</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8932,10 +8874,10 @@
       <TimeSpan>
      <begin>12</begin>
         <end>13</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8947,10 +8889,10 @@
       <TimeSpan>
      <begin>12</begin>
         <end>13</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8962,10 +8904,10 @@
       <TimeSpan>
      <begin>12</begin>
         <end>13</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8977,10 +8919,10 @@
       <TimeSpan>
      <begin>12</begin>
         <end>13</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -8992,10 +8934,10 @@
       <TimeSpan>
      <begin>12</begin>
         <end>13</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9007,10 +8949,10 @@
       <TimeSpan>
      <begin>12</begin>
         <end>13</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9022,10 +8964,10 @@
       <TimeSpan>
      <begin>13</begin>
         <end>14</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9037,10 +8979,10 @@
       <TimeSpan>
      <begin>13</begin>
         <end>14</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9052,10 +8994,10 @@
       <TimeSpan>
      <begin>13</begin>
         <end>14</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9067,10 +9009,10 @@
       <TimeSpan>
      <begin>13</begin>
         <end>14</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9082,10 +9024,10 @@
       <TimeSpan>
      <begin>13</begin>
         <end>14</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9097,10 +9039,10 @@
       <TimeSpan>
      <begin>13</begin>
         <end>14</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9112,10 +9054,10 @@
       <TimeSpan>
      <begin>13</begin>
         <end>14</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9127,10 +9069,10 @@
       <TimeSpan>
      <begin>13</begin>
         <end>14</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9142,10 +9084,10 @@
       <TimeSpan>
      <begin>13</begin>
         <end>14</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9157,10 +9099,10 @@
       <TimeSpan>
      <begin>13</begin>
         <end>14</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9172,10 +9114,10 @@
       <TimeSpan>
      <begin>14</begin>
         <end>15</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9187,10 +9129,10 @@
       <TimeSpan>
      <begin>14</begin>
         <end>15</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9202,10 +9144,10 @@
       <TimeSpan>
      <begin>14</begin>
         <end>15</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9217,10 +9159,10 @@
       <TimeSpan>
      <begin>14</begin>
         <end>15</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9232,10 +9174,10 @@
       <TimeSpan>
      <begin>14</begin>
         <end>15</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9247,10 +9189,10 @@
       <TimeSpan>
      <begin>14</begin>
         <end>15</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9262,10 +9204,10 @@
       <TimeSpan>
      <begin>14</begin>
         <end>15</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9277,10 +9219,10 @@
       <TimeSpan>
      <begin>14</begin>
         <end>15</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9292,10 +9234,10 @@
       <TimeSpan>
      <begin>14</begin>
         <end>15</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9307,10 +9249,10 @@
       <TimeSpan>
      <begin>14</begin>
         <end>15</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9322,10 +9264,10 @@
       <TimeSpan>
      <begin>15</begin>
         <end>16</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9337,10 +9279,10 @@
       <TimeSpan>
      <begin>15</begin>
         <end>16</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9352,10 +9294,10 @@
       <TimeSpan>
      <begin>15</begin>
         <end>16</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9367,10 +9309,10 @@
       <TimeSpan>
      <begin>15</begin>
         <end>16</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9382,10 +9324,10 @@
       <TimeSpan>
      <begin>15</begin>
         <end>16</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9397,10 +9339,10 @@
       <TimeSpan>
      <begin>15</begin>
         <end>16</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9412,10 +9354,10 @@
       <TimeSpan>
      <begin>15</begin>
         <end>16</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9427,10 +9369,10 @@
       <TimeSpan>
      <begin>15</begin>
         <end>16</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9442,10 +9384,10 @@
       <TimeSpan>
      <begin>15</begin>
         <end>16</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9457,10 +9399,10 @@
       <TimeSpan>
      <begin>15</begin>
         <end>16</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9472,10 +9414,10 @@
       <TimeSpan>
      <begin>16</begin>
         <end>17</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9487,10 +9429,10 @@
       <TimeSpan>
      <begin>16</begin>
         <end>17</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9502,10 +9444,10 @@
       <TimeSpan>
      <begin>16</begin>
         <end>17</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9517,10 +9459,10 @@
       <TimeSpan>
      <begin>16</begin>
         <end>17</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9532,10 +9474,10 @@
       <TimeSpan>
      <begin>16</begin>
         <end>17</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9547,10 +9489,10 @@
       <TimeSpan>
      <begin>16</begin>
         <end>17</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9562,10 +9504,10 @@
       <TimeSpan>
      <begin>16</begin>
         <end>17</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9577,10 +9519,10 @@
       <TimeSpan>
      <begin>16</begin>
         <end>17</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9592,10 +9534,10 @@
       <TimeSpan>
      <begin>16</begin>
         <end>17</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9607,10 +9549,10 @@
       <TimeSpan>
      <begin>16</begin>
         <end>17</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9622,10 +9564,10 @@
       <TimeSpan>
      <begin>17</begin>
         <end>18</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9637,10 +9579,10 @@
       <TimeSpan>
      <begin>17</begin>
         <end>18</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9652,10 +9594,10 @@
       <TimeSpan>
      <begin>17</begin>
         <end>18</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9667,10 +9609,10 @@
       <TimeSpan>
      <begin>17</begin>
         <end>18</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9682,10 +9624,10 @@
       <TimeSpan>
      <begin>17</begin>
         <end>18</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9697,10 +9639,10 @@
       <TimeSpan>
      <begin>17</begin>
         <end>18</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9712,10 +9654,10 @@
       <TimeSpan>
      <begin>17</begin>
         <end>18</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9727,10 +9669,10 @@
       <TimeSpan>
      <begin>17</begin>
         <end>18</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9742,10 +9684,10 @@
       <TimeSpan>
      <begin>17</begin>
         <end>18</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9757,10 +9699,10 @@
       <TimeSpan>
      <begin>17</begin>
         <end>18</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9772,10 +9714,10 @@
       <TimeSpan>
      <begin>18</begin>
         <end>19</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9787,10 +9729,10 @@
       <TimeSpan>
      <begin>18</begin>
         <end>19</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9802,10 +9744,10 @@
       <TimeSpan>
      <begin>18</begin>
         <end>19</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9817,10 +9759,10 @@
       <TimeSpan>
      <begin>18</begin>
         <end>19</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9832,10 +9774,10 @@
       <TimeSpan>
      <begin>18</begin>
         <end>19</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9847,10 +9789,10 @@
       <TimeSpan>
      <begin>18</begin>
         <end>19</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9862,10 +9804,10 @@
       <TimeSpan>
      <begin>18</begin>
         <end>19</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9877,10 +9819,10 @@
       <TimeSpan>
      <begin>18</begin>
         <end>19</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9892,10 +9834,10 @@
       <TimeSpan>
      <begin>18</begin>
         <end>19</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9907,10 +9849,25 @@
       <TimeSpan>
      <begin>18</begin>
         <end>19</end> </TimeSpan>
-<Style id="movies">
+<Style id="electronics">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+
+</href>
+        </Icon>
+      </IconStyle>
+    </Style>      <Point>
+        <coordinates>35.21200574506042,32.105721621191464,0 </coordinates>
+      </Point>
+    </Placemark><Placemark>
+      <TimeSpan>
+     <begin>19</begin>
+        <end>20</end> </TimeSpan>
+<Style id="electronics">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
 
 </href>
         </Icon>
@@ -9931,31 +9888,16 @@
         </Icon>
       </IconStyle>
     </Style>      <Point>
-        <coordinates>35.21200574506042,32.105721621191464,0 </coordinates>
-      </Point>
-    </Placemark><Placemark>
-      <TimeSpan>
-     <begin>19</begin>
-        <end>20</end> </TimeSpan>
-<Style id="electronics">
-      <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
-
-</href>
-        </Icon>
-      </IconStyle>
-    </Style>      <Point>
         <coordinates>35.212532074496366,32.106982780342726,0 </coordinates>
       </Point>
     </Placemark><Placemark>
       <TimeSpan>
      <begin>19</begin>
         <end>20</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -9967,10 +9909,10 @@
       <TimeSpan>
      <begin>19</begin>
         <end>20</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -9982,10 +9924,10 @@
       <TimeSpan>
      <begin>19</begin>
         <end>20</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -9997,10 +9939,10 @@
       <TimeSpan>
      <begin>19</begin>
         <end>20</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10012,10 +9954,10 @@
       <TimeSpan>
      <begin>19</begin>
         <end>20</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10027,10 +9969,10 @@
       <TimeSpan>
      <begin>19</begin>
         <end>20</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10042,25 +9984,10 @@
       <TimeSpan>
      <begin>19</begin>
         <end>20</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
-
-</href>
-        </Icon>
-      </IconStyle>
-    </Style>      <Point>
-        <coordinates>35.212532074496366,32.106982780342726,0 </coordinates>
-      </Point>
-    </Placemark><Placemark>
-      <TimeSpan>
-     <begin>19</begin>
-        <end>20</end> </TimeSpan>
-<Style id="electronics">
-      <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10072,10 +9999,10 @@
       <TimeSpan>
      <begin>20</begin>
         <end>21</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10087,10 +10014,10 @@
       <TimeSpan>
      <begin>20</begin>
         <end>21</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10102,10 +10029,10 @@
       <TimeSpan>
      <begin>20</begin>
         <end>21</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10117,10 +10044,10 @@
       <TimeSpan>
      <begin>20</begin>
         <end>21</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10132,10 +10059,10 @@
       <TimeSpan>
      <begin>20</begin>
         <end>21</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10147,10 +10074,10 @@
       <TimeSpan>
      <begin>20</begin>
         <end>21</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10162,10 +10089,10 @@
       <TimeSpan>
      <begin>20</begin>
         <end>21</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10177,10 +10104,10 @@
       <TimeSpan>
      <begin>20</begin>
         <end>21</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10192,10 +10119,10 @@
       <TimeSpan>
      <begin>20</begin>
         <end>21</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10207,10 +10134,10 @@
       <TimeSpan>
      <begin>20</begin>
         <end>21</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10222,10 +10149,10 @@
       <TimeSpan>
      <begin>21</begin>
         <end>22</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10237,10 +10164,10 @@
       <TimeSpan>
      <begin>21</begin>
         <end>22</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10252,10 +10179,25 @@
       <TimeSpan>
      <begin>21</begin>
         <end>22</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+
+</href>
+        </Icon>
+      </IconStyle>
+    </Style>      <Point>
+        <coordinates>35.212532074496366,32.106982780342726,0 </coordinates>
+      </Point>
+    </Placemark><Placemark>
+      <TimeSpan>
+     <begin>21</begin>
+        <end>22</end> </TimeSpan>
+<Style id="movies">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10267,10 +10209,10 @@
       <TimeSpan>
      <begin>21</begin>
         <end>22</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10282,10 +10224,10 @@
       <TimeSpan>
      <begin>21</begin>
         <end>22</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10297,10 +10239,10 @@
       <TimeSpan>
      <begin>21</begin>
         <end>22</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10312,10 +10254,10 @@
       <TimeSpan>
      <begin>21</begin>
         <end>22</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10327,10 +10269,10 @@
       <TimeSpan>
      <begin>21</begin>
         <end>22</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10342,25 +10284,10 @@
       <TimeSpan>
      <begin>21</begin>
         <end>22</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
-
-</href>
-        </Icon>
-      </IconStyle>
-    </Style>      <Point>
-        <coordinates>35.2062116361405,32.101283138606995,0 </coordinates>
-      </Point>
-    </Placemark><Placemark>
-      <TimeSpan>
-     <begin>21</begin>
-        <end>22</end> </TimeSpan>
-<Style id="electronics">
-      <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10372,10 +10299,10 @@
       <TimeSpan>
      <begin>22</begin>
         <end>23</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10387,10 +10314,10 @@
       <TimeSpan>
      <begin>22</begin>
         <end>23</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10402,10 +10329,10 @@
       <TimeSpan>
      <begin>22</begin>
         <end>23</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10417,10 +10344,10 @@
       <TimeSpan>
      <begin>22</begin>
         <end>23</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10432,10 +10359,10 @@
       <TimeSpan>
      <begin>22</begin>
         <end>23</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10447,10 +10374,10 @@
       <TimeSpan>
      <begin>22</begin>
         <end>23</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10462,10 +10389,10 @@
       <TimeSpan>
      <begin>22</begin>
         <end>23</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10477,10 +10404,10 @@
       <TimeSpan>
      <begin>22</begin>
         <end>23</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10492,10 +10419,10 @@
       <TimeSpan>
      <begin>22</begin>
         <end>23</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10507,10 +10434,10 @@
       <TimeSpan>
      <begin>22</begin>
         <end>23</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10522,10 +10449,10 @@
       <TimeSpan>
      <begin>23</begin>
         <end>24</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10537,10 +10464,10 @@
       <TimeSpan>
      <begin>23</begin>
         <end>24</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10552,10 +10479,10 @@
       <TimeSpan>
      <begin>23</begin>
         <end>24</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10567,10 +10494,10 @@
       <TimeSpan>
      <begin>23</begin>
         <end>24</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10582,10 +10509,10 @@
       <TimeSpan>
      <begin>23</begin>
         <end>24</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10597,10 +10524,10 @@
       <TimeSpan>
      <begin>23</begin>
         <end>24</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10612,10 +10539,10 @@
       <TimeSpan>
      <begin>23</begin>
         <end>24</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10627,10 +10554,10 @@
       <TimeSpan>
      <begin>23</begin>
         <end>24</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10642,10 +10569,10 @@
       <TimeSpan>
      <begin>23</begin>
         <end>24</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10657,10 +10584,10 @@
       <TimeSpan>
      <begin>23</begin>
         <end>24</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10672,10 +10599,10 @@
       <TimeSpan>
      <begin>24</begin>
         <end>25</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10687,10 +10614,10 @@
       <TimeSpan>
      <begin>24</begin>
         <end>25</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10702,10 +10629,10 @@
       <TimeSpan>
      <begin>24</begin>
         <end>25</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10717,10 +10644,10 @@
       <TimeSpan>
      <begin>24</begin>
         <end>25</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10732,10 +10659,10 @@
       <TimeSpan>
      <begin>24</begin>
         <end>25</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10747,10 +10674,10 @@
       <TimeSpan>
      <begin>24</begin>
         <end>25</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10762,10 +10689,10 @@
       <TimeSpan>
      <begin>24</begin>
         <end>25</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10777,10 +10704,10 @@
       <TimeSpan>
      <begin>24</begin>
         <end>25</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10792,10 +10719,10 @@
       <TimeSpan>
      <begin>24</begin>
         <end>25</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10807,10 +10734,10 @@
       <TimeSpan>
      <begin>24</begin>
         <end>25</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10822,10 +10749,10 @@
       <TimeSpan>
      <begin>25</begin>
         <end>26</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10837,10 +10764,10 @@
       <TimeSpan>
      <begin>25</begin>
         <end>26</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10852,10 +10779,10 @@
       <TimeSpan>
      <begin>25</begin>
         <end>26</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10867,10 +10794,10 @@
       <TimeSpan>
      <begin>25</begin>
         <end>26</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10882,10 +10809,10 @@
       <TimeSpan>
      <begin>25</begin>
         <end>26</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10897,10 +10824,10 @@
       <TimeSpan>
      <begin>25</begin>
         <end>26</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10912,10 +10839,10 @@
       <TimeSpan>
      <begin>25</begin>
         <end>26</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10927,10 +10854,10 @@
       <TimeSpan>
      <begin>25</begin>
         <end>26</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10942,10 +10869,10 @@
       <TimeSpan>
      <begin>25</begin>
         <end>26</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10957,10 +10884,10 @@
       <TimeSpan>
      <begin>25</begin>
         <end>26</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10972,10 +10899,10 @@
       <TimeSpan>
      <begin>26</begin>
         <end>27</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -10987,10 +10914,10 @@
       <TimeSpan>
      <begin>26</begin>
         <end>27</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11002,10 +10929,10 @@
       <TimeSpan>
      <begin>26</begin>
         <end>27</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11017,10 +10944,10 @@
       <TimeSpan>
      <begin>26</begin>
         <end>27</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11032,10 +10959,10 @@
       <TimeSpan>
      <begin>26</begin>
         <end>27</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11047,10 +10974,10 @@
       <TimeSpan>
      <begin>26</begin>
         <end>27</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11062,10 +10989,10 @@
       <TimeSpan>
      <begin>26</begin>
         <end>27</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11077,10 +11004,10 @@
       <TimeSpan>
      <begin>26</begin>
         <end>27</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11092,10 +11019,25 @@
       <TimeSpan>
      <begin>26</begin>
         <end>27</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
+
+</href>
+        </Icon>
+      </IconStyle>
+    </Style>      <Point>
+        <coordinates>35.2062116361405,32.101283138606995,0 </coordinates>
+      </Point>
+    </Placemark><Placemark>
+      <TimeSpan>
+     <begin>26</begin>
+        <end>27</end> </TimeSpan>
+<Style id="movies">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11107,10 +11049,10 @@
       <TimeSpan>
      <begin>27</begin>
         <end>28</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11122,10 +11064,10 @@
       <TimeSpan>
      <begin>27</begin>
         <end>28</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11137,10 +11079,10 @@
       <TimeSpan>
      <begin>27</begin>
         <end>28</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11152,10 +11094,10 @@
       <TimeSpan>
      <begin>27</begin>
         <end>28</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11167,10 +11109,10 @@
       <TimeSpan>
      <begin>27</begin>
         <end>28</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11182,10 +11124,10 @@
       <TimeSpan>
      <begin>27</begin>
         <end>28</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11197,10 +11139,10 @@
       <TimeSpan>
      <begin>27</begin>
         <end>28</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11212,10 +11154,10 @@
       <TimeSpan>
      <begin>27</begin>
         <end>28</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11227,10 +11169,10 @@
       <TimeSpan>
      <begin>27</begin>
         <end>28</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11242,10 +11184,10 @@
       <TimeSpan>
      <begin>27</begin>
         <end>28</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11257,10 +11199,10 @@
       <TimeSpan>
      <begin>28</begin>
         <end>29</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11272,10 +11214,10 @@
       <TimeSpan>
      <begin>28</begin>
         <end>29</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11287,10 +11229,10 @@
       <TimeSpan>
      <begin>28</begin>
         <end>29</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11302,10 +11244,10 @@
       <TimeSpan>
      <begin>28</begin>
         <end>29</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11317,10 +11259,10 @@
       <TimeSpan>
      <begin>28</begin>
         <end>29</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11332,10 +11274,10 @@
       <TimeSpan>
      <begin>28</begin>
         <end>29</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11347,10 +11289,10 @@
       <TimeSpan>
      <begin>28</begin>
         <end>29</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11362,10 +11304,10 @@
       <TimeSpan>
      <begin>28</begin>
         <end>29</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11377,10 +11319,10 @@
       <TimeSpan>
      <begin>28</begin>
         <end>29</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11392,10 +11334,10 @@
       <TimeSpan>
      <begin>28</begin>
         <end>29</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11407,10 +11349,10 @@
       <TimeSpan>
      <begin>29</begin>
         <end>30</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11422,10 +11364,10 @@
       <TimeSpan>
      <begin>29</begin>
         <end>30</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11437,10 +11379,10 @@
       <TimeSpan>
      <begin>29</begin>
         <end>30</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11452,10 +11394,10 @@
       <TimeSpan>
      <begin>29</begin>
         <end>30</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11467,10 +11409,10 @@
       <TimeSpan>
      <begin>29</begin>
         <end>30</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11482,10 +11424,10 @@
       <TimeSpan>
      <begin>29</begin>
         <end>30</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11497,10 +11439,10 @@
       <TimeSpan>
      <begin>29</begin>
         <end>30</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11512,10 +11454,10 @@
       <TimeSpan>
      <begin>29</begin>
         <end>30</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11527,10 +11469,10 @@
       <TimeSpan>
      <begin>29</begin>
         <end>30</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
@@ -11542,10 +11484,10 @@
       <TimeSpan>
      <begin>29</begin>
         <end>30</end> </TimeSpan>
-<Style id="electronics">
+<Style id="movies">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/euro.png
+          <href>http://maps.google.com/mapfiles/kml/shapes/earthquake.png
 
 </href>
         </Icon>
