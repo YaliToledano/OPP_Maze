@@ -107,7 +107,7 @@ public class MyGameGUI implements Runnable {
 
         //moves and game loop
         game.startGame();
-        System.out.println("game started" + game.timeToEnd());
+        System.out.println("game started ");
         arena.addRobots(game.getRobots());
         while (game.isRunning()) {
             //StdDraw.text(,0,"time: " + game.timeToEnd());

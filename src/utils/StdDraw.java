@@ -1674,7 +1674,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
-        System.out.println("event click is " + e.getActionCommand());
+		//System.out.println("event click is " + e.getActionCommand());
 		String event = e.getActionCommand();
         if (event.equals("Save")) {
 			FileDialog chooser = new FileDialog(StdDraw.frame, "Use a .png or .jpg extension", FileDialog.SAVE);
