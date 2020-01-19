@@ -140,7 +140,6 @@ public class MyGameGUI implements Runnable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        arena.addFruits(game.getFruits());
         drawFruits(arena);
         drawRobots(arena);
         StdDraw.show();
