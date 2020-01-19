@@ -17,4 +17,15 @@ and will collect the most fruits.
 furthermore there is an option to save a run manual or automatic to kml format whitch can be displayed in google earth animation, 
 all the stages are based on ariel university.
 
-
+## main classes
+data structes:
+- DGraph
+- Robot
+- Fruit
+- Arena
+gui :
+Graph_GUI
+MyGameGUI
+algorhtims:
+Graph_Algo
+Game_Algo
