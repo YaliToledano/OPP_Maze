@@ -109,7 +109,6 @@ public class Arena implements _arena {
     }
 
     /**
-     * \
      *
      * @param e   edge to check
      * @param pos of point

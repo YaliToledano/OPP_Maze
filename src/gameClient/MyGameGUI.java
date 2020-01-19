@@ -186,7 +186,7 @@ public class MyGameGUI implements Runnable {
 
     //moves the closest robot to desired node
     private static void move(game_service game, Arena arena, int t, Game_Algo game_algo) {
-        int rToMove = game_algo.closestRobotsToNode(t).get(0).getID();
+        int rToMove = game_algo.closestRobotsToNode(t).get(0).getId();
         arena.updateRobots(game.move());
         if (arena.getRobots().get(rToMove).getDest() == -1) {
             arena.updateRobots(game.move());

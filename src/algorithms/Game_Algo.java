@@ -180,7 +180,7 @@ public class Game_Algo {
                 Fruit f = closetFruitToRobot(r);
                 if (f.isAssigned()) {//if other robot already goes to that fruit chooses another random fruit
                     int x = (int) Math.random() * arena.getFruitsCount();
-                    while (f.getId() != x) x = (int) Math.random() * arena.getFruitsCount();
+                    // while (f.getId() != x) x = (int) Math.random() * arena.getFruitsCount();
                     f = arena.getFruits().get(x);
                 }
                 f.setAssigned(true);
