@@ -7,6 +7,10 @@ which can be solved an automatic algorhim that we implemnted, or manualy using m
 we created a GUI (with the help of StdDraw) to represnt visually above game. in it you can choose a stage and in what mode to solve it 
 (manual/automatic).
 
+
+![](https://user-images.githubusercontent.com/37403170/72686488-1a907380-3afe-11ea-968d-7d659edfe8fa.png)
+
+
 ## Modes
 - Manual : using double mouse click you can choose a location for your given robts, 
 and again by double mouse clicking on a target node next to a deired robot(only on neighboring nodes) 
