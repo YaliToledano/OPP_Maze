@@ -1,11 +1,9 @@
 package algorithms;
 
+import Server.Game_Server;
 import Server.game_service;
-import dataStructure.Arena;
-import dataStructure.Fruit;
-import dataStructure.Robot;
-import dataStructure.edge_data;
-import dataStructure.node_data;
+import dataStructure.*;
+import gameClient.MyGameGUI;
 
 import java.util.*;
 import java.util.concurrent.BlockingQueue;
@@ -127,6 +125,7 @@ public class Game_Algo {
                 r.setDest(itr.next().getDest());
                 game.chooseNextEdge(r.getId(), r.getDest());
                 arena.updateRobots(game.move());
+                arena.addFruits(game.getFruits());
                 System.out.println("moved robot " + r.getId() + " to node " + r.getDest());
 
             }
@@ -170,6 +169,7 @@ public class Game_Algo {
             }
         }
         arena.updateRobots(game.move());
+        arena.addFruits(game.getFruits());
     }
     //better greedy algorithm - if robots are close together
     public void basicG(game_service game) {
@@ -202,6 +202,18 @@ public class Game_Algo {
                 }
             }
             arena.updateRobots(game.move());
+            arena.addFruits(game.getFruits());
+        }
+    }
+
+    public static void main(String[] args) {
+        game_service game = Game_Server.getServer(1);
+        String graph = game.getGraph();
+        DGraph graph1 = new DGraph();
+        graph1.init(graph);
+        ArrayList<node_data> ln = (ArrayList<node_data>)graph1.getV();
+        for (node_data n:ln) {
+            System.out.println(n.getKey()+"   ("+n.getLocation().x()+","+n.getLocation().y());
         }
     }
 }
