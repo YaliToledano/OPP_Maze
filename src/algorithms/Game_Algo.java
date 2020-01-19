@@ -12,6 +12,9 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.LinkedBlockingQueue;
 
+/**
+ * class for all algorithms used in the automatic solution of the stages
+ */
 
 public class Game_Algo {
     private Arena arena;
@@ -27,7 +30,7 @@ public class Game_Algo {
     }
 
     //finds fruit with shortest dist to  given robot
-    private Fruit closetFruitToRobot(Robot r) {
+    public Fruit closetFruitToRobot(Robot r) {
         //List<Fruit> fruitsorder = new ArrayList<Fruit>();
         List<Fruit> fruits = arena.getFruits(); //original fruits list
         //creating distance list
@@ -110,7 +113,11 @@ public class Game_Algo {
         return ls;
     }
 
-    //random walk
+    /**
+     * random walk algorithm
+     *
+     * @param game current game service
+     */
     public void AutomaticMode(game_service game) {
         for (Robot r : arena.getRobots()) {
             if (r.getDest() == -1) {
@@ -171,7 +178,12 @@ public class Game_Algo {
         }
         arena.updateRobots(game.move());
     }
-    //better greedy algorithm - if robots are close together
+
+    /**
+     *  greedy approach to solve the stages sends each robot to it's closest fruit and if two robots want to go to the
+     *  same fruit it sends one to a random fruit
+     * @param game
+     */
     public void basicG(game_service game) {
         for (Robot r : arena.getRobots()) {
             if (r.getTargetNodes().size() == 0) {

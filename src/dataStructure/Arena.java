@@ -109,7 +109,7 @@ public class Arena implements _arena {
     }
 
     /**
-     *
+     *uses distance to decide if a point is on a given edge.(used in fruit edge finding.
      * @param e   edge to check
      * @param pos of point
      * @return if the ethe given pos is on the edge
@@ -153,6 +153,11 @@ public class Arena implements _arena {
         }
     }
 
+    /**
+     * adds all data realted to the robots from the game server.
+     *
+     * @param json output from the game server
+     */
     public void addRobots(List<String> json) {
         try {
             robots = new ArrayList<Robot>();

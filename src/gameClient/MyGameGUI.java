@@ -19,6 +19,10 @@ import utils.Point3D;
 import utils.Range;
 import utils.StdDraw;
 
+/**
+ * class that runs as thread (ex. in main) responsible for drawing and update the drawing  of fruits and robots 10 times a second
+ * it waits for input from GUI and then runs the play method.
+ */
 public class MyGameGUI implements Runnable {
 
     public static void main(String[] args) {
@@ -141,6 +145,7 @@ public class MyGameGUI implements Runnable {
         drawRobots(arena);
         StdDraw.show();
     }
+
     //finds a node in the graph that matches given location
     private static int nodeFromLoc(Point3D p, graph g) {
         ArrayList<node_data> l = (ArrayList<node_data>) g.getV();
@@ -158,9 +163,6 @@ public class MyGameGUI implements Runnable {
             if (fruits.get(i).getType() == -1) {
                 StdDraw.picture(fruits.get(i).getLocation().x(), fruits.get(i).getLocation().y(), "banana.jpg", 0.0008, 0.0008);
             } else {
-                StdDraw.setPenColor(StdDraw.GREEN);
-                StdDraw.setPenRadius(0.05);
-                //StdDraw.point(fruits.get(i).getLocation().x(), fruits.get(i).getLocation().y());
                 StdDraw.picture(fruits.get(i).getLocation().x(), fruits.get(i).getLocation().y(), "apple.png", 0.0008, 0.0008);
             }
         }
@@ -174,6 +176,7 @@ public class MyGameGUI implements Runnable {
             StdDraw.point(robots.get(i).getCurrentLocation().x(), robots.get(i).getCurrentLocation().y());
         }
     }
+
     //finds if to points are close enough to be the same one
     private static boolean close(Point3D p1, Point3D p2) {
         if (p1 == null || p2 == null) return false;
