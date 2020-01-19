@@ -55,11 +55,13 @@ class KML_Logger implements Runnable {
         setEdges_kml();
     }
 
+    //saving kml as kml file at the end of the play run
 
     public void saveKML() throws IOException {
         save(start + nodesKML + edgesKML + robotsKML + fruitsKML + end);
     }
 
+    //saving kml
     public void save(String kml) throws IOException {
         FileWriter fw = new FileWriter("data/"+scenario_num + ".kml");
         PrintWriter outs = new PrintWriter(fw);
@@ -140,7 +142,7 @@ class KML_Logger implements Runnable {
                 e.printStackTrace();
             }
         }
-        synchronized (this) {
+        synchronized (this) { //saving the file
             String kml = start + nodesKML + edgesKML + robotsKML + fruitsKML + end;
             try {
                 save(kml);
@@ -150,14 +152,17 @@ class KML_Logger implements Runnable {
         }
     }
 
+    //adding new time stamps to the kml fields (update)
+
     public void update(Arena arena)
     {
         this.arena = arena;
-        robotsKML+=robotsKML();
-        fruitsKML+=fruitsKML();
+        robotsKML+=robotsKML();//adding to the robots new information
+        fruitsKML+=fruitsKML();//adding to the fruits new information
     }
 
-    private void playAutomatic() {
+    //create kml file for specific game number as automatic gameplay
+    public void playAutomatic() {
         //init game service and graph
         this.arena = new Arena();
         this.game = Game_Server.getServer(scenario_num);
@@ -165,7 +170,6 @@ class KML_Logger implements Runnable {
         DGraph graph1 = new DGraph();
         graph1.init(graph);
         this.arena.setGraph(graph1);
-        System.out.println(this.game.toString());
 
         this.graph = graph1;
         setNodes_kml();
@@ -197,7 +201,7 @@ class KML_Logger implements Runnable {
         arena.addRobots(this.game.getRobots());
         while (this.game.isRunning()) {
 
-            game_algo.basicG(this.game);
+            game_algo.basicG(this.game);//the automatic play and update
             robotsKML+=robotsKML();
             fruitsKML+=fruitsKML();
 
@@ -210,6 +214,7 @@ class KML_Logger implements Runnable {
         }
     }
 
+    //creating in kml time stamp for robots at specific time
     private String robotsKML() {
         String output = "";
         long time = (this.timeOfGame - game.timeToEnd()) / 1000;
@@ -236,6 +241,7 @@ class KML_Logger implements Runnable {
     }
 
 
+    //creating in kml time stamp for fruits at specific time
     private String fruitsKML() {
         String output = "";
         long time = (this.timeOfGame - game.timeToEnd()) / 1000;
@@ -287,6 +293,11 @@ class KML_Logger implements Runnable {
         this.game = game;
     }
 
+    public String getKML() {
+        return start + nodesKML + edgesKML + robotsKML + fruitsKML + end;
+    }
+
+    //creating 24 kml's for each game number
     public static void main(String[] args) {
         for (int i = 0; i < 24; i++) {
             KML_Logger kml = new KML_Logger(i);
