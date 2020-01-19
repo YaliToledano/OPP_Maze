@@ -37,7 +37,7 @@ public class Game_Algo {
         Fruit closeFruit = null;
         double x = 0;
         for (Fruit f : fruits) {
-            System.out.println("fruit in " + f.getEdge().getSrc() + " -> " + f.getEdge().getDest());
+            //System.out.println("fruit in " + f.getEdge().getSrc() + " -> " + f.getEdge().getDest());
             x = ga.shortestPathDist(r.getSrc(), f.getEdge().getSrc()) + f.getEdge().getWeight();
             if (x < close) {
                 close = x;
@@ -163,7 +163,7 @@ public class Game_Algo {
         for (Robot r : arena.getRobots()) {
             if (r.getDest() == -1 && r.getTargetNodes().size() > 0) {
                 r.setDest(r.getTargetNodes().remove());
-                System.out.println(r.getTargetNodes().toString());
+                //System.out.println(r.getTargetNodes().toString());
                 game.chooseNextEdge(r.getId(), r.getDest());
 
                 System.out.println("moved robot " + r.getId() + " to node " + r.getDest());
@@ -198,7 +198,7 @@ public class Game_Algo {
                 f.setAssigned(true);
                 r.setFruit(f);
                 List<node_data> nodesPath = ga.shortestPath(r.getSrc(), f.getEdge().getSrc());
-                System.out.println("closest fruit is in" + f.getEdge().getSrc() + " " + f.getEdge().getDest());
+                //System.out.println("closest fruit is in" + f.getEdge().getSrc() + " " + f.getEdge().getDest());
                 for (node_data n : nodesPath) {
                     r.getTargetNodes().add(n.getKey());
                 }
