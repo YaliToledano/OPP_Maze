@@ -18,14 +18,14 @@ furthermore there is an option to save a run manual or automatic to kml format w
 all the stages are based on ariel university.
 
 ## main classes
-data structes:
+### data structes:
 - DGraph
 - Robot
 - Fruit
 - Arena
-gui :
+### gui :
 Graph_GUI
 MyGameGUI
-algorhtims:
+### algorhtims:
 Graph_Algo
 Game_Algo
