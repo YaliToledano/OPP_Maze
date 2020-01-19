@@ -206,6 +206,7 @@ public class Game_Algo {
         }
     }
 
+
     public static void main(String[] args) {
         game_service game = Game_Server.getServer(1);
         String graph = game.getGraph();

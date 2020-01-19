@@ -33,7 +33,6 @@ class KML_Logger implements Runnable {
     private String nodesKML = "";
     private String edgesKML = "";
     private long timeOfGame;
-    private boolean firstRun = true;
     private String start = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n" +
             "<kml xmlns=\"http://earth.google.com/kml/2.2\">\r\n" +
             "  <Document>\r\n";
@@ -44,8 +43,25 @@ class KML_Logger implements Runnable {
         this.scenario_num = scenario_num;
     }
 
+    public KML_Logger(game_service game, int scenario_num) {
+        this.game = game;
+        ga = new Graph_Algo();
+        this.graph = new DGraph();
+        this.graph.init(game.getGraph());
+        this.scenario_num = scenario_num;
+        arena = new Arena();
+        this.arena.setGraph(graph);
+        setNodes_kml();
+        setEdges_kml();
+    }
+
+
+    public void saveKML() throws IOException {
+        save(start + nodesKML + edgesKML + robotsKML + fruitsKML + end);
+    }
+
     public void save(String kml) throws IOException {
-        FileWriter fw = new FileWriter(scenario_num + ".kml");
+        FileWriter fw = new FileWriter("data/"+scenario_num + ".kml");
         PrintWriter outs = new PrintWriter(fw);
         outs.println(kml);
         outs.close();
@@ -133,6 +149,14 @@ class KML_Logger implements Runnable {
             }
         }
     }
+
+    public void update(Arena arena)
+    {
+        this.arena = arena;
+        robotsKML+=robotsKML();
+        fruitsKML+=fruitsKML();
+    }
+
     private void playAutomatic() {
         //init game service and graph
         this.arena = new Arena();
@@ -186,7 +210,7 @@ class KML_Logger implements Runnable {
         }
     }
 
-    public String robotsKML() {
+    private String robotsKML() {
         String output = "";
         long time = (this.timeOfGame - game.timeToEnd()) / 1000;
         for (Robot r : this.arena.getRobots()) {
@@ -212,7 +236,7 @@ class KML_Logger implements Runnable {
     }
 
 
-    public String fruitsKML() {
+    private String fruitsKML() {
         String output = "";
         long time = (this.timeOfGame - game.timeToEnd()) / 1000;
         for (Fruit f : this.arena.getFruits()) {

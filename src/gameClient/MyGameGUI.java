@@ -2,6 +2,7 @@ package gameClient;
 
 
 import java.awt.*;
+import java.io.IOException;
 import java.util.*;
 import java.util.List;
 
@@ -27,7 +28,7 @@ public class MyGameGUI implements Runnable {
     }
 
 
-    private static void play(int scenario_num, String Mode) {
+    private static void play(int scenario_num, String Mode) throws IOException {
         //init game service and graph
         Arena arena = new Arena();
         game_service game = Game_Server.getServer(scenario_num);
@@ -47,6 +48,9 @@ public class MyGameGUI implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+        //creating KML option
+        KML_Logger kml = new KML_Logger(game,scenario_num);
 
         //fruits placement
         arena.addFruits(game.getFruits());
@@ -110,9 +114,11 @@ public class MyGameGUI implements Runnable {
                 if (StdDraw.getLastLoc() != null || !close(p, StdDraw.getLastLoc()) || nodeFromLoc(StdDraw.getLastLoc(), arena.getGraph()) != -1) {
                     p = StdDraw.getLastLoc();
                     move(game, arena, nodeFromLoc(p, arena.getGraph()), game_algo);
+                    kml.update(arena);
                 }
             } else {
                 game_algo.basicG(game);
+                kml.update(arena);
             }
             reDraw(game, arena, gui);
 
@@ -123,6 +129,7 @@ public class MyGameGUI implements Runnable {
             }
         }
         System.out.println(game.toString());
+        kml.saveKML();
     }
 
     //draws all required components
@@ -187,6 +194,7 @@ public class MyGameGUI implements Runnable {
     private static void move(game_service game, Arena arena, int t, Game_Algo game_algo) {
         int rToMove = game_algo.closestRobotsToNode(t).get(0).getId();
         arena.updateRobots(game.move());
+        arena.addFruits(game.getFruits());;
         if (arena.getRobots().get(rToMove).getDest() == -1) {
             arena.updateRobots(game.move());
             game.chooseNextEdge(rToMove, t);
@@ -207,7 +215,11 @@ public class MyGameGUI implements Runnable {
                 }
             }
             //System.out.println(Integer.parseInt(StdDraw.getMap().substring(1)) + StdDraw.getMode());
-            play(Integer.parseInt(StdDraw.getMap().substring(1)), StdDraw.getMode());
+            try {
+                play(Integer.parseInt(StdDraw.getMap().substring(1)), StdDraw.getMode());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             StdDraw.setMap("");
             StdDraw.setMode("");
         }
