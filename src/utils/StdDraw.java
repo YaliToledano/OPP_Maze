@@ -33,6 +33,7 @@ import dataStructure.DGraph;
 import dataStructure.Node;
 import dataStructure.graph;
 import dataStructure.node_data;
+import gameClient.resultFetcher;
 import gui.Graph_GUI;
 
 import java.awt.*;
@@ -747,6 +748,11 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 
 		//DB select
 		JMenu DB = new JMenu("Results");
+		JMenuItem d = new JMenuItem("display over all results");
+		d.addActionListener(std);
+		DB.add(d);
+		d.addActionListener(std);
+		menuBar.add(DB);
 		return menuBar;
 	}
 
@@ -1696,8 +1702,8 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 			Mode = "Manual";
 		} else if (event.contains("Automatic")) {
 			Mode = "Automatic";
-		} else if (event.equals("")) {
-
+		} else if (event.contains("display")) {
+			JOptionPane.showMessageDialog(frame, resultFetcher.fetch(322663816));
 		}
 	}
 
