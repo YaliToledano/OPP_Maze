@@ -12,14 +12,14 @@ import java.util.*;
  */
 public class Arena implements _arena {
     private graph graph;
-    private List<Fruit> fruits;
+    private Vector<Fruit> fruits;
     private List<Robot> robots;
     private int fruitsCount;
     private int robotsCount;
     private Queue<Fruit> unassigned;
 
     public Arena() {
-        fruits = new ArrayList<Fruit>();
+        fruits = new Vector<>();
         robots = new ArrayList<Robot>();
         unassigned = new LinkedList<>();
         fruitsCount = 0;
@@ -50,7 +50,7 @@ public class Arena implements _arena {
         return unassigned;
     }
 
-    public void setFruits(List<Fruit> fruits) {
+    public void setFruits(Vector<Fruit> fruits) {
         this.fruits = fruits;
     }
 
@@ -123,7 +123,7 @@ public class Arena implements _arena {
 
     public void addFruits(List<String> json) {
         try {
-            fruits = new ArrayList<Fruit>();
+            //fruits = new Vector<>();
             fruitsCount = 0;
             Iterator<String> it = json.iterator();
             while (it.hasNext()) {
@@ -172,12 +172,35 @@ public class Arena implements _arena {
     }
 
     public void updateRobots(List<String> json) {
+        if (json == null) return;
         try {
             for (String s : json) {
+
                 JSONObject jj = new JSONObject(s);
                 JSONObject j = jj.getJSONObject("Robot");
                 Robot r = searchRobot(j.getInt("id"));
                 r.update(s);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void updateFruits(List<String> json) {
+        try {
+            int count = 0;
+            for (String s : json) {
+                System.out.println("update");
+                Fruit f = fruits.get(count);
+                JSONObject jj = new JSONObject(s);
+                JSONObject j = jj.getJSONObject("Fruit");
+                f.setValue(j.getDouble("value"));
+                f.setType(j.getInt("type"));
+                String[] pos1 = j.getString("pos").split(",");
+                f.setPos(new Point3D(Double.parseDouble(pos1[0]), Double.parseDouble(pos1[1])));
+                setFruitEdge(f);
+                count++;
+                //System.out.println(f.isAssigned());
             }
         } catch (JSONException e) {
             e.printStackTrace();

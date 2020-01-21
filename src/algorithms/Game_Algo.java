@@ -14,9 +14,14 @@ import java.util.concurrent.LinkedBlockingQueue;
  * class for all algorithms used in the automatic solution of the stages
  */
 
-public class Game_Algo {
+public class Game_Algo implements Runnable {
     private Arena arena;
     private Graph_Algo ga;
+    private game_service game;
+
+    public void setGame(game_service game) {
+        this.game = game;
+    }
 
     public Game_Algo(Arena arena) {
         this.arena = arena;
@@ -28,14 +33,19 @@ public class Game_Algo {
     }
 
     //finds fruit with shortest dist to  given robot
-    public Fruit closetFruitToRobot(Robot r) {
-        //List<Fruit> fruitsorder = new ArrayList<Fruit>();
+    public List<Fruit> closetFruitToRobot(Robot r) {
+        List<Fruit> fruitsorder = new ArrayList<Fruit>();
         List<Fruit> fruits = arena.getFruits(); //original fruits list
+        System.out.println(fruits.get(0).getEdge().getSrc());
         //creating distance list
-        //PriorityQueue<Fruit> dist = new PriorityQueue<>();
+        List<Double> dist = new ArrayList<>();
+        List<Double> distorder = new ArrayList<Double>();
         Double close = Double.POSITIVE_INFINITY;
         Fruit closeFruit = null;
         double x = 0;
+        for (Fruit f : fruits) {
+            dist.add(ga.shortestPathDist(r.getSrc(), f.getEdge().getSrc()));
+        }
         for (Fruit f : fruits) {
             //System.out.println("fruit in " + f.getEdge().getSrc() + " -> " + f.getEdge().getDest());
             x = ga.shortestPathDist(r.getSrc(), f.getEdge().getSrc()) + f.getEdge().getWeight();
@@ -45,7 +55,17 @@ public class Game_Algo {
             }
         }
 
-        return closeFruit;
+        for (int i = 0; i < fruits.size(); i++) {  //sorting the new robots list with the distance list (insertion sort)
+            int j = 0;
+            while (j < fruitsorder.size() && distorder.get(j) < dist.get(i)) {
+                j++;
+            }
+            fruitsorder.add(j, fruits.get(i));
+            distorder.add(j, dist.get(i));
+        }
+
+
+        return fruitsorder;
     }
 
     public List<Robot> closestRobotsToFruit(Fruit fruit) {
@@ -132,7 +152,7 @@ public class Game_Algo {
                 r.setDest(itr.next().getDest());
                 game.chooseNextEdge(r.getId(), r.getDest());
                 arena.updateRobots(game.move());
-                arena.addFruits(game.getFruits());
+                arena.updateFruits(game.getFruits());
                 System.out.println("moved robot " + r.getId() + " to node " + r.getDest());
 
             }
@@ -148,7 +168,7 @@ public class Game_Algo {
             //System.out.println("fruit edge"+f.getEdge().getSrc() + " " + f.getEdge().getDest());
             if (r.getTargetNodes().size() == 0) {
                 List<node_data> ls = ga.shortestPath(r.getSrc(), f.getEdge().getSrc());
-                BlockingQueue<Integer> dest = r.getTargetNodes();
+                Queue<Integer> dest = r.getTargetNodes();
                 for (node_data n : ls) {
                     dest.add(n.getKey());
                 }
@@ -176,7 +196,7 @@ public class Game_Algo {
             }
         }
         arena.updateRobots(game.move());
-        arena.addFruits(game.getFruits());
+        arena.updateFruits(game.getFruits());
     }
 
     /**
@@ -189,32 +209,36 @@ public class Game_Algo {
             if (r.getTargetNodes().size() == 0) {
                 if (r.getFruit() != null)
                     r.getFruit().setAssigned(false);
-                Fruit f = closetFruitToRobot(r);
-                if (f.isAssigned()) {//if other robot already goes to that fruit chooses another random fruit
-                    int x = (int) Math.random() * arena.getFruitsCount();
-                    // while (f.getId() != x) x = (int) Math.random() * arena.getFruitsCount();
-                    f = arena.getFruits().get(x);
+                arena.updateFruits(game.getFruits());
+                List<Fruit> ff = closetFruitToRobot(r);
+                Fruit f = ff.remove(0);
+                while (f.isAssigned()) {//if other robot already goes to that fruit chooses another next fruit
+                    f = ff.remove(0);
                 }
                 f.setAssigned(true);
                 r.setFruit(f);
                 List<node_data> nodesPath = ga.shortestPath(r.getSrc(), f.getEdge().getSrc());
-                //System.out.println("closest fruit is in" + f.getEdge().getSrc() + " " + f.getEdge().getDest());
                 for (node_data n : nodesPath) {
                     r.getTargetNodes().add(n.getKey());
                 }
+                System.out.println(r.getTargetNodes());
+                System.out.println("dest f " + f.getEdge().getDest());
                 r.getTargetNodes().add(f.getEdge().getDest());
-                if (r.getTargetNodes().peek() == r.getSrc())
-                    r.getTargetNodes().remove();
-                //System.out.println("course is " + r.getTargetNodes().toString());
-            } else {
-                if (r.getDest() == -1) {
-                    r.setDest(r.getTargetNodes().remove());
-                    System.out.println("moved robot " + r.getId() + " to node " + r.getDest());
-                    game.chooseNextEdge(r.getId(), r.getDest());
-                }
+                System.out.println("after dest " + r.getTargetNodes());
+                // if (r.getTargetNodes().peek() == r.getSrc())
+                // r.getTargetNodes().remove();
+                r.setDest(-1);
+                System.out.println("course is " + r.getTargetNodes().toString());
             }
+            if (r.getDest() == -1) {
+                //System.out.println(r.getTargetNodes());
+                    r.setDest(r.getTargetNodes().remove());
+                // System.out.println("moved robot " + r.getId() + " to node " + r.getDest());
+                    game.chooseNextEdge(r.getId(), r.getDest());
+            }
+            arena.updateFruits(game.getFruits());
             arena.updateRobots(game.move());
-            arena.addFruits(game.getFruits());
+            //System.out.println(arena.getFruits().get(0).getEdge().getSrc() + " " +arena.getFruits().get(0).getEdge().getDest() );
         }
     }
 
@@ -227,6 +251,18 @@ public class Game_Algo {
         ArrayList<node_data> ln = (ArrayList<node_data>)graph1.getV();
         for (node_data n:ln) {
             System.out.println(n.getKey()+"   ("+n.getLocation().x()+","+n.getLocation().y());
+        }
+    }
+
+    @Override
+    public void run() {
+        while (true) {
+            basicG(game);
+            try {
+                Thread.sleep(50);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

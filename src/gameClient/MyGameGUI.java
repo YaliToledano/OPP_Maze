@@ -118,25 +118,28 @@ public class MyGameGUI implements Runnable {
         game.startGame();
         System.out.println("game started ");
         arena.addRobots(game.getRobots());
+        game_algo.setGame(game);
+        Thread gameA = new Thread(game_algo);
+        gameA.start();
         while (game.isRunning()) {
             //StdDraw.text(,0,"time: " + game.timeToEnd());
-            System.out.println(game.timeToEnd());
+            //System.out.println(game.timeToEnd());
             //Range rx = Graph_GUI.getX(),ry=Graph_GUI.getY();
             //StdDraw.text(rx.get_max()-0.5,ry.get_max()-0.5,game.timeToEnd()+"");
             if (Mode.equals("Manual")) {
                 if (StdDraw.getLastLoc() != null || !close(p, StdDraw.getLastLoc()) || nodeFromLoc(StdDraw.getLastLoc(), arena.getGraph()) != -1) {
                     p = StdDraw.getLastLoc();
                     move(game, arena, nodeFromLoc(p, arena.getGraph()), game_algo);
-                    kml.update(arena); //update the kml with new information
+                    //kml.update(arena); //update the kml with new information
                 }
             } else {
-                game_algo.basicG(game);
-                kml.update(arena);  //update the kml with new information
+                //game_algo.basicG(game);
+                //kml.update(arena);  //update the kml with new information
             }
             reDraw(game, arena, gui);
 
             try {
-                Thread.sleep(100);
+                Thread.sleep(20);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -207,7 +210,8 @@ public class MyGameGUI implements Runnable {
     private static void move(game_service game, Arena arena, int t, Game_Algo game_algo) {
         int rToMove = game_algo.closestRobotsToNode(t).get(0).getId();
         arena.updateRobots(game.move());
-        arena.addFruits(game.getFruits());;
+        arena.updateFruits(game.getFruits());
+        ;
         if (arena.getRobots().get(rToMove).getDest() == -1) {
             arena.updateRobots(game.move());
             game.chooseNextEdge(rToMove, t);

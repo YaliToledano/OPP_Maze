@@ -8,9 +8,7 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.*;
 
 public class Robot implements _robot {
 
@@ -18,7 +16,7 @@ public class Robot implements _robot {
     private Point3D pos;
     private int src;
     private int dest;
-    private BlockingQueue<Integer> targetNodes;
+    private Queue<Integer> targetNodes;
     private double speed;
     private double value;
     private Fruit fruit;
@@ -41,7 +39,7 @@ public class Robot implements _robot {
             this.speed = j.getDouble("speed");
             String[] pos1 = j.getString("pos").split(",");
             pos = new Point3D(Double.parseDouble(pos1[0]), Double.parseDouble(pos1[1]));
-            targetNodes = new LinkedBlockingDeque<>();
+            targetNodes = new LinkedBlockingQueue<>();
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -52,7 +50,7 @@ public class Robot implements _robot {
             JSONObject jj = new JSONObject(json);
             JSONObject j = jj.getJSONObject("Robot");
             this.src = j.getInt("src");
-            this.dest = -1;
+            this.dest = j.getInt("dest");
             this.value = j.getDouble("value");
             this.speed = j.getDouble("speed");
             String[] pos1 = j.getString("pos").split(",");
@@ -118,7 +116,7 @@ public class Robot implements _robot {
         this.speed = speed;
     }
 
-    public void setTargetNodes(BlockingQueue<Integer> targetNodes) {
+    public void setTargetNodes(Queue<Integer> targetNodes) {
         this.targetNodes = targetNodes;
     }
 
@@ -131,7 +129,7 @@ public class Robot implements _robot {
     }
 
 
-    public BlockingQueue<Integer> getTargetNodes() {
+    public Queue<Integer> getTargetNodes() {
         return targetNodes;
     }
 
