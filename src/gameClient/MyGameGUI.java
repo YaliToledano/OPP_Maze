@@ -56,6 +56,7 @@ public class MyGameGUI implements Runnable {
         }
 
         //creating KML option
+        //this kml is updating while any game is running and you must end the program in order to guarantee it will saving
         KML_Logger kml = new KML_Logger(game,scenario_num);
 
         //fruits placement
@@ -120,11 +121,11 @@ public class MyGameGUI implements Runnable {
                 if (StdDraw.getLastLoc() != null || !close(p, StdDraw.getLastLoc()) || nodeFromLoc(StdDraw.getLastLoc(), arena.getGraph()) != -1) {
                     p = StdDraw.getLastLoc();
                     move(game, arena, nodeFromLoc(p, arena.getGraph()), game_algo);
-                    kml.update(arena);
+                    kml.update(arena); //update the kml with new information
                 }
             } else {
                 game_algo.basicG(game);
-                kml.update(arena);
+                kml.update(arena);  //update the kml with new information
             }
             reDraw(game, arena, gui);
 
