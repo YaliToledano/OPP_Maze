@@ -35,6 +35,8 @@ public class MyGameGUI implements Runnable {
     private static void play(int scenario_num, String Mode) throws IOException {
         //init game service and graph
         Arena arena = new Arena();
+        int id = 0;
+        Game_Server.login(id);
         game_service game = Game_Server.getServer(scenario_num);
         String graph = game.getGraph();
         DGraph graph1 = new DGraph();
@@ -133,7 +135,8 @@ public class MyGameGUI implements Runnable {
             }
         }
         System.out.println(game.toString());
-        kml.saveKML();
+        //kml.saveKML();
+        game.sendKML(kml.toString());
     }
 
     //draws all required components
