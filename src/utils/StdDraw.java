@@ -711,6 +711,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		JMenuBar menuBar = new JMenuBar();
 		JMenu menu = new JMenu("File");
 		menuBar.add(menu);
+		/*
 		JMenuItem menuItem1 = new JMenuItem(" Save...   ");
 		menuItem1.addActionListener(std);
 		//menuItem1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
@@ -719,12 +720,13 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		menuItem2.addActionListener(std);
 		//menuItem2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
 		menu.add(menuItem2);
+		*/
 		JMenuItem clear = new JMenuItem("Clear ");
 		clear.addActionListener(std);
 		menu.add(clear);
 
 		//add stages selection
-		JMenu stages = new JMenu("stages");
+		JMenu stages = new JMenu("Stages");
 		JMenuItem s;
 		for (int i = 0; i < 24; i++) {
 			s = new JMenuItem("A" + (i));
@@ -743,6 +745,8 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		Mode.add(A);
 		menuBar.add(Mode);
 
+		//DB select
+		JMenu DB = new JMenu("Results");
 		return menuBar;
 	}
 
@@ -1676,6 +1680,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	public void actionPerformed(ActionEvent e) {
 		//System.out.println("event click is " + e.getActionCommand());
 		String event = e.getActionCommand();
+		/*
         if (event.equals("Save")) {
 			FileDialog chooser = new FileDialog(StdDraw.frame, "Use a .png or .jpg extension", FileDialog.SAVE);
 			chooser.setVisible(true);
@@ -1683,15 +1688,17 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 			try {
 				Graph_GUI.save(filename);
 			}catch (Exception ex){ex.printStackTrace();}
-        } else if (event.contains("A") && event.matches(".*\\d.*")) {
-            //Mode = "";
+        } else
+		 */
+		if (event.contains("A") && event.matches(".*\\d.*")) {
 			map = event;
 		} else if (event.contains("Manual")) {
 			Mode = "Manual";
 		} else if (event.contains("Automatic")) {
 			Mode = "Automatic";
-		}
+		} else if (event.equals("")) {
 
+		}
 	}
 
 	/**

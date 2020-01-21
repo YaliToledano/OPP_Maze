@@ -35,9 +35,15 @@ public class MyGameGUI implements Runnable {
     private static void play(int scenario_num, String Mode) throws IOException {
         //init game service and graph
         Arena arena = new Arena();
-        int id = 0;
+        int id = 322663816;
+        game_service game = null;
         Game_Server.login(id);
-        game_service game = Game_Server.getServer(scenario_num);
+        try {
+            game = Game_Server.getServer(scenario_num);
+        } catch (Exception e) {
+            System.out.println("past the previous level first");
+            return;
+        }
         String graph = game.getGraph();
         DGraph graph1 = new DGraph();
         graph1.init(graph);
