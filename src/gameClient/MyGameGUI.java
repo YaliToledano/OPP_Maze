@@ -37,7 +37,7 @@ public class MyGameGUI implements Runnable {
         Arena arena = new Arena();
         int id = 322663816;
         game_service game = null;
-        Game_Server.login(id);
+        //Game_Server.login(id);
         game = Game_Server.getServer(scenario_num);
         String graph = game.getGraph();
         DGraph graph1 = new DGraph();
@@ -58,7 +58,7 @@ public class MyGameGUI implements Runnable {
 
         //creating KML option
         //this kml is updating while any game is running and you must end the program in order to guarantee it will saving
-        KML_Logger kml = new KML_Logger(game,scenario_num);
+        KML_Logger kml = new KML_Logger(game, scenario_num);
 
         //fruits placement
         arena.addFruits(game.getFruits());
@@ -74,6 +74,7 @@ public class MyGameGUI implements Runnable {
         }
 
         Game_Algo game_algo = new Game_Algo(arena);
+        game_algo.setGame(game);
         game_algo.setScenario_num(scenario_num);
         //robots init and placement
         Point3D p = StdDraw.getLastLoc();
@@ -221,8 +222,7 @@ public class MyGameGUI implements Runnable {
     @Override
     public void run() {
         int[] a = {0, 1, 3, 5, 9, 11, 13, 16, 19, 20, 23};
-        int i = 0;
-        while (i < a.length) {
+        for (int k = 0; k < a.length; k++) play(a[k], "Automatic");
 
             /*
             while (StdDraw.getMode().equals("") || StdDraw.getMap().equals("")) {
@@ -233,20 +233,21 @@ public class MyGameGUI implements Runnable {
                 }
             }
              */
-            //System.out.println(Integer.parseInt(StdDraw.getMap().substring(1)) + StdDraw.getMode());
-            try {
-                //System.out.println("$$$$$$ stage: " + i + " $$$$$$");
-                for (int k = 0; k < a.length; k++) play(a[k], "Automatic");
-                //play(Integer.parseInt(StdDraw.getMap()), "Automatic");
-                //System.out.println("$$$$$$ stage: " + i + " $$$$$$");
+        //System.out.println(Integer.parseInt(StdDraw.getMap().substring(1)) + StdDraw.getMode());
+        try {
+            //System.out.println("$$$$$$ stage: " + i + " $$$$$$");
 
-                //i = i + 1;
-            } catch (Exception e) {
-                //e.printStackTrace();
-            }
-            StdDraw.setMap("");
-            StdDraw.setMode("");
+            //play(Integer.parseInt(StdDraw.getMap()), "Automatic");
+            //System.out.println("$$$$$$ stage: " + i + " $$$$$$");
+
+            //i = i + 1;
+        } catch (Exception e) {
+            //e.printStackTrace();
         }
-        int t = 4;
+        StdDraw.setMap("");
+        StdDraw.setMode("");
     }
+
+    int t = 4;
 }
+
