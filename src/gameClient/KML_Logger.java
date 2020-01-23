@@ -22,7 +22,7 @@ import utils.Point3D;
 import utils.StdDraw;
 
 
-class KML_Logger implements Runnable {
+public class KML_Logger implements Runnable {
     private int scenario_num;
     private game_service game;
     private Arena arena;
