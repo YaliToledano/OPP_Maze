@@ -236,10 +236,11 @@ public class MyGameGUI implements Runnable {
             //System.out.println(Integer.parseInt(StdDraw.getMap().substring(1)) + StdDraw.getMode());
             try {
                 //System.out.println("$$$$$$ stage: " + i + " $$$$$$");
-                play(Integer.parseInt(StdDraw.getMap()), "Automatic");
+                for (int k = 0; k < a.length; k++) play(a[k], "Automatic");
+                //play(Integer.parseInt(StdDraw.getMap()), "Automatic");
                 //System.out.println("$$$$$$ stage: " + i + " $$$$$$");
-                //play(a[i],"Automatic");
-                i = i + 1;
+
+                //i = i + 1;
             } catch (Exception e) {
                 //e.printStackTrace();
             }
