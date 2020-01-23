@@ -74,7 +74,7 @@ public class Arena implements _arena {
         this.unassigned = unassigned;
     }
 
-    //the
+    //parameter for deciding if a fruit is on an edge
     private double dist(edge_data e, Point3D pos) {
         Point3D p1 = this.graph.getNode(e.getSrc()).getLocation();
         Point3D p2 = this.graph.getNode(e.getDest()).getLocation();
@@ -225,6 +225,12 @@ public class Arena implements _arena {
         }
     }
 
+    /**
+     * search an returns a robot by it's id
+     *
+     * @param id
+     * @return
+     */
     public Robot searchRobot(int id) { //search robot in the list by id
         for (Robot r : robots) {
             if (r.getId() == id)

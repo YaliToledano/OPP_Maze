@@ -90,6 +90,11 @@ public class Robot implements _robot {
         return dest;
     }
 
+    /**
+     * the path the robot will take in a from of a queue
+     *
+     * @return
+     */
     public Queue<Integer> getTargetNodes() {
         return targetNodes;
     }
@@ -143,7 +148,7 @@ public class Robot implements _robot {
 
     public void setFruit(Fruit f) {
         this.fruit = f;
-    }
+    }//fruit the robot is going to
 
 
 }

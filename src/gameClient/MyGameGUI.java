@@ -128,7 +128,7 @@ public class MyGameGUI implements Runnable {
                 if (StdDraw.getLastLoc() != null || !close(p, StdDraw.getLastLoc()) || nodeFromLoc(StdDraw.getLastLoc(), arena.getGraph()) != -1) {
                     p = StdDraw.getLastLoc();
                     move(game, arena, nodeFromLoc(p, arena.getGraph()), game_algo);
-                    kml.update(arena); //update the kml with new information
+                    //kml.update(arena); //update the kml with new information
                 }
             } else {
                 //game_algo.basicG(game);
@@ -172,7 +172,6 @@ public class MyGameGUI implements Runnable {
         }
         return -1;
     }
-
     private static void drawFruits(Arena a) {
         List<Fruit> fruits = a.getFruits();
         for (int i = 0; i < fruits.size(); i++) {
@@ -208,7 +207,7 @@ public class MyGameGUI implements Runnable {
         int rToMove = game_algo.closestRobotsToNode(t).get(0).getId();
         arena.updateRobots(game.move());
         arena.updateFruits(game.getFruits());
-        ;
+
         if (arena.getRobots().get(rToMove).getDest() == -1) {
             arena.updateRobots(game.move());
             game.chooseNextEdge(rToMove, t);
@@ -218,13 +217,14 @@ public class MyGameGUI implements Runnable {
         System.out.println("moved robot: " + rToMove + " to node " + t);
     }
 
+    /**
+     * uncomment while loop and play (try catch )if you want to choose yourself stages and modes
+     */
     @Override
     public void run() {
         int[] a = {0, 1, 3, 5, 9, 11, 13, 16, 19, 20, 23};
         int i = 0;
-        while (i < a.length) {
-
-            /*
+        /*
             while (StdDraw.getMode().equals("") || StdDraw.getMap().equals("")) {
                 try {
                     Thread.sleep(500);
@@ -233,20 +233,16 @@ public class MyGameGUI implements Runnable {
                 }
             }
              */
-            //System.out.println(Integer.parseInt(StdDraw.getMap().substring(1)) + StdDraw.getMode());
-            try {
-                //System.out.println("$$$$$$ stage: " + i + " $$$$$$");
-                for (int k = 0; k < a.length; k++) play(a[k], "Automatic");
-                //play(Integer.parseInt(StdDraw.getMap()), "Automatic");
-                //System.out.println("$$$$$$ stage: " + i + " $$$$$$");
-
-                //i = i + 1;
-            } catch (Exception e) {
-                //e.printStackTrace();
-            }
-            StdDraw.setMap("");
-            StdDraw.setMode("");
+        for (int k = 0; k < a.length; k++) play(a[k], "Automatic");
+        //System.out.println(Integer.parseInt(StdDraw.getMap().substring(1)) + StdDraw.getMode());
+        try {
+            //play(Integer.parseInt(StdDraw.getMap()), "Automatic");
+            //i = i + 1;
+        } catch (Exception e) {
+            //e.printStackTrace();
         }
+        StdDraw.setMap("");
+        StdDraw.setMode("");
         int t = 4;
     }
 }

@@ -15,7 +15,8 @@ import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
- * class for all algorithms used in the automatic solution of the stages
+ * class for all algorithms used in the automatic solution of the stages placing robots deciding which way a robot
+ * will go etc.
  */
 
 public class Game_Algo implements Runnable {
@@ -46,6 +47,10 @@ public class Game_Algo implements Runnable {
         this.arena = arena;
     }
 
+    /**
+     * @param r - robot
+     * @return list of fruit ordered by ratio of distance to fruit divided by fruit value
+     */
     public List<Fruit> priorityFruitToRobot(Robot r) {
         List<Fruit> fruitsorder = new ArrayList<Fruit>();
         List<Fruit> fruits = arena.getFruits(); //original fruits list
@@ -111,7 +116,11 @@ public class Game_Algo implements Runnable {
         return fruitsorder;
     }
 
-    //finds fruit with shortest dist to  given robot
+    /**
+     *
+     * @param r
+     * @return returns fruits list ordered by distance from robot r
+     */
     public List<Fruit> closetFruitToRobot(Robot r) {
         List<Fruit> fruitsorder = new ArrayList<Fruit>();
         List<Fruit> fruits = arena.getFruits(); //original fruits list
@@ -147,6 +156,11 @@ public class Game_Algo implements Runnable {
         return fruitsorder;
     }
 
+    /**
+     * finds and orders by distance from fruit all robots
+     * @param fruit
+     * @return
+     */
     public List<Robot> closestRobotsToFruit(Fruit fruit) {
         List<Robot> robotorder = new ArrayList<Robot>();
         List<Robot> robots = arena.getRobots(); //original robots list
@@ -210,6 +224,11 @@ public class Game_Algo implements Runnable {
         return ls;
     }
 
+    /**
+     * place a robot on each fruit src node
+     * @param numOfRobots available to place
+     * @return list of nodes id to place robots on
+     */
     public List<Integer> placeRobotsF(int numOfRobots) //place robots at the beginning
     {
         List<Integer> ls = new ArrayList<>();
@@ -255,7 +274,10 @@ public class Game_Algo implements Runnable {
         }
     }
 
-    //greedy algorithm - fruit first approach
+    /**
+     * old version sends each robot to it's closest fruit
+     * @param game
+     */
     public void greedyMove(game_service game) {
         for (Fruit f : arena.getFruits()) {
             //if (f.isAssigned()==true) continue;
@@ -354,6 +376,13 @@ public class Game_Algo implements Runnable {
         }
     }
 
+    /**
+     * better version of basicG that reduces calls to the server by calling game.move()
+     * at really wide interval (when robot traveling on edge)
+     * also a greedy approach sends to the closest fruit to each robot it won't send robot to the same fruit
+     * even if both are close one of them will be sent to the next closet fruit
+     * @param game
+     */
     public void secG(game_service game) {
         for (Robot r : arena.getRobots()) {
             if (r.getDest() == -1) {
