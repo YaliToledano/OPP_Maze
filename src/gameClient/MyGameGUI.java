@@ -32,18 +32,13 @@ public class MyGameGUI implements Runnable {
     }
 
 
-    private static void play(int scenario_num, String Mode) throws IOException {
+    private static void play(int scenario_num, String Mode) {
         //init game service and graph
         Arena arena = new Arena();
         int id = 322663816;
         game_service game = null;
         Game_Server.login(id);
-        try {
-            game = Game_Server.getServer(scenario_num);
-        } catch (Exception e) {
-            System.out.println("past the previous level first");
-            return;
-        }
+        game = Game_Server.getServer(scenario_num);
         String graph = game.getGraph();
         DGraph graph1 = new DGraph();
         graph1.init(graph);
@@ -102,10 +97,10 @@ public class MyGameGUI implements Runnable {
                 //System.out.println(numRobots);
                 List<Integer> ls = game_algo.placeRobots(numRobots);
                 for (int j = 0; j < ls.size(); j++) {
-                    game.addRobot(ls.get(i));
+                    game.addRobot(ls.get(j));
                     StdDraw.setPenRadius(0.05);
                     StdDraw.setPenColor(Color.red);
-                    p = arena.getGraph().getNode(ls.get(i)).getLocation();
+                    p = arena.getGraph().getNode(ls.get(j)).getLocation();
                     StdDraw.point(p.x(), p.y());
                 }
             }
@@ -120,7 +115,8 @@ public class MyGameGUI implements Runnable {
         arena.addRobots(game.getRobots());
         game_algo.setGame(game);
         Thread gameA = new Thread(game_algo);
-        gameA.start();
+        if (Mode.equals("Automatic"))
+            gameA.start();
         while (game.isRunning()) {
             //StdDraw.text(,0,"time: " + game.timeToEnd());
             //System.out.println(game.timeToEnd());
@@ -137,16 +133,15 @@ public class MyGameGUI implements Runnable {
                 //kml.update(arena);  //update the kml with new information
             }
             reDraw(game, arena, gui);
-
             try {
-                Thread.sleep(20);
+                Thread.sleep(5);
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
         System.out.println(game.toString());
         //kml.saveKML();
-        game.sendKML(kml.toString());
+        //game.sendKML(kml.toString());
     }
 
     //draws all required components
@@ -223,7 +218,11 @@ public class MyGameGUI implements Runnable {
 
     @Override
     public void run() {
-        while (true) {
+        int[] a = {0, 1, 3, 5, 9, 11, 13, 16, 19, 20};
+        int i = a.length - 1;
+        while (i < a.length) {
+
+            /*
             while (StdDraw.getMode().equals("") || StdDraw.getMap().equals("")) {
                 try {
                     Thread.sleep(500);
@@ -231,14 +230,18 @@ public class MyGameGUI implements Runnable {
                     e.printStackTrace();
                 }
             }
+             */
             //System.out.println(Integer.parseInt(StdDraw.getMap().substring(1)) + StdDraw.getMode());
             try {
-                play(Integer.parseInt(StdDraw.getMap().substring(1)), StdDraw.getMode());
-            } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("$$$$$$ stage: " + i + " $$$$$$");
+                //play(a[i],"Automatic");
+                i = i + 1;
+            } catch (Exception e) {
+                //e.printStackTrace();
             }
             StdDraw.setMap("");
             StdDraw.setMode("");
         }
+        int t = 4;
     }
 }

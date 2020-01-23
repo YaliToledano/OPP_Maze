@@ -48,6 +48,8 @@ public class resultFetcher {
 
     //gets best stats for each level returns string
     private static String getBestScores() {
+        int[] maxMoves = {290, 580, 580, 500, 580, 580, 580, 580, 290, 580, 290, 1140};
+        int[] stagesId = {0, 1, 3, 5, 9, 11, 13, 16, 19, 20, 23};
         String query = "SELECT * FROM Logs WHERE UserID=" + id + ";";
         StringBuilder sb = new StringBuilder();
         try {
@@ -59,19 +61,23 @@ public class resultFetcher {
             int max = Integer.MIN_VALUE;
             String rowData = "";
             while (resultSet.next()) {
-                if (resultSet.getInt("levelID") != levelId) {
-                    sb.append("\n" + rowData);
-                    levelId++;
-                    max = Integer.MIN_VALUE;
-                }
-
-                if (resultSet.getInt("levelID") == levelId) {
-                    if (max < resultSet.getInt("score")) {
+                System.out.println(stagesId[levelId]);
+                //if(levelId >= maxMoves.length || levelId >=stagesId.length)break;
+                if (resultSet.getInt("levelID") == stagesId[levelId]) {
+                    if (max < resultSet.getInt("score") && resultSet.getInt("moves") <= maxMoves[levelId]) {
                         max = resultSet.getInt("score");
-                        rowData = "levelID= " + resultSet.getInt("levelID") + ", moves= " + resultSet.getInt("moves") + ", Score " + resultSet.getDouble("score");
+                        rowData = "levelID= " + resultSet.getInt("levelID") + ", moves= "
+                                + resultSet.getInt("moves") + ", Score " + resultSet.getDouble("score");
                     }
                 }
-                sb.append("\n" + rowData);
+                if (resultSet.getInt("levelID") != stagesId[levelId]) {
+                    System.out.println(rowData);
+                    sb.append("\n" + rowData);
+                    rowData = "";
+                    levelId++;
+                    max = -100;
+                }
+
             }
             resultSet.close();
             statement.close();

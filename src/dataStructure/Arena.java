@@ -74,12 +74,19 @@ public class Arena implements _arena {
         this.unassigned = unassigned;
     }
 
+    //the
+    private double dist(edge_data e, Point3D pos) {
+        Point3D p1 = this.graph.getNode(e.getSrc()).getLocation();
+        Point3D p2 = this.graph.getNode(e.getDest()).getLocation();
+        return Math.abs((p1.distance2D(pos) + p2.distance2D(pos)) - p1.distance2D(p2));
+    }
+
     public void setFruitEdge(Fruit f) {
         Point3D pos = f.getLocation();
         ArrayList<edge_data> edges = (ArrayList<edge_data>) ((DGraph) graph).getAllE();
+        /*
         ArrayList<edge_data> match = new ArrayList<edge_data>();
         for (edge_data e : edges) {
-            //System.out.println(e.getSrc() + " " + e.getDest());
             if (isOnEdge((Edge) e, pos))
                 match.add(e);
         }
@@ -87,25 +94,38 @@ public class Arena implements _arena {
         edge_data selected_edge = null;
 
         if (f.getType() == 1) {
-            double max = Double.NEGATIVE_INFINITY;
-            for (int e = 0; e < 1; e++) {
-                if (max < match.get(e).getWeight()) {
-                    max = match.get(e).getWeight();
-                    selected_edge = match.get(e);
+            double min = Double.POSITIVE_INFINITY;
+            for (edge_data e : match) {
+                if (min >e.getWeight()) {
+                    min =e.getWeight();
+                    selected_edge = e;
                 }
             }
+
         } else {
-            //System.out.println("banana");
-            double min = Double.POSITIVE_INFINITY;
-            for (int e = 0; e < 1; e++) {
-                if (min > match.get(e).getWeight()) {
-                    min = match.get(e).getWeight();
-                    selected_edge = match.get(e);
+            double max = Double.NEGATIVE_INFINITY;
+            for (edge_data e : match) {
+                if (max < e.getWeight()) {
+                    max = e.getWeight();
+                    selected_edge = e;
                 }
             }
         }
         // System.out.println("Edge is "+selected_edge.getSrc() +" "+selected_edge.getDest());
         f.setEdge((Edge) selected_edge);
+
+         */
+        double minDist = Double.POSITIVE_INFINITY;
+        edge_data Edge = null;
+        for (edge_data e : edges) {
+            if (minDist >= dist(e, pos)) {
+                if ((f.getType() == -1 && e.getSrc() > e.getDest()) || (f.getType() == 1 && e.getSrc() < e.getDest())) {
+                    minDist = dist(e, pos);
+                    Edge = e;
+                }
+            }
+        }
+        f.setEdge((Edge) Edge);
     }
 
     /**
@@ -190,7 +210,6 @@ public class Arena implements _arena {
         try {
             int count = 0;
             for (String s : json) {
-                System.out.println("update");
                 Fruit f = fruits.get(count);
                 JSONObject jj = new JSONObject(s);
                 JSONObject j = jj.getJSONObject("Fruit");
@@ -200,7 +219,6 @@ public class Arena implements _arena {
                 f.setPos(new Point3D(Double.parseDouble(pos1[0]), Double.parseDouble(pos1[1])));
                 setFruitEdge(f);
                 count++;
-                //System.out.println(f.isAssigned());
             }
         } catch (JSONException e) {
             e.printStackTrace();

@@ -62,9 +62,10 @@ public class Fruit implements _fruit {
 
     //setters
     public void setPos(Point3D pos) {
-        if (!this.pos.equals(pos))
+        if (this.pos.x() != pos.x() || this.pos.y() != pos.y()) {
             setAssigned(false);
-        this.pos = new Point3D(pos);
+            this.pos = new Point3D(pos);
+        }
     }
 
     public void setEdge(Edge edge) {
@@ -85,5 +86,9 @@ public class Fruit implements _fruit {
 
     public void setValue(double val) {
         this.value = val;
+    }
+
+    public String toString() {
+        return "id " + id + " value " + value + " pos " + pos + " type " + type + " Edge " + edge.getSrc() + "->" + edge.getDest() + " assigned " + assigned;
     }
 }

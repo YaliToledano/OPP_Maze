@@ -20,6 +20,7 @@ public class Robot implements _robot {
     private double speed;
     private double value;
     private Fruit fruit;
+    private Edge edge;
 
     public Robot() {
     }
@@ -61,6 +62,7 @@ public class Robot implements _robot {
         }
     }
 
+    //getters
     @Override
     public Point3D getCurrentLocation() {
         return pos;
@@ -88,14 +90,16 @@ public class Robot implements _robot {
         return dest;
     }
 
-
-    public void setSrc(int src) {
-        this.src = src;
+    public Queue<Integer> getTargetNodes() {
+        return targetNodes;
     }
 
+    public Fruit getFruit() {
+        return fruit;
+    }
 
-    public void setDest(int dest) {
-        this.dest = dest;
+    public Edge getEdge() {
+        return edge;
     }
 
     @Override
@@ -103,6 +107,19 @@ public class Robot implements _robot {
         return speed;
     }
 
+    //setters
+
+    public void setEdge(Edge edge) {
+        this.edge = edge;
+    }
+
+    public void setSrc(int src) {
+        this.src = src;
+    }
+
+    public void setDest(int dest) {
+        this.dest = dest;
+    }
 
     public void setId(int id) {
         this.id = id;
@@ -129,15 +146,4 @@ public class Robot implements _robot {
     }
 
 
-    public Queue<Integer> getTargetNodes() {
-        return targetNodes;
-    }
-
-    public int getDesttNode() {
-        return dest;
-    }
-
-    public Fruit getFruit() {
-        return fruit;
-    }
 }
