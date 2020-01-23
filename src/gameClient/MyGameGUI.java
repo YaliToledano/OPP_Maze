@@ -132,7 +132,7 @@ public class MyGameGUI implements Runnable {
                 }
             } else {
                 //game_algo.basicG(game);
-                kml.update(arena);  //update the kml with new information
+
             }
             reDraw(game, arena, gui);
             try {

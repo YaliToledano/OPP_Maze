@@ -8,6 +8,7 @@ import gameClient.MyGameGUI;
 import utils.Point3D;
 
 import javax.management.Query;
+import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
@@ -25,6 +26,7 @@ public class Game_Algo implements Runnable {
     private long lasttime;
     int counter = 0;
     int scenario_num;
+    KML_Logger kml;
 
     public void setGame(game_service game) {
         this.game = game;
@@ -32,6 +34,7 @@ public class Game_Algo implements Runnable {
 
     public void setScenario_num(int scenario_num) {
         this.scenario_num = scenario_num;
+        kml = new KML_Logger(game,scenario_num);
     }
 
     public Game_Algo(Arena arena) {
@@ -458,6 +461,7 @@ public class Game_Algo implements Runnable {
                 if (scenario_num == 0) {
                     secG(game);
                     Thread.sleep(6);
+
                 }
                 else if (scenario_num == 1) {
                     secG(game);
@@ -499,9 +503,15 @@ public class Game_Algo implements Runnable {
                     basicG(game);
                     Thread.sleep(6);
                 }
+                kml.update(arena);//update the kml with new information
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+        }
+        try {
+            kml.saveKML();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
