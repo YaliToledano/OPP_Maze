@@ -49,7 +49,7 @@ public class resultFetcher {
     //gets best stats for each level returns string
     private static String getBestScores() {
         int[] maxMoves = {290, 580, 580, 500, 580, 580, 580, 580, 290, 580, 290, 1140};
-        int[] stagesId = {0, 1, 3, 5, 9, 11, 13, 16, 19, 20, 23};
+        int[] stagesId = {0, 1, 3, 5, 9, 11, 13, 16, 19};
         String query = "SELECT * FROM Logs WHERE UserID=" + id + ";";
         StringBuilder sb = new StringBuilder();
         try {
@@ -61,18 +61,18 @@ public class resultFetcher {
             int max = Integer.MIN_VALUE;
             String rowData = "";
             while (resultSet.next()) {
-                System.out.println(stagesId[levelId]);
-                //if(levelId >= maxMoves.length || levelId >=stagesId.length)break;
+                if (levelId >= maxMoves.length || levelId >= stagesId.length) break;
                 if (resultSet.getInt("levelID") == stagesId[levelId]) {
                     if (max < resultSet.getInt("score") && resultSet.getInt("moves") <= maxMoves[levelId]) {
                         max = resultSet.getInt("score");
                         rowData = "levelID= " + resultSet.getInt("levelID") + ", moves= "
                                 + resultSet.getInt("moves") + ", Score " + resultSet.getDouble("score");
+                        //System.out.println(rowData);
                     }
                 }
                 if (resultSet.getInt("levelID") != stagesId[levelId]) {
-                    System.out.println(rowData);
-                    sb.append("\n" + rowData);
+                    //System.out.println(rowData);
+                    sb.append("\n" + rowData + " place: " + numAboveMe(max, stagesId[levelId]));
                     rowData = "";
                     levelId++;
                     max = -100;
@@ -93,6 +93,39 @@ public class resultFetcher {
         return sb.toString();
     }
 
+    private static int numAboveMe(int score, int clevelId) {
+        String query = "SELECT * FROM Logs WHERE score > " + score + " AND levelID = " + clevelId + " ORDER by UserID;";
+        //query = "SELECT * FROM Logs WHERE (UserID,moves,score) in (SELECT UserID, MAX(score), MIN(moves) FROM Logs WHERE levelID = "+ clevelId +" AND score > "+ score + " GROUP BY UserID);";
+        int[] maxMoves = {290, 580, 580, 500, 580, 580, 580, 580, 290, 580, 290, 1140};
+        int[] stagesId = {0, 1, 3, 5, 9, 11, 13, 16, 19, 20, 23};
+        int count = 1;
+        int nid = -1;
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection connection = DriverManager.getConnection(jdbcUrl, jdbcUser, jdbcUserPassword);
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            while (resultSet.next()) {
+                if (clevelId >= maxMoves.length) break;
+                if ((resultSet.getInt("moves") <= maxMoves[clevelId]) && nid != resultSet.getInt("UserID")) {
+                    System.out.println("id " + resultSet.getInt("UserID") + ", moves= "
+                            + resultSet.getInt("moves") + " level" + clevelId);
+                    count++;
+                    nid = resultSet.getInt("UserID");
+                }
+            }
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch (SQLException sqle) {
+            System.out.println("SQLException: " + sqle.getMessage());
+            System.out.println("Vendor Error: " + sqle.getErrorCode());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        System.out.println(count);
+        return count;
+    }
 
     public static void main(String[] args) {
         System.out.print(resultFetcher.fetch(322663816));

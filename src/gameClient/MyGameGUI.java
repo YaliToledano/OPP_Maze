@@ -219,7 +219,7 @@ public class MyGameGUI implements Runnable {
     @Override
     public void run() {
         int[] a = {0, 1, 3, 5, 9, 11, 13, 16, 19, 20};
-        int i = a.length - 1;
+        int i = 7;
         while (i < a.length) {
 
             /*
@@ -234,7 +234,7 @@ public class MyGameGUI implements Runnable {
             //System.out.println(Integer.parseInt(StdDraw.getMap().substring(1)) + StdDraw.getMode());
             try {
                 System.out.println("$$$$$$ stage: " + i + " $$$$$$");
-                //play(a[i],"Automatic");
+                play(a[i], "Automatic");
                 i = i + 1;
             } catch (Exception e) {
                 //e.printStackTrace();
