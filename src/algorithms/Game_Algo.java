@@ -3,6 +3,8 @@ package algorithms;
 import Server.Game_Server;
 import Server.game_service;
 import dataStructure.*;
+import gameClient.KML_Logger;
+import gameClient.Logger_KML;
 import gameClient.MyGameGUI;
 import utils.Point3D;
 
@@ -24,9 +26,14 @@ public class Game_Algo implements Runnable {
     private int flag = 0;
     private long lasttime;
     int counter = 0;
+    int scenario_num;
 
     public void setGame(game_service game) {
         this.game = game;
+    }
+
+    public void setScenario_num(int scenario_num) {
+        this.scenario_num = scenario_num;
     }
 
     public Game_Algo(Arena arena) {
@@ -449,9 +456,51 @@ public class Game_Algo implements Runnable {
     @Override
     public void run() {
         while (game.isRunning()) {
-            thG(game);
             try {
-                Thread.sleep(6);
+                if (scenario_num == 0) {
+                    secG(game);
+                    Thread.sleep(6);
+                }
+                else if (scenario_num == 1) {
+                    secG(game);
+                    Thread.sleep(6);
+                }
+                else if (scenario_num == 3) {
+                    secG(game);
+                    Thread.sleep(6);
+                }
+                else if (scenario_num == 5) {
+                    secG(game);
+                    Thread.sleep(6);
+                }
+                else if (scenario_num == 11) {
+                    secG(game);
+                    Thread.sleep(6);
+                }
+                else if (scenario_num == 13) {
+                    secG(game);
+                    Thread.sleep(6);
+                }
+                else if (scenario_num == 16) {
+                    secG(game);
+                    Thread.sleep(6);
+                }
+                else if (scenario_num == 19) {
+                    secG(game);
+                    Thread.sleep(6);
+                }
+                else if (scenario_num == 20) {
+                    secG(game);
+                    Thread.sleep(5);
+                }
+                else if (scenario_num == 23) {
+                    secG(game);
+                    Thread.sleep(5);
+                }
+                else {
+                    basicG(game);
+                    Thread.sleep(6);
+                }
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
