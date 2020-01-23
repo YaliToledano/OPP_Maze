@@ -35,9 +35,10 @@ public class MyGameGUI implements Runnable {
     private static void play(int scenario_num, String Mode) {
         //init game service and graph
         Arena arena = new Arena();
-        int id = 322663816;
+        int id = 322219015;
         game_service game = null;
-        Game_Server.login(id);
+        //Game_Server.login(id);
+
         game = Game_Server.getServer(scenario_num);
         String graph = game.getGraph();
         DGraph graph1 = new DGraph();
@@ -113,6 +114,7 @@ public class MyGameGUI implements Runnable {
         game.startGame();
         System.out.println("game started ");
         arena.addRobots(game.getRobots());
+        game_algo.placeRobotsF(numRobots);
         game_algo.setGame(game);
         Thread gameA = new Thread(game_algo);
         if (Mode.equals("Automatic"))
@@ -218,8 +220,8 @@ public class MyGameGUI implements Runnable {
 
     @Override
     public void run() {
-        int[] a = {0, 1, 3, 5, 9, 11, 13, 16, 19, 20};
-        int i = a.length - 1;
+        int[] a = {0, 1, 3, 5, 9, 11, 13, 16, 19, 20, 23 ,-31};
+        int i = 0;
         while (i < a.length) {
 
             /*
@@ -234,7 +236,7 @@ public class MyGameGUI implements Runnable {
             //System.out.println(Integer.parseInt(StdDraw.getMap().substring(1)) + StdDraw.getMode());
             try {
                 System.out.println("$$$$$$ stage: " + i + " $$$$$$");
-                //play(a[i],"Automatic");
+                play(a[i],"Automatic");
                 i = i + 1;
             } catch (Exception e) {
                 //e.printStackTrace();
