@@ -398,7 +398,7 @@ public class Game_Algo implements Runnable {
                 Point3D psrc = arena.getGraph().getNode(r.getFruit().getEdge().getSrc()).getLocation();
                 Point3D pdest = arena.getGraph().getNode(r.getFruit().getEdge().getDest()).getLocation();
                 double prf = psrc.distance2D(r.getFruit().getLocation()) / psrc.distance2D(pdest);
-                if (Math.abs(pr - prf) <= 0.02 || pr >= 0.996) {
+                if (Math.abs(pr - prf) <= 0.015 || pr >= 0.996) {
                     arena.updateRobots(game.move());
                 } else {
                     //arena.updateRobots(game.move());

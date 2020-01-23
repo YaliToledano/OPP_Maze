@@ -729,8 +729,9 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		//add stages selection
 		JMenu stages = new JMenu("Stages");
 		JMenuItem s;
-		for (int i = 0; i < 24; i++) {
-			s = new JMenuItem("A" + (i));
+		int[] stagesId = {0, 1, 3, 5, 9, 11, 13, 16, 19, 20, 23};
+		for (int i = 0; i < stagesId.length; i++) {
+			s = new JMenuItem(stagesId[i] + "");
 			s.addActionListener(std);
 			stages.add(s);
 		}
@@ -1696,7 +1697,8 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 			}catch (Exception ex){ex.printStackTrace();}
         } else
 		 */
-		if (event.contains("A") && event.matches(".*\\d.*")) {
+		if (event.matches(".*\\d.*")) {
+			int[] stagesId = {0, 1, 3, 5, 9, 11, 13, 16, 19, 20, 23};
 			map = event;
 		} else if (event.contains("Manual")) {
 			Mode = "Manual";

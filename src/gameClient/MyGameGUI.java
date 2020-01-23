@@ -219,10 +219,8 @@ public class MyGameGUI implements Runnable {
     @Override
     public void run() {
         int[] a = {0, 1, 3, 5, 9, 11, 13, 16, 19, 20};
-        int i = 7;
-        while (i < a.length) {
-
-            /*
+        int i = 8;
+        while (true) {
             while (StdDraw.getMode().equals("") || StdDraw.getMap().equals("")) {
                 try {
                     Thread.sleep(500);
@@ -230,11 +228,11 @@ public class MyGameGUI implements Runnable {
                     e.printStackTrace();
                 }
             }
-             */
+
             //System.out.println(Integer.parseInt(StdDraw.getMap().substring(1)) + StdDraw.getMode());
             try {
-                System.out.println("$$$$$$ stage: " + i + " $$$$$$");
-                play(a[i], "Automatic");
+                //System.out.println("$$$$$$ stage: " + i + " $$$$$$");
+                play(Integer.parseInt(StdDraw.getMap()), "Automatic");
                 i = i + 1;
             } catch (Exception e) {
                 //e.printStackTrace();
@@ -242,6 +240,5 @@ public class MyGameGUI implements Runnable {
             StdDraw.setMap("");
             StdDraw.setMode("");
         }
-        int t = 4;
     }
 }
