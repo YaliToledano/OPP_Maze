@@ -201,13 +201,13 @@ public class KML_Logger implements Runnable {
         arena.addRobots(this.game.getRobots());
         while (this.game.isRunning()) {
 
-            game_algo.basicG(this.game);//the automatic play and update
+            game_algo.secG(this.game);//the automatic play and update
             robotsKML+=robotsKML();
             fruitsKML+=fruitsKML();
 
 
             try {
-                Thread.sleep(100);
+                Thread.sleep(8);
             } catch (Exception e) {
                 e.printStackTrace();
             }

@@ -489,36 +489,36 @@ public class Game_Algo implements Runnable {
             try {
                 if (scenario_num == 0) {
                     secG(game);
-                    Thread.sleep(6);
+                    Thread.sleep(9);
 
                 }
                 else if (scenario_num == 1) {
                     secG(game);
-                    Thread.sleep(6);
+                    Thread.sleep(9);
                 }
                 else if (scenario_num == 3) {
                     secG(game);
-                    Thread.sleep(6);
+                    Thread.sleep(9);
                 }
                 else if (scenario_num == 5) {
                     secG(game);
-                    Thread.sleep(6);
+                    Thread.sleep(9);
                 }
                 else if (scenario_num == 11) {
                     secG(game);
-                    Thread.sleep(6);
+                    Thread.sleep(9);
                 }
                 else if (scenario_num == 13) {
                     secG(game);
-                    Thread.sleep(6);
+                    Thread.sleep(9);
                 }
                 else if (scenario_num == 16) {
                     secG(game);
-                    Thread.sleep(6);
+                    Thread.sleep(9);
                 }
                 else if (scenario_num == 19) {
                     secG(game);
-                    Thread.sleep(6);
+                    Thread.sleep(9);
                 }
                 else if (scenario_num == 20) {
                     secG(game);
