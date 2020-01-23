@@ -33,3 +33,9 @@ MyGameGUI
 ### algorhtims:
 Graph_Algo
 Game_Algo
+
+# Assigment 4 addtions
+## resultFetcher
+responsible for DB data fetching
+
+added better game algorthims for gameAlgo
