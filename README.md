@@ -33,3 +33,11 @@ MyGameGUI
 ### algorhtims:
 Graph_Algo
 Game_Algo
+
+# Assigment 4 addtions
+## resultFetcher
+responsible for DB data fetching
+
+added better game algorthims for gameAlgo
+
+NOTE ~! game might look laggy at times but it is intentional in order to minimize moves usage we update the server move call only when nesscery.

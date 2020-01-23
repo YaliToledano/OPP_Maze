@@ -113,6 +113,7 @@ public class MyGameGUI implements Runnable {
         game.startGame();
         System.out.println("game started ");
         arena.addRobots(game.getRobots());
+        game_algo.placeRobotsF(numRobots);
         game_algo.setGame(game);
         Thread gameA = new Thread(game_algo);
         if (Mode.equals("Automatic"))
@@ -228,11 +229,12 @@ public class MyGameGUI implements Runnable {
                     e.printStackTrace();
                 }
             }
-
             //System.out.println(Integer.parseInt(StdDraw.getMap().substring(1)) + StdDraw.getMode());
             try {
                 //System.out.println("$$$$$$ stage: " + i + " $$$$$$");
                 play(Integer.parseInt(StdDraw.getMap()), "Automatic");
+                System.out.println("$$$$$$ stage: " + i + " $$$$$$");
+                play(a[i],"Automatic");
                 i = i + 1;
             } catch (Exception e) {
                 //e.printStackTrace();

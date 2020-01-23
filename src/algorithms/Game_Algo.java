@@ -7,6 +7,7 @@ import gameClient.MyGameGUI;
 import utils.Point3D;
 
 
+import javax.management.Query;
 import java.util.*;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
@@ -22,6 +23,7 @@ public class Game_Algo implements Runnable {
     private game_service game;
     private int flag = 0;
     private long lasttime;
+    int counter = 0;
 
     public void setGame(game_service game) {
         this.game = game;
@@ -196,6 +198,24 @@ public class Game_Algo implements Runnable {
         for (int i = count; i < numOfRobots; i++) {
             //ls.add(1 + (int) Math.random() * arena.getGraph().getV().size());
         }
+
+        return ls;
+    }
+
+    public List<Integer> placeRobotsF(int numOfRobots) //place robots at the beginning
+    {
+        List<Integer> ls = new ArrayList<>();
+        int count = 0;
+        for (Fruit f : arena.getFruits()) {
+            if (count < arena.getRobots().size())
+                arena.getRobots().get(count).setFruit(f);
+            ls.add(f.getEdge().getSrc());
+            count++;
+        }
+        for (int i = count; i < numOfRobots; i++) {
+            //ls.add(1 + (int) Math.random() * arena.getGraph().getV().size());
+        }
+
         return ls;
     }
 
@@ -267,8 +287,9 @@ public class Game_Algo implements Runnable {
     }
 
     /**
-     *  greedy approach to solve the stages sends each robot to it's closest fruit and if two robots want to go to the
-     *  same fruit it sends one to a random fruit
+     * greedy approach to solve the stages sends each robot to it's closest fruit and if two robots want to go to the
+     * same fruit it sends one to a random fruit
+     *
      * @param game
      */
     public void basicG(game_service game) {
@@ -319,9 +340,9 @@ public class Game_Algo implements Runnable {
         String graph = game.getGraph();
         DGraph graph1 = new DGraph();
         graph1.init(graph);
-        ArrayList<node_data> ln = (ArrayList<node_data>)graph1.getV();
-        for (node_data n:ln) {
-            System.out.println(n.getKey()+"   ("+n.getLocation().x()+","+n.getLocation().y());
+        ArrayList<node_data> ln = (ArrayList<node_data>) graph1.getV();
+        for (node_data n : ln) {
+            System.out.println(n.getKey() + "   (" + n.getLocation().x() + "," + n.getLocation().y());
         }
     }
 
@@ -368,21 +389,37 @@ public class Game_Algo implements Runnable {
     }
 
     public void thG(game_service game) {
+        boolean[] roboAss = new boolean[arena.getRobots().size()];
         for (Robot r : arena.getRobots()) {
             if (r.getDest() == -1) {
                 if (r.getTargetNodes().isEmpty()) {
-                    List<Fruit> ff = priorityFruitToRobot(r);
-                    Fruit f = ff.remove(0);
-                    while (f.isAssigned()) {//if any other robot already goes to that fruit chooses next closest fruit
-                        f = ff.remove(0);
+                    if (counter == 0) {
+                        for (Fruit f : arena.getFruits()) {
+                            List<Robot> rr = closestRobotsToFruit(f);
+                            int i = 0;
+                            while (i < rr.size() && rr.get(i).getId() < rr.size() && roboAss[rr.get(i).getId()])
+                                i++;
+                            if (i != roboAss.length) {
+                                List<node_data> path = ga.shortestPath(rr.get(i).getSrc(), f.getEdge().getSrc());
+                                rr.get(i).setTargetNodes(new LinkedBlockingQueue<>());
+                                for (node_data n : path) {
+                                    rr.get(i).getTargetNodes().add(n.getKey());
+                                }
+
+                                rr.get(i).getTargetNodes().add(f.getEdge().getDest());
+                                if (rr.get(i).getDest() != -1)
+                                    rr.get(i).getTargetNodes().remove();
+                                f.setAssigned(true);
+                                rr.get(i).setFruit(f);
+                                if (rr.get(i).getId() < roboAss.length)
+                                    roboAss[rr.get(i).getId()] = true;
+                                counter = 0;
+
+                            }
+                        }
+                    } else {
+                        counter++;
                     }
-                    List<node_data> path = ga.shortestPath(r.getSrc(), f.getEdge().getSrc());
-                    for (node_data n : path) {
-                        r.getTargetNodes().add(n.getKey());
-                    }
-                    r.getTargetNodes().add(f.getEdge().getDest());
-                    f.setAssigned(true);
-                    r.setFruit(f);
                 } else {
                     r.setDest(r.getTargetNodes().remove());
                     game.chooseNextEdge(r.getId(), r.getDest());
@@ -408,12 +445,13 @@ public class Game_Algo implements Runnable {
             arena.updateRobots(game.getRobots());
         }
     }
+
     @Override
     public void run() {
         while (game.isRunning()) {
-            secG(game);
+            thG(game);
             try {
-                Thread.sleep(9);
+                Thread.sleep(6);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

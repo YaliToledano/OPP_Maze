@@ -293,6 +293,7 @@ class KML_Logger implements Runnable {
         this.game = game;
     }
 
+    //get the kml string
     public String getKML() {
         return start + nodesKML + edgesKML + robotsKML + fruitsKML + end;
     }
