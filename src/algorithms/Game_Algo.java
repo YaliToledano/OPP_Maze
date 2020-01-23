@@ -449,7 +449,7 @@ public class Game_Algo implements Runnable {
     @Override
     public void run() {
         while (game.isRunning()) {
-            thG(game);
+            basicG(game);
             try {
                 Thread.sleep(6);
             } catch (InterruptedException e) {

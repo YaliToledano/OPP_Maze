@@ -233,8 +233,8 @@ public class MyGameGUI implements Runnable {
             try {
                 //System.out.println("$$$$$$ stage: " + i + " $$$$$$");
                 play(Integer.parseInt(StdDraw.getMap()), "Automatic");
-                System.out.println("$$$$$$ stage: " + i + " $$$$$$");
-                play(a[i],"Automatic");
+                //System.out.println("$$$$$$ stage: " + i + " $$$$$$");
+                //play(a[i],"Automatic");
                 i = i + 1;
             } catch (Exception e) {
                 //e.printStackTrace();
