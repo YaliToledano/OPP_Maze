@@ -74,6 +74,7 @@ public class MyGameGUI implements Runnable {
         }
 
         Game_Algo game_algo = new Game_Algo(arena);
+        game_algo.setScenario_num(scenario_num);
         //robots init and placement
         Point3D p = StdDraw.getLastLoc();
         for (int i = 0; i < numRobots; i++) {
@@ -127,11 +128,11 @@ public class MyGameGUI implements Runnable {
                 if (StdDraw.getLastLoc() != null || !close(p, StdDraw.getLastLoc()) || nodeFromLoc(StdDraw.getLastLoc(), arena.getGraph()) != -1) {
                     p = StdDraw.getLastLoc();
                     move(game, arena, nodeFromLoc(p, arena.getGraph()), game_algo);
-                    //kml.update(arena); //update the kml with new information
+                    kml.update(arena); //update the kml with new information
                 }
             } else {
                 //game_algo.basicG(game);
-                //kml.update(arena);  //update the kml with new information
+                kml.update(arena);  //update the kml with new information
             }
             reDraw(game, arena, gui);
             try {
@@ -219,9 +220,11 @@ public class MyGameGUI implements Runnable {
 
     @Override
     public void run() {
-        int[] a = {0, 1, 3, 5, 9, 11, 13, 16, 19, 20};
-        int i = 8;
-        while (true) {
+        int[] a = {0, 1, 3, 5, 9, 11, 13, 16, 19, 20, 23};
+        int i = 0;
+        while (i < a.length) {
+
+            /*
             while (StdDraw.getMode().equals("") || StdDraw.getMap().equals("")) {
                 try {
                     Thread.sleep(500);
@@ -229,6 +232,7 @@ public class MyGameGUI implements Runnable {
                     e.printStackTrace();
                 }
             }
+             */
             //System.out.println(Integer.parseInt(StdDraw.getMap().substring(1)) + StdDraw.getMode());
             try {
                 //System.out.println("$$$$$$ stage: " + i + " $$$$$$");
@@ -242,5 +246,6 @@ public class MyGameGUI implements Runnable {
             StdDraw.setMap("");
             StdDraw.setMode("");
         }
+        int t = 4;
     }
 }
