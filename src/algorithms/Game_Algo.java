@@ -375,7 +375,6 @@ public class Game_Algo implements Runnable {
             System.out.println(n.getKey() + "   (" + n.getLocation().x() + "," + n.getLocation().y());
         }
     }
-
     /**
      * better version of basicG that reduces calls to the server by calling game.move()
      * at really wide interval (when robot traveling on edge)
@@ -383,7 +382,7 @@ public class Game_Algo implements Runnable {
      * even if both are close one of them will be sent to the next closet fruit
      * @param game
      */
-    public void secG(game_service game) {
+    public void cloG(game_service game, double PF) {
         for (Robot r : arena.getRobots()) {
             if (r.getDest() == -1) {
                 if (r.getTargetNodes().isEmpty()) {
@@ -414,7 +413,7 @@ public class Game_Algo implements Runnable {
                 Point3D psrc = arena.getGraph().getNode(r.getFruit().getEdge().getSrc()).getLocation();
                 Point3D pdest = arena.getGraph().getNode(r.getFruit().getEdge().getDest()).getLocation();
                 double prf = psrc.distance2D(r.getFruit().getLocation()) / psrc.distance2D(pdest);
-                if (Math.abs(pr - prf) <= 0.02 || pr >= 0.996) {
+                if (Math.abs(pr - prf) <= PF || pr >= 0.996) {
                     arena.updateRobots(game.move());
                 } else {
                     //arena.updateRobots(game.move());
@@ -425,12 +424,54 @@ public class Game_Algo implements Runnable {
         }
     }
 
-    public void thG(game_service game) {
+    public void secG(game_service game,double PF) {
+        for (Robot r : arena.getRobots()) {
+            if (r.getDest() == -1) {
+                if (r.getTargetNodes().isEmpty()) {
+                    List<Fruit> ff = priorityFruitToRobot(r);
+                    Fruit f = ff.remove(0);
+                    while (f.isAssigned()) {//if any other robot already goes to that fruit chooses next closest fruit
+                        f = ff.remove(0);
+                    }
+                    List<node_data> path = ga.shortestPath(r.getSrc(), f.getEdge().getSrc());
+                    for (node_data n : path) {
+                        r.getTargetNodes().add(n.getKey());
+                    }
+                    r.getTargetNodes().add(f.getEdge().getDest());
+                    f.setAssigned(true);
+                    r.setFruit(f);
+                } else {
+                    r.setDest(r.getTargetNodes().remove());
+                    game.chooseNextEdge(r.getId(), r.getDest());
+                    r.setEdge((Edge) arena.getGraph().getEdge(r.getSrc(), r.getDest()));
+                    this.lasttime = (new Date()).getTime();
+                }
+            } else {
+                long now = (new Date()).getTime();
+                double dt = (double) (now - this.lasttime) / 1000.0D;
+                double v = r.getSpeed();
+                double pr = v * dt / r.getEdge().getWeight();
+                int dest = r.getEdge().getDest();
+                Point3D psrc = arena.getGraph().getNode(r.getFruit().getEdge().getSrc()).getLocation();
+                Point3D pdest = arena.getGraph().getNode(r.getFruit().getEdge().getDest()).getLocation();
+                double prf = psrc.distance2D(r.getFruit().getLocation()) / psrc.distance2D(pdest);
+                if (Math.abs(pr - prf) <= PF || pr >= 0.996) {
+                    arena.updateRobots(game.move());
+                } else {
+                    //arena.updateRobots(game.move());
+                }
+            }
+            arena.updateFruits(game.getFruits());
+            arena.updateRobots(game.getRobots());
+        }
+    }
+
+    public void thG(game_service game,double PF, int c) {
         boolean[] roboAss = new boolean[arena.getRobots().size()];
         for (Robot r : arena.getRobots()) {
             if (r.getDest() == -1) {
                 if (r.getTargetNodes().isEmpty()) {
-                    if (counter == 0) {
+                    if (counter == c) {
                         for (Fruit f : arena.getFruits()) {
                             List<Robot> rr = closestRobotsToFruit(f);
                             int i = 0;
@@ -488,45 +529,49 @@ public class Game_Algo implements Runnable {
         while (game.isRunning()) {
             try {
                 if (scenario_num == 0) {
-                    secG(game);
-                    Thread.sleep(9);
+                    cloG(game, 0.02);
+                    Thread.sleep(7);
 
                 }
                 else if (scenario_num == 1) {
-                    secG(game);
-                    Thread.sleep(9);
+                    secG(game, 0.015);
+                    Thread.sleep(5);
                 }
                 else if (scenario_num == 3) {
-                    secG(game);
-                    Thread.sleep(9);
+                    secG(game, 0.015);
+                    Thread.sleep(5);
                 }
                 else if (scenario_num == 5) {
-                    secG(game);
-                    Thread.sleep(9);
+                    secG(game, 0.015);
+                    Thread.sleep(5);
+                }
+                else if (scenario_num == 9) {
+                    secG(game, 0.015);
+                    Thread.sleep(5);
                 }
                 else if (scenario_num == 11) {
-                    secG(game);
+                    secG(game, 0.02);
                     Thread.sleep(9);
                 }
                 else if (scenario_num == 13) {
-                    secG(game);
-                    Thread.sleep(9);
+                    thG(game,0.015,0);
+                    Thread.sleep(6);
                 }
                 else if (scenario_num == 16) {
-                    secG(game);
-                    Thread.sleep(9);
+                    cloG(game, 0.015);
+                    Thread.sleep(4);
                 }
                 else if (scenario_num == 19) {
-                    secG(game);
-                    Thread.sleep(9);
+                    thG(game, 0.015,0);
+                    Thread.sleep(5);
                 }
                 else if (scenario_num == 20) {
-                    secG(game);
-                    Thread.sleep(5);
+                    thG(game, 0.02,1);
+                    Thread.sleep(7);
                 }
                 else if (scenario_num == 23) {
-                    secG(game);
-                    Thread.sleep(5);
+                    cloG(game, 0.015);
+                    Thread.sleep(4);
                 }
                 else {
                     basicG(game);
