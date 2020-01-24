@@ -225,8 +225,7 @@ public class MyGameGUI implements Runnable {
     @Override
     public void run() {
         int[] a = {0, 1, 3, 5, 9, 11, 13, 16, 19, 20, 23};
-        //for (int k = 0; k < a.length; k++)
-        play(a[9], "Automatic");
+        for (int k = 0; k < a.length; k++) play(a[k], "Automatic");
 
             /*
             while (StdDraw.getMode().equals("") || StdDraw.getMap().equals("")) {
